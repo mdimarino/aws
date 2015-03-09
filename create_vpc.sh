@@ -2,7 +2,7 @@
 
 vpcname=$1
 
-echo =================================================================================
+echo =================================================================================; echo
 
 # Criar VPC com CIDR 10.50.0.0/16
     echo "Criando VPC $vpcname com CIDR 10.50.0.0/16"
@@ -17,7 +17,7 @@ echo ===========================================================================
         echo -n . ; sleep 3;
     done; echo " $state"
 
-echo =================================================================================
+echo; echo =================================================================================; echo
 
 # Criar um internet gateway (para permitir acesso a internet)
     echo "Criando um internet gateway"
@@ -27,13 +27,13 @@ echo ===========================================================================
     echo "Alterando Tag Name do internet gateway para 'Gateway da Subrede Publica'"
     aws ec2 create-tags --resources $internetgatewayid --tags Key=Name,Value="Gateway da Subrede Publica"
 
-echo =================================================================================
+echo; echo =================================================================================; echo
 
 # Atachar o internet gateway na vpc
     echo "Atachando o internet gateway na vpc $1"
     aws ec2 attach-internet-gateway --internet-gateway-id $internetgatewayid --vpc-id $vpcid
 
-echo =================================================================================
+echo; echo =================================================================================; echo
 
 # Criar tabelas de roteamento para subredes publicas e privadas
     echo "Criando tabela de roteamento para subredes publicas"
@@ -51,15 +51,17 @@ echo ===========================================================================
     echo "Alterando Tag Name da tabela de roteamento para 'Tabela de Roteamento Privada'"
     aws ec2 create-tags --resources $private_routetableid --tags Key=Name,Value="Tabela de Roteamento Privada"
 
-echo =================================================================================
+echo; echo =================================================================================; echo
 
 # Criar rota na tabela de roteamento publica para o internet gateway, ira rotear o trafego para fora desta rede para internet
     echo "Criando rota na tabela de roteamento publica para o internet gateway"
     aws ec2 create-route --route-table-id $public_routetableid --gateway-id $internetgatewayid --destination-cidr-block 0.0.0.0/0
 
-echo =================================================================================
+echo; echo =================================================================================; echo
 
 # Criar subnets:
+
+# A AWS tem 5 zonas de disponibilidade em us-east-1: a,b,c,d,e. Somente a,b,c,e podem ser usadas, d fica reservada.
 
 # Subrede Publica 01 - 10.50.0.0/24 - zona de disponibilidade us-east-1a
     echo "Criando subrede publica 01 - 10.50.0.0/24 - us-east-1a"
@@ -70,7 +72,7 @@ echo ===========================================================================
     echo "Associando tabela de roteamento publica $public_routetableid a subrede $subnetid_0"
     aws ec2 associate-route-table --subnet-id $subnetid_0 --route-table-id $public_routetableid
 
-echo =================================================================================
+echo; echo =================================================================================; echo
 
 # Subrede Privada 01 - 10.50.1.0/24 - zona de disponibilidade us-east-1a
     echo "Criando subrede privada 01 - 10.50.1.0/24 - us-east-1a"
@@ -81,7 +83,7 @@ echo ===========================================================================
     echo "Associando tabela de roteamento privada $private_routetableid a subrede $subnetid_1"
     aws ec2 associate-route-table --subnet-id $subnetid_1 --route-table-id $private_routetableid
 
-echo =================================================================================
+echo; echo =================================================================================; echo
 
 # Subrede Publica 02 - 10.50.2.0/24 - zona de disponibilidade us-east-1b
     echo "Criando subrede publica 02 - 10.50.2.0/24 - us-east-1b"
@@ -92,7 +94,7 @@ echo ===========================================================================
     echo "Associando tabela de roteamento publica $public_routetableid a subrede $subnetid_2"
     aws ec2 associate-route-table --subnet-id $subnetid_2 --route-table-id $public_routetableid
 
-echo =================================================================================
+echo; echo =================================================================================; echo
 
 # Subrede Privada 02 - 10.50.3.0/24 - zona de disponibilidade us-east-1b
     echo "Criando subrede privada 02 - 10.50.3.0/24 - us-east-1b"
@@ -103,7 +105,7 @@ echo ===========================================================================
     echo "Associando tabela de roteamento privada $private_routetableid a subrede $subnetid_3"
     aws ec2 associate-route-table --subnet-id $subnetid_3 --route-table-id $private_routetableid
 
-echo =================================================================================
+echo; echo =================================================================================; echo
 
 # Subrede Publica 03 - 10.50.4.0/24 - zona de disponibilidade us-east-1c
     echo "Criando subrede publica 03 - 10.50.4.0/24 - us-east-1c"
@@ -114,10 +116,10 @@ echo ===========================================================================
     echo "Associando tabela de roteamento publica $public_routetableid a subrede $subnetid_4"
     aws ec2 associate-route-table --subnet-id $subnetid_4 --route-table-id $public_routetableid
 
-echo =================================================================================
+echo; echo =================================================================================; echo
 
 # Subrede Privada 03 - 10.50.5.0/24 - zona de disponibilidade us-east-1c
-    echo "Criando subrede privada 01 - 10.50.5.0/24 - us-east-1c"
+    echo "Criando subrede privada 03 - 10.50.5.0/24 - us-east-1c"
     subnetid_5=$(aws ec2 create-subnet --vpc-id $vpcid --cidr-block 10.50.5.0/24 --availability-zone us-east-1c --output text --query 'Subnet.SubnetId')
     echo SubnetId=$subnetid_5
     echo "Alterando Tag Name da subrede para 'Subrede Privada 03'"
@@ -125,24 +127,61 @@ echo ===========================================================================
     echo "Associando tabela de roteamento privada $private_routetableid a subrede $subnetid_5"
     aws ec2 associate-route-table --subnet-id $subnetid_5 --route-table-id $private_routetableid
 
-echo =================================================================================
+echo; echo =================================================================================; echo
+
+# Subrede Publica 04 - 10.50.6.0/24 - zona de disponibilidade us-east-1e
+    echo "Criando subrede publica 04 - 10.50.6.0/24 - us-east-1e"
+    subnetid_6=$(aws ec2 create-subnet --vpc-id $vpcid --cidr-block 10.50.6.0/24 --availability-zone us-east-1e --output text --query 'Subnet.SubnetId')
+    echo SubnetId=$subnetid_6
+    echo "Alterando Tag Name da subrede para 'Subrede Publica 04'"
+    aws ec2 create-tags --resources $subnetid_6 --tags Key=Name,Value="Subrede Publica 04"
+    echo "Associando tabela de roteamento publica $public_routetableid a subrede $subnetid_6"
+    aws ec2 associate-route-table --subnet-id $subnetid_6 --route-table-id $public_routetableid
+
+echo; echo =================================================================================; echo
+
+# Subrede Privada 04 - 10.50.7.0/24 - zona de disponibilidade us-east-1e
+    echo "Criando subrede privada 04 - 10.50.7.0/24 - us-east-1e"
+    subnetid_7=$(aws ec2 create-subnet --vpc-id $vpcid --cidr-block 10.50.7.0/24 --availability-zone us-east-1e --output text --query 'Subnet.SubnetId')
+    echo SubnetId=$subnetid_7
+    echo "Alterando Tag Name da subrede para 'Subrede Privada 04'"
+    aws ec2 create-tags --resources $subnetid_7 --tags Key=Name,Value="Subrede Privada 04"
+    echo "Associando tabela de roteamento privada $private_routetableid a subrede $subnetid_7"
+    aws ec2 associate-route-table --subnet-id $subnetid_7 --route-table-id $private_routetableid
+
+echo; echo =================================================================================; echo
 
 # Criando grupos de seguranca para as instancias NAT, localizadas nas subredes publicas, liberando acesso para as subredes privadas acessarem a internet
     echo "Criando grupo de seguranca para instancia NAT, na subrede publica 01/us-east-1a, liberando acesso para a subrede privada 01"
-    security_group_NAT1=$(aws ec2 create-security-group --group-name "Grupo de Seguranca NAT - us-east-1a" --description "Regras de Seguranca para a instancia NAT" --vpc-id $vpcid --query 'GroupId')
+    security_group_NAT1=$(aws ec2 create-security-group --group-name "NAT-us-east-1a" --description "Regras de Seguranca para a instancia NAT" --vpc-id $vpcid --query 'GroupId')
     aws ec2 authorize-security-group-ingress --group-id $security_group_NAT1 --protocol -1 --port -1 --cidr 10.50.1.0/24
+    aws ec2 authorize-security-group-ingress --group-id $security_group_NAT1 --protocol tcp --port 22 --cidr 0.0.0.0/0
 
-echo =================================================================================
+echo; echo =================================================================================; echo
+
+# Criando grupos de seguranca para as instancias NAT, localizadas nas subredes publicas, liberando acesso para as subredes privadas acessarem a internet
     echo "Criando grupo de seguranca para instancia NAT, na subrede publica 02/us-east-1b, liberando acesso para a subrede privada 02"
-    security_group_NAT3=$(aws ec2 create-security-group --group-name "Grupo de Seguranca NAT - us-east-1b" --description "Regras de Seguranca para a instancia NAT" --vpc-id $vpcid --query 'GroupId')
+    security_group_NAT3=$(aws ec2 create-security-group --group-name "NAT-us-east-1b" --description "Regras de Seguranca para a instancia NAT" --vpc-id $vpcid --query 'GroupId')
     aws ec2 authorize-security-group-ingress --group-id $security_group_NAT3 --protocol -1 --port -1 --cidr 10.50.3.0/24
+    aws ec2 authorize-security-group-ingress --group-id $security_group_NAT3 --protocol tcp --port 22 --cidr 0.0.0.0/0
+    
+echo; echo =================================================================================; echo
 
-echo =================================================================================
+# Criando grupos de seguranca para as instancias NAT, localizadas nas subredes publicas, liberando acesso para as subredes privadas acessarem a internet
     echo "Criando grupo de seguranca para instancia NAT, na subrede publica 03/us-east-1c, liberando acesso para a subrede privada 03"
-    security_group_NAT5=$(aws ec2 create-security-group --group-name "Grupo de Seguranca NAT - us-east-1c" --description "Regras de Seguranca para a instancia NAT" --vpc-id $vpcid --query 'GroupId')
+    security_group_NAT5=$(aws ec2 create-security-group --group-name "NAT-us-east-1c" --description "Regras de Seguranca para a instancia NAT" --vpc-id $vpcid --query 'GroupId')
     aws ec2 authorize-security-group-ingress --group-id $security_group_NAT5 --protocol -1 --port -1 --cidr 10.50.5.0/24
+    aws ec2 authorize-security-group-ingress --group-id $security_group_NAT5 --protocol tcp --port 22 --cidr 0.0.0.0/0
 
-echo =================================================================================
+echo; echo =================================================================================; echo
+
+# Criando grupos de seguranca para as instancias NAT, localizadas nas subredes publicas, liberando acesso para as subredes privadas acessarem a internet
+    echo "Criando grupo de seguranca para instancia NAT, na subrede publica 04/us-east-1e, liberando acesso para a subrede privada 04"
+    security_group_NAT7=$(aws ec2 create-security-group --group-name "NAT-us-east-1e" --description "Regras de Seguranca para a instancia NAT" --vpc-id $vpcid --query 'GroupId')
+    aws ec2 authorize-security-group-ingress --group-id $security_group_NAT7 --protocol -1 --port -1 --cidr 10.50.7.0/24
+    aws ec2 authorize-security-group-ingress --group-id $security_group_NAT7 --protocol tcp --port 22 --cidr 0.0.0.0/0
+
+echo; echo =================================================================================; echo
 
 # Dump das variaveis de ambiente, util para outros scripts
 echo export vpcname=$vpcname
@@ -156,6 +195,11 @@ echo export subnetid_2=$subnetid_2
 echo export subnetid_3=$subnetid_3
 echo export subnetid_4=$subnetid_4
 echo export subnetid_5=$subnetid_5
+echo export subnetid_6=$subnetid_6
+echo export subnetid_7=$subnetid_7
 echo export security_group_NAT1=$security_group_NAT1
 echo export security_group_NAT3=$security_group_NAT3
 echo export security_group_NAT5=$security_group_NAT5
+echo export security_group_NAT7=$security_group_NAT7
+
+echo; echo =================================================================================
