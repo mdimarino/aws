@@ -1,22 +1,9 @@
 #!/bin/bash
 
-    vpcname=vpc-01
-    vpcid=vpc-2997d84c
-    internetgatewayid=igw-ffc0499a
-    public_routetableid=rtb-3ad1885f
-    private_routetableid=rtb-0ed1886b
-    subnetid_0=subnet-136bcb38
-    subnetid_1=subnet-116bcb3a
-    subnetid_2=subnet-2b93095c
-    subnetid_3=subnet-2993095e
-    subnetid_4=subnet-8b8833d2
-    subnetid_5=subnet-8f8833d6
-    subnetid_6=subnet-987c33a2
-    subnetid_7=subnet-997c33a3
-    security_group_NAT1=sg-6de16809
-    security_group_NAT3=sg-69e1680d
-    security_group_NAT5=sg-71e16815
-    security_group_NAT7=sg-7de16819
+echo; echo =================================================================================; echo
+
+    echo "Carregando variáveis de ambiente"
+    . ./vars.sh
 
     ubuntu_image=ami-9a562df2
 
@@ -35,7 +22,7 @@ echo; echo =====================================================================
     done; echo " $state"
 
     echo "Alterando Tag Name do instância NAT1 para 'prod_NAT1'"
-    aws ec2 create-tags --resources $ec2_InstanceId_NAT1 --tags Key=Name,Value="prod_NAT1"
+    aws ec2 create-tags --resources $ec2_InstanceId_NAT1 --tags Key=Name,Value="prod-NAT1"
 
     echo "Alterando parâmetro source-dest-check para no"
     aws ec2 modify-instance-attribute --instance-id $ec2_InstanceId_NAT1 --no-source-dest-check
