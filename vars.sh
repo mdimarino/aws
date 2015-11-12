@@ -1,19 +1,19 @@
 #!/bin/bash
 
     export vpcname=vpc-01
-    export vpcid=vpc-2997d84c
-    export internetgatewayid=igw-ffc0499a
-    export public_routetableid=rtb-3ad1885f
-    export private_routetableid=rtb-0ed1886b
-    export subnetid_0=subnet-136bcb38
-    export subnetid_1=subnet-116bcb3a
-    export subnetid_2=subnet-2b93095c
-    export subnetid_3=subnet-2993095e
-    export subnetid_4=subnet-8b8833d2
-    export subnetid_5=subnet-8f8833d6
-    export subnetid_6=subnet-987c33a2
-    export subnetid_7=subnet-997c33a3
-    export security_group_NAT1=sg-6de16809
-    export security_group_NAT3=sg-69e1680d
-    export security_group_NAT5=sg-71e16815
-    export security_group_NAT7=sg-7de16819
+    export vpcid=vpc-1969d27d
+    export internetgatewayid=igw-174d5f72
+    export public_routetableid=rtb-da2752be
+    export private_routetableid=rtb-a72752c3
+    export subnetid_0=subnet-fcd2d7d7
+    export subnetid_1=subnet-f3d2d7d8
+    export subnetid_2=subnet-50b24126
+    export subnetid_3=subnet-5cb2412a
+    export subnetid_4=subnet-c0ece699
+    export subnetid_5=subnet-c2ece69b
+    export subnetid_6=subnet-60e9405d
+    export subnetid_7=subnet-5ee94063
+    export security_group_NAT1=sg-5bf6673d
+    export security_group_NAT3=sg-2bf6674d
+    export security_group_NAT5=sg-0bf6676d
+    export security_group_NAT7=sg-dcf667ba
