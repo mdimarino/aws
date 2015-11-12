@@ -102,7 +102,7 @@ echo; echo =====================================================================
     subnetid_3=$(aws --profile $profile ec2 create-subnet --vpc-id $vpcid --cidr-block 172.31.3.0/24 --availability-zone us-east-1b --output text --query 'Subnet.SubnetId')
     echo SubnetId=$subnetid_3
     echo "Alterando Tag Name da subrede para 'Subrede Privada 02'"
-    aws --profile $profile ec2 create-tags --resources $subnetid_3 --tags Key=Name,Value="Subrede Privada 02"
+    aws --profile $profile ec2 create-tags --resources $subnetid_3 --tags Key=Name,Value="Subrede Privada 02 - $vpcname"
     echo "Associando tabela de roteamento privada $private_routetableid a subrede $subnetid_3"
     aws --profile $profile ec2 associate-route-table --subnet-id $subnetid_3 --route-table-id $private_routetableid
 
