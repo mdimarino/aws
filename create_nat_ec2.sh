@@ -4,6 +4,7 @@ echo; echo =====================================================================
 
     echo "Carregando variáveis de ambiente"
 
+    # Recebe como argumento o arquivo de variáveis de ambiente
     . ./$1
 
     image_id=ami-9a562df2

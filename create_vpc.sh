@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Automatização da criação de VPCs na Amazon Web Services
+
 profile=$1
 vpc_name=$2
 cidr=172.31
@@ -26,7 +28,7 @@ echo ===========================================================================
 
 echo; echo =================================================================================; echo
 
-# Criar um internet gateway (para permitir acesso a internet)
+# Criar um internet gateway (para permitir subredes públicas terem acesso à internet)
     echo "Criando um internet gateway"
     internet_gateway_id=$(aws --profile ${profile} ec2 create-internet-gateway --output text --query 'InternetGateway.InternetGatewayId')
     echo internet_gateway_id=${internet_gateway_id}
@@ -66,7 +68,7 @@ echo; echo =====================================================================
 
 echo; echo =================================================================================; echo
 
-# Criar subnets:
+# Criar subredes:
 
 # A AWS tem 5 zonas de disponibilidade em us-east-1: a,b,c,d,e. Somente a,b,c,e podem ser usadas, d fica reservada.
 
@@ -158,25 +160,31 @@ echo; echo =====================================================================
 
 echo; echo =================================================================================; echo
 
-# Criando grupos de seguranca para as instancias NAT, localizadas nas subredes Públicas, liberando acesso para as subredes privadas acessarem a internet
-    echo "Criando grupo de seguranca para instancia NAT, na subrede Pública 01/${availability_zone_1}, liberando acesso para a subrede privada 01"
+# Criando grupos de segurança para as instancias NAT, localizadas nas subredes Públicas, liberando acesso para as subredes privadas acessarem a internet
+    echo "Criando grupo de segurança para instancia NAT, na subrede Pública 01/${availability_zone_1}, liberando acesso para a subrede privada 01"
     security_group_NAT1=$(aws --profile ${profile} ec2 create-security-group --group-name "NAT-${availability_zone_1}-${vpc_name}" --description "Regras de Seguranca para a instancia NAT - ${vpc_name}" --vpc-id ${vpc_id} --query 'GroupId')
+    echo "Alterando Tag Name do grupo de segurança para 'SecGrpNAT1'"
+    aws --profile ${profile} ec2 create-tags --resources ${security_group_NAT3} --tags Key=Name,Value="SecGrpNAT1"
     aws --profile ${profile} ec2 authorize-security-group-ingress --group-id ${security_group_NAT1} --protocol -1 --port -1 --cidr ${cidr}.1.0/24
     aws --profile ${profile} ec2 authorize-security-group-ingress --group-id ${security_group_NAT1} --protocol tcp --port 22 --cidr 0.0.0.0/0
 
 echo; echo =================================================================================; echo
 
-# Criando grupos de seguranca para as instancias NAT, localizadas nas subredes Públicas, liberando acesso para as subredes privadas acessarem a internet
-    echo "Criando grupo de seguranca para instancia NAT, na subrede Pública 02/${availability_zone_2}, liberando acesso para a subrede privada 02"
+# Criando grupos de segurança para as instancias NAT, localizadas nas subredes Públicas, liberando acesso para as subredes privadas acessarem a internet
+    echo "Criando grupo de segurança para instancia NAT, na subrede Pública 02/${availability_zone_2}, liberando acesso para a subrede privada 02"
     security_group_NAT3=$(aws --profile ${profile} ec2 create-security-group --group-name "NAT-${availability_zone_2}-${vpc_name}" --description "Regras de Seguranca para a instancia NAT - ${vpc_name}" --vpc-id ${vpc_id} --query 'GroupId')
+    echo "Alterando Tag Name do grupo de segurança para 'SecGrpNAT3'"
+    aws --profile ${profile} ec2 create-tags --resources ${security_group_NAT3} --tags Key=Name,Value="SecGrpNAT3"
     aws --profile ${profile} ec2 authorize-security-group-ingress --group-id ${security_group_NAT3} --protocol -1 --port -1 --cidr ${cidr}.3.0/24
     aws --profile ${profile} ec2 authorize-security-group-ingress --group-id ${security_group_NAT3} --protocol tcp --port 22 --cidr 0.0.0.0/0
 
 echo; echo =================================================================================; echo
 
-# Criando grupos de seguranca para as instancias NAT, localizadas nas subredes Públicas, liberando acesso para as subredes privadas acessarem a internet
-    echo "Criando grupo de seguranca para instancia NAT, na subrede Pública 03/${availability_zone_3}, liberando acesso para a subrede privada 03"
+# Criando grupos de segurança para as instancias NAT, localizadas nas subredes Públicas, liberando acesso para as subredes privadas acessarem a internet
+    echo "Criando grupo de segurança para instancia NAT, na subrede Pública 03/${availability_zone_3}, liberando acesso para a subrede privada 03"
     security_group_NAT5=$(aws --profile ${profile} ec2 create-security-group --group-name "NAT-${availability_zone_3}-${vpc_name}" --description "Regras de Seguranca para a instancia NAT - ${vpc_name}" --vpc-id ${vpc_id} --query 'GroupId')
+    echo "Alterando Tag Name do grupo de segurança para 'SecGrpNAT5'"
+    aws --profile ${profile} ec2 create-tags --resources ${security_group_NAT3} --tags Key=Name,Value="SecGrpNAT5"
     aws --profile ${profile} ec2 authorize-security-group-ingress --group-id ${security_group_NAT5} --protocol -1 --port -1 --cidr ${cidr}.5.0/24
     aws --profile ${profile} ec2 authorize-security-group-ingress --group-id ${security_group_NAT5} --protocol tcp --port 22 --cidr 0.0.0.0/0
 
@@ -185,6 +193,8 @@ echo; echo =====================================================================
 # Criando grupos de seguranca para as instancias NAT, localizadas nas subredes Públicas, liberando acesso para as subredes privadas acessarem a internet
     echo "Criando grupo de seguranca para instancia NAT, na subrede Pública 04/${availability_zone_4}, liberando acesso para a subrede privada 04"
     security_group_NAT7=$(aws --profile ${profile} ec2 create-security-group --group-name "NAT-${availability_zone_4}-${vpc_name}" --description "Regras de Seguranca para a instancia NAT - ${vpc_name}" --vpc-id ${vpc_id} --query 'GroupId')
+    echo "Alterando Tag Name do grupo de segurança para 'SecGrpNAT7'"
+    aws --profile ${profile} ec2 create-tags --resources ${security_group_NAT3} --tags Key=Name,Value="SecGrpNAT7"
     aws --profile ${profile} ec2 authorize-security-group-ingress --group-id ${security_group_NAT7} --protocol -1 --port -1 --cidr ${cidr}.7.0/24
     aws --profile ${profile} ec2 authorize-security-group-ingress --group-id ${security_group_NAT7} --protocol tcp --port 22 --cidr 0.0.0.0/0
 
