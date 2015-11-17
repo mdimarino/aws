@@ -81,7 +81,7 @@ echo; echo =====================================================================
 
 echo; echo =================================================================================; echo
 
-# Subrede Privada 00 - ${cidr}.1.0/24 - zona de disponibilidade ${availability_zone_1}
+# Subrede Privada 01 - ${cidr}.1.0/24 - zona de disponibilidade ${availability_zone_1}
     echo "Criando subrede privada 01 - ${cidr}.1.0/24 - ${availability_zone_1}"
     subnetid_2=$(aws --profile ${profile} ec2 create-subnet --vpc-id ${vpc_id} --cidr-block ${cidr}.1.0/24 --availability-zone ${availability_zone_1} --output text --query 'Subnet.SubnetId')
     echo SubnetId=${subnetid_2}
