@@ -4,7 +4,7 @@
 
 profile=$1
 vpc_name=$2
-cidr=172.31
+cidr=$3
 
 # Liste aqui suas zonas de disponibilidade
 
@@ -29,8 +29,9 @@ echo ===========================================================================
         echo -n . ; sleep 3;
     done; echo " ${state}"
 
-    echo "Habilitando atributos dns-support e dns-hostnames da vpc ${vpc_id}"
-    aws --profile ${profile} ec2 modify-vpc-attribute --vpc-id ${vpc_id} --enable-dns-support --enable-dns-hostnames
+    echo "Habilitando atributos dns-support e dns-hostnames da vpc ${vpc_name}"
+    aws --profile ${profile} ec2 modify-vpc-attribute --vpc-id ${vpc_id} --enable-dns-support "{\"Value\":true}"
+    aws --profile ${profile} ec2 modify-vpc-attribute --vpc-id ${vpc_id} --enable-dns-hostnames "{\"Value\":true}"
 
 echo; echo =================================================================================; echo
 
@@ -260,7 +261,7 @@ echo; echo =====================================================================
 
 echo; echo =================================================================================; echo
 
-
+    #hosted_zone_id=$(aws --profile ${profile} route53 create-hosted-zone --name ${vpc_name} --vpc "VPCRegion=us-east-1,VPCId=${vpc_id}" --caller-reference $(date +%Y%m%d-%H%M) --hosted-zone-config "Comment=Dominio privado da vpc ${vpc_name}" --query 'HostedZone.Id')
 
 echo; echo =================================================================================; echo
 
@@ -291,5 +292,6 @@ echo export security_group_NAT3=${security_group_NAT3} | tee -a ${dump_file}
 echo export security_group_NAT5=${security_group_NAT5} | tee -a ${dump_file}
 echo export security_group_NAT7=${security_group_NAT7} | tee -a ${dump_file}
 echo export dhcp_options_id=${dhcp_options_id} | tee -a ${dump_file}
+#echo export hosted_zone_id=${hosted_zone_id} | tee -a ${dump_file}
 
 echo; echo =================================================================================
