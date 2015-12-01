@@ -64,12 +64,41 @@ echo; echo =====================================================================
     echo "* Alterando Tag Name da tabela de roteamento para 'Tabela de Roteamento das Subredes Públicas - ${vpc_name}'"
     aws --profile ${profile} ec2 create-tags --resources ${public_routetable_id} --tags Key=Name,Value="Tabela de Roteamento das Subredes Publicas - ${vpc_name}"
 
-    echo -n "* Criando tabela de roteamento para subredes privadas: "
-    private_routetable_id=$(aws --profile ${profile} ec2 create-route-table --vpc-id ${vpc_id} --output text --query 'RouteTable.RouteTableId')
-    echo RouteTableId=${private_routetable_id}
+    echo ''
 
-    echo "* Alterando Tag Name da tabela de roteamento para 'Tabela de Roteamento das Subredes Privadas - ${vpc_name}'"
-    aws --profile ${profile} ec2 create-tags --resources ${private_routetable_id} --tags Key=Name,Value="Tabela de Roteamento das Subredes Privadas - ${vpc_name}"
+    echo -n "* Criando tabela de roteamento para Subrede Privada 01: "
+    private1_routetable_id=$(aws --profile ${profile} ec2 create-route-table --vpc-id ${vpc_id} --output text --query 'RouteTable.RouteTableId')
+    echo RouteTableId=${private1_routetable_id}
+
+    echo "* Alterando Tag Name da tabela de roteamento para 'Tabela de Roteamento da Subrede Privada 01 - ${vpc_name}'"
+    aws --profile ${profile} ec2 create-tags --resources ${private1_routetable_id} --tags Key=Name,Value="Tabela de Roteamento da Subrede Privada 01 - ${vpc_name}"
+
+    echo ''
+
+    echo -n "* Criando tabela de roteamento para Subrede Privada 02: "
+    private2_routetable_id=$(aws --profile ${profile} ec2 create-route-table --vpc-id ${vpc_id} --output text --query 'RouteTable.RouteTableId')
+    echo RouteTableId=${private2_routetable_id}
+
+    echo "* Alterando Tag Name da tabela de roteamento para 'Tabela de Roteamento da Subrede Privada 02 - ${vpc_name}'"
+    aws --profile ${profile} ec2 create-tags --resources ${private2_routetable_id} --tags Key=Name,Value="Tabela de Roteamento da Subrede Privada 02 - ${vpc_name}"
+
+    echo ''
+
+    echo -n "* Criando tabela de roteamento para Subrede Privada 03: "
+    private3_routetable_id=$(aws --profile ${profile} ec2 create-route-table --vpc-id ${vpc_id} --output text --query 'RouteTable.RouteTableId')
+    echo RouteTableId=${private3_routetable_id}
+
+    echo "* Alterando Tag Name da tabela de roteamento para 'Tabela de Roteamento da Subrede Privada 03 - ${vpc_name}'"
+    aws --profile ${profile} ec2 create-tags --resources ${private3_routetable_id} --tags Key=Name,Value="Tabela de Roteamento da Subrede Privada 03 - ${vpc_name}"
+
+    echo ''
+
+    echo -n "* Criando tabela de roteamento para Subrede Privada 04: "
+    private4_routetable_id=$(aws --profile ${profile} ec2 create-route-table --vpc-id ${vpc_id} --output text --query 'RouteTable.RouteTableId')
+    echo RouteTableId=${private4_routetable_id}
+
+    echo "* Alterando Tag Name da tabela de roteamento para 'Tabela de Roteamento da Subrede Privada 04 - ${vpc_name}'"
+    aws --profile ${profile} ec2 create-tags --resources ${private4_routetable_id} --tags Key=Name,Value="Tabela de Roteamento da Subrede Privada 04 - ${vpc_name}"
 
 echo; echo =================================================================================; echo
 
@@ -105,8 +134,8 @@ echo; echo =====================================================================
     echo "* Alterando Tag Name da subrede para 'Subrede Privada 01 - ${vpc_name}'"
     aws --profile ${profile} ec2 create-tags --resources ${subnetid_2} --tags Key=Name,Value="Subrede Privada 01 - ${vpc_name}"
 
-    echo -n "* Associando tabela de roteamento das subredes privadas ${private_routetable_id} a subrede ${subnetid_2}: "
-    aws --profile ${profile} ec2 associate-route-table --subnet-id ${subnetid_2} --route-table-id ${private_routetable_id}
+    echo -n "* Associando tabela de roteamento da subrede privadas ${private1_routetable_id} a subrede ${subnetid_2}: "
+    aws --profile ${profile} ec2 associate-route-table --subnet-id ${subnetid_2} --route-table-id ${private1_routetable_id}
 
 echo; echo =================================================================================; echo
 
@@ -133,8 +162,8 @@ echo; echo =====================================================================
     echo "* Alterando Tag Name da subrede para 'Subrede Privada 02 - ${vpc_name}'"
     aws --profile ${profile} ec2 create-tags --resources ${subnetid_4} --tags Key=Name,Value="Subrede Privada 02 - ${vpc_name}"
 
-    echo -n "* Associando tabela de roteamento das subredes privadas ${private_routetable_id} a subrede ${subnetid_4}: "
-    aws --profile ${profile} ec2 associate-route-table --subnet-id ${subnetid_4} --route-table-id ${private_routetable_id}
+    echo -n "* Associando tabela de roteamento da subrede privada ${private2_routetable_id} a subrede ${subnetid_4}: "
+    aws --profile ${profile} ec2 associate-route-table --subnet-id ${subnetid_4} --route-table-id ${private2_routetable_id}
 
 echo; echo =================================================================================; echo
 
@@ -161,8 +190,8 @@ echo; echo =====================================================================
     echo "* Alterando Tag Name da subrede para 'Subrede Privada 03 - ${vpc_name}'"
     aws --profile ${profile} ec2 create-tags --resources ${subnetid_6} --tags Key=Name,Value="Subrede Privada 03 - ${vpc_name}"
 
-    echo -n "* Associando tabela de roteamento das subredes privadas ${private_routetable_id} a subrede ${subnetid_6}: "
-    aws --profile ${profile} ec2 associate-route-table --subnet-id ${subnetid_6} --route-table-id ${private_routetable_id}
+    echo -n "* Associando tabela de roteamento da subrede privada ${private3_routetable_id} a subrede ${subnetid_6}: "
+    aws --profile ${profile} ec2 associate-route-table --subnet-id ${subnetid_6} --route-table-id ${private3_routetable_id}
 
 echo; echo =================================================================================; echo
 
@@ -189,8 +218,8 @@ echo; echo =====================================================================
     echo "* Alterando Tag Name da subrede para 'Subrede Privada 04 - ${vpc_name}'"
     aws --profile ${profile} ec2 create-tags --resources ${subnetid_8} --tags Key=Name,Value="Subrede Privada 04 - ${vpc_name}"
 
-    echo -n "* Associando tabela de roteamento das subredes privadas ${private_routetable_id} a subrede ${subnetid_8}: "
-    aws --profile ${profile} ec2 associate-route-table --subnet-id ${subnetid_8} --route-table-id ${private_routetable_id}
+    echo -n "* Associando tabela de roteamento da subrede privada ${private4_routetable_id} a subrede ${subnetid_8}: "
+    aws --profile ${profile} ec2 associate-route-table --subnet-id ${subnetid_8} --route-table-id ${private4_routetable_id}
 
 echo; echo =================================================================================; echo
 
@@ -277,39 +306,44 @@ echo; echo =====================================================================
         echo -n . ; sleep 3;
     done; echo " OK!"
 
-    temp="${hosted_zone_id%\"}"
-    temp="${temp#\"}"
-    hosted_zone_id="${temp}"
+    #temp="${hosted_zone_id%\"}"
+    #temp="${temp#\"}"
+    #hosted_zone_id="${temp}"
 
 echo; echo =================================================================================; echo
 
 # Criar arquivo ${vpc_name}_vars.sh com o dump das variáveis de ambiente
 
-dump_file=${vpc_name}_vars.sh
+    dump_file=${vpc_name}_vars.sh
 
-echo "#!/bin/bash" > ${dump_file}
-echo "" >> ${dump_file}
+    echo "#!/bin/bash" > ${dump_file}
+    echo "" >> ${dump_file}
 
 # Dump das variaveis de ambiente, usadas em outros scripts
-echo export cidr=${cidr} | tee -a ${dump_file}
-echo export vpc_name=${vpc_name} | tee -a ${dump_file}
-echo export vpc_id=${vpc_id} | tee -a ${dump_file}
-echo export internet_gateway_id=${internet_gateway_id} | tee -a ${dump_file}
-echo export public_routetable_id=${public_routetable_id} | tee -a ${dump_file}
-echo export private_routetable_id=${private_routetable_id} | tee -a ${dump_file}
-echo export subnetid_1=${subnetid_1} | tee -a ${dump_file}
-echo export subnetid_2=${subnetid_2} | tee -a ${dump_file}
-echo export subnetid_3=${subnetid_3} | tee -a ${dump_file}
-echo export subnetid_4=${subnetid_4} | tee -a ${dump_file}
-echo export subnetid_5=${subnetid_5} | tee -a ${dump_file}
-echo export subnetid_6=${subnetid_6} | tee -a ${dump_file}
-echo export subnetid_7=${subnetid_7} | tee -a ${dump_file}
-echo export subnetid_8=${subnetid_8} | tee -a ${dump_file}
-echo export security_group_NAT1=${security_group_NAT1} | tee -a ${dump_file}
-echo export security_group_NAT3=${security_group_NAT3} | tee -a ${dump_file}
-echo export security_group_NAT5=${security_group_NAT5} | tee -a ${dump_file}
-echo export security_group_NAT7=${security_group_NAT7} | tee -a ${dump_file}
-echo export dhcp_options_id=${dhcp_options_id} | tee -a ${dump_file}
-echo export hosted_zone_id=${hosted_zone_id} | tee -a ${dump_file}
+
+    echo export profile=${profile} | tee -a ${dump_file}
+    echo export cidr=${cidr} | tee -a ${dump_file}
+    echo export vpc_name=${vpc_name} | tee -a ${dump_file}
+    echo export vpc_id=${vpc_id} | tee -a ${dump_file}
+    echo export internet_gateway_id=${internet_gateway_id} | tee -a ${dump_file}
+    echo export public_routetable_id=${public_routetable_id} | tee -a ${dump_file}
+    echo export private1_routetable_id=${private1_routetable_id} | tee -a ${dump_file}
+    echo export private2_routetable_id=${private2_routetable_id} | tee -a ${dump_file}
+    echo export private3_routetable_id=${private3_routetable_id} | tee -a ${dump_file}
+    echo export private4_routetable_id=${private4_routetable_id} | tee -a ${dump_file}
+    echo export subnetid_1=${subnetid_1} | tee -a ${dump_file}
+    echo export subnetid_2=${subnetid_2} | tee -a ${dump_file}
+    echo export subnetid_3=${subnetid_3} | tee -a ${dump_file}
+    echo export subnetid_4=${subnetid_4} | tee -a ${dump_file}
+    echo export subnetid_5=${subnetid_5} | tee -a ${dump_file}
+    echo export subnetid_6=${subnetid_6} | tee -a ${dump_file}
+    echo export subnetid_7=${subnetid_7} | tee -a ${dump_file}
+    echo export subnetid_8=${subnetid_8} | tee -a ${dump_file}
+    echo export security_group_NAT1=${security_group_NAT1} | tee -a ${dump_file}
+    echo export security_group_NAT3=${security_group_NAT3} | tee -a ${dump_file}
+    echo export security_group_NAT5=${security_group_NAT5} | tee -a ${dump_file}
+    echo export security_group_NAT7=${security_group_NAT7} | tee -a ${dump_file}
+    echo export dhcp_options_id=${dhcp_options_id} | tee -a ${dump_file}
+    echo export hosted_zone_id=${hosted_zone_id} | tee -a ${dump_file}
 
 echo; echo =================================================================================
