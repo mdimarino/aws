@@ -15,7 +15,7 @@
 
     #rpm -Uvh https://yum.newrelic.com/pub/newrelic/el5/x86_64/newrelic-repo-5-3.noarch.rpm
     #yum install newrelic-sysmond -y
-    #nrsysmond-config --set license_key=921c325244e357c024c09e52b126f9f969761ff8
+    #nrsysmond-config --set license_key=
 
     echo 1 > /proc/sys/net/ipv4/ip_forward
     echo 0 > /proc/sys/net/ipv4/conf/eth0/send_redirects
