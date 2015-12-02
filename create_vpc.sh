@@ -35,7 +35,7 @@ echo ===========================================================================
         echo -n . ; sleep 3;
     done; echo " ${state}"
 
-    echo "* Habilitando atributos dns-support e dns-hostnames da vpc ${vpc_name}"
+    echo "* Habilitando atributos dns-support e dns-hostnames na vpc ${vpc_name}"
     aws --profile ${profile} ec2 modify-vpc-attribute \
         --vpc-id ${vpc_id} \
         --enable-dns-support "{\"Value\":true}"
@@ -45,9 +45,9 @@ echo ===========================================================================
 
 echo; echo =================================================================================; echo
 
-# Criar um internet gateway (para permitir subredes públicas terem acesso à internet)
+# Criar internet gateway (para permitir subredes públicas terem acesso à internet)
 
-    echo -n "* Criando um internet gateway: "
+    echo -n "* Criando internet gateway: "
     internet_gateway_id=$(aws --profile ${profile} ec2 create-internet-gateway \
         --output text \
         --query 'InternetGateway.InternetGatewayId')
@@ -71,7 +71,7 @@ echo; echo =====================================================================
 
 # Criar tabelas de roteamento para subredes públicas e privadas
 
-    echo -n "* Criando tabela de roteamento para subredes Públicas: "
+    echo -n "* Criando tabela de roteamento para Subredes Públicas: "
     # Quando a vpc é criada uma tabela de roteamento default é criada automaticamente, vamos usá-la para as subredes públicas
     public_routetable_id=$(aws --profile ${profile} ec2 describe-route-tables \
         --filters Name=vpc-id,Values=${vpc_id} \
@@ -416,7 +416,7 @@ echo; echo =====================================================================
 
 echo; echo =================================================================================; echo
 
-# * Criar grupos de seguranca para as instâncias NAT, localizadas nas subredes Públicas, liberando acesso para as subredes privadas acessarem a internet
+# Criar grupos de seguranca para as instâncias NAT, localizadas nas subredes Públicas, liberando acesso para as subredes privadas acessarem a internet
 
     echo "* Criando grupo de seguranca para instancia NAT, na subrede Pública 04/${availability_zone_4}, liberando acesso para a subrede privada 04"
     security_group_NAT7=$(aws --profile ${profile} ec2 create-security-group \
