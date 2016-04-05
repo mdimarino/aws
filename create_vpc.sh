@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Automatização da criação de VPCs na Amazon Web Services
+# Automatização da criação de VPCs na Amazon Web Services US-EAST
 
 profile=$1
 vpc_name=$2
 cidr=$3
 
-# Cada região da AWS tem cinco zonas de disponibilidade: a,b,c,d,e. Somente quatro podem ser usadas, uma fica reservada.
+# Cada região da AWS US-EAST tem cinco zonas de disponibilidade: a,b,c,d,e. Somente quatro podem ser usadas, uma fica reservada.
 # Liste aqui suas zonas de disponibilidade
 
 availability_zone_1=us-east-1a
