@@ -4,14 +4,14 @@
 
 profile=$1
 vpc_name=$2
-cidr=$3
+cidr=$3 # exemplo: 172.16
 
 # Cada região da AWS US-EAST tem cinco zonas de disponibilidade: a,b,c,d,e. Somente quatro podem ser usadas, uma fica reservada.
 # Liste aqui suas zonas de disponibilidade
 
 availability_zone_1=us-east-1a
-availability_zone_2=us-east-1c
-availability_zone_3=us-east-1d
+availability_zone_2=us-east-1b
+availability_zone_3=us-east-1c
 availability_zone_4=us-east-1e
 
 echo =================================================================================; echo
@@ -468,6 +468,7 @@ echo; echo =====================================================================
         --hosted-zone-config "Comment=Dominio privado da vpc ${vpc_name}" \
         --output json)
 
+    # como remover dependência do jq?
     hosted_zone_id=$(echo ${create_hosted_zone_json_output} | jq .HostedZone.Id)
     change_info_id=$(echo ${create_hosted_zone_json_output} | jq .ChangeInfo.Id)
 
