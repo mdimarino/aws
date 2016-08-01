@@ -16,8 +16,9 @@ availability_zone_3=us-east-1c
 availability_zone_4=us-east-1e
 
 # Exemplos de subredes usando CIDR 172.16.
-# Cada subrede terá 1022 endereços para hosts, a AWS reserva os IPs
-# .1(VPC router), .2(Amazon-provided DNS) e .3(uso futuro)
+
+# Cada subrede terá 1019 endereços para hosts.
+# A AWS reserva os IPs .1(VPC router), .2(Amazon-provided DNS) e .3(uso futuro).
 
 # zona a publica 01 172.16.0.0/22 - 172.16.0.4 a 172.16.3.254
 # zona a privada 01 172.16.4.0/22 - 172.16.4.4 a 172.16.7.254
