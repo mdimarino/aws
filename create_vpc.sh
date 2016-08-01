@@ -6,13 +6,30 @@ profile=$1
 vpc_name=$2
 cidr=$3 # exemplo: 172.16
 
-# Cada região da AWS US-EAST tem cinco zonas de disponibilidade: a,b,c,d,e. Somente quatro podem ser usadas, uma fica reservada.
+# Cada região da AWS US-EAST tem cinco zonas de disponibilidade: a,b,c,d,e.
+# Somente quatro podem ser usadas, uma fica reservada.
 # Liste aqui suas zonas de disponibilidade.
 
 availability_zone_1=us-east-1a
 availability_zone_2=us-east-1b
 availability_zone_3=us-east-1c
 availability_zone_4=us-east-1e
+
+# Exemplos de subredes usando CIDR 172.16.
+# Cada subrede terá 1022 endereços para hosts, a AWS reserva os IPs
+# .1(VPC router), .2(Amazon-provided DNS) e .3(uso futuro)
+
+# zona a publica 01 172.16.0.0/22 - 172.16.0.4 a 172.16.3.254
+# zona a privada 01 172.16.4.0/22 - 172.16.4.4 a 172.16.7.254
+
+# zona b publica 02 172.16.8.0/22 - 172.16.8.4 a 172.16.11.254
+# zona b privada 02 172.16.12.0/22 - 172.16.12.4 a 172.16.15.254
+
+# zona c publica 03 172.16.16.0/22 - 172.16.16.4 a 172.16.19.254
+# zona c privada 03 172.16.20.0/22 - 172.16.20.4 a 172.16.23.254
+
+# zona e publica 04 172.16.24.0/22 - 172.16.24.4 a 172.16.27.254
+# zona e privada 04 172.16.28.0/22 - 172.16.28.4 a 172.16.31.254
 
 echo =================================================================================; echo
 
@@ -31,7 +48,10 @@ echo ===========================================================================
         --tags Key=Name,Value=${vpc_name}
 
     echo -n "* Aguardando pela VPC..."
-    while state=$(aws --profile ${profile} ec2 describe-vpcs --filters Name=tag-key,Values=vpc_name --filters Name=tag-value,Values=${vpc_name} --output text --query 'Vpcs[*].State'); test "${state}" = "pending"; do
+    while state=$(aws --profile ${profile} ec2 describe-vpcs \
+        --filters Name=tag-key,Values=vpc_name \
+        --filters Name=tag-value,Values=${vpc_name} \
+        --output text --query 'Vpcs[*].State'); test "${state}" = "pending"; do
         echo -n . ; sleep 3;
     done; echo " ${state}"
 
@@ -150,12 +170,12 @@ echo; echo =====================================================================
 
 # Criar subredes:
 
-# Subrede Pública 01 - ${cidr}.0.0/24 - zona de disponibilidade ${availability_zone_1}.
+# Subrede Pública 01 - ${cidr}.0.0/22 - zona de disponibilidade ${availability_zone_1}.
 
-    echo -n "* Criando subrede pública 01 - ${cidr}.0.0/24 - ${availability_zone_1}: "
+    echo -n "* Criando subrede pública 01 - ${cidr}.0.0/22 - ${availability_zone_1}: "
     subnetid_1=$(aws --profile ${profile} ec2 create-subnet \
         --vpc-id ${vpc_id} \
-        --cidr-block ${cidr}.0.0/24 \
+        --cidr-block ${cidr}.0.0/22 \
         --availability-zone ${availability_zone_1} \
         --output text \
         --query 'Subnet.SubnetId')
@@ -173,12 +193,12 @@ echo; echo =====================================================================
 
 echo; echo =================================================================================; echo
 
-# Subrede Privada 01 - ${cidr}.1.0/24 - zona de disponibilidade ${availability_zone_1}.
+# Subrede Privada 01 - ${cidr}.4.0/22 - zona de disponibilidade ${availability_zone_1}.
 
-    echo -n "* Criando subrede privada 01 - ${cidr}.1.0/24 - ${availability_zone_1}: "
+    echo -n "* Criando subrede privada 01 - ${cidr}.4.0/22 - ${availability_zone_1}: "
     subnetid_2=$(aws --profile ${profile} ec2 create-subnet \
         --vpc-id ${vpc_id} \
-        --cidr-block ${cidr}.1.0/24 \
+        --cidr-block ${cidr}.4.0/22 \
         --availability-zone ${availability_zone_1} \
         --output text \
         --query 'Subnet.SubnetId')
@@ -196,11 +216,11 @@ echo; echo =====================================================================
 
 echo; echo =================================================================================; echo
 
-# Subrede Pública 02 - ${cidr}.2.0/24 - zona de disponibilidade ${availability_zone_2}.
+# Subrede Pública 02 - ${cidr}.8.0/22 - zona de disponibilidade ${availability_zone_2}.
 
-    echo -n "* Criando subrede pública 02 - ${cidr}.2.0/24 - ${availability_zone_2}: "
+    echo -n "* Criando subrede pública 02 - ${cidr}.8.0/22 - ${availability_zone_2}: "
     subnetid_3=$(aws --profile ${profile} ec2 create-subnet \
-        --vpc-id ${vpc_id} --cidr-block ${cidr}.2.0/24 \
+        --vpc-id ${vpc_id} --cidr-block ${cidr}.8.0/22 \
         --availability-zone ${availability_zone_2} \
         --output text \
         --query 'Subnet.SubnetId')
@@ -212,16 +232,18 @@ echo; echo =====================================================================
         --tags Key=Name,Value="${vpc_name} - Subrede Publica 02"
 
     echo -n "* Associando tabela de roteamento das subredes públicas ${public_routetable_id} a subrede ${subnetid_3}: "
-    aws --profile ${profile} ec2 associate-route-table --subnet-id ${subnetid_3} --route-table-id ${public_routetable_id}
+    aws --profile ${profile} ec2 associate-route-table \
+        --subnet-id ${subnetid_3} \
+        --route-table-id ${public_routetable_id}
 
 echo; echo =================================================================================; echo
 
-# Subrede Privada 02 - ${cidr}.3.0/24 - zona de disponibilidade ${availability_zone_2}.
+# Subrede Privada 02 - ${cidr}.12.0/22 - zona de disponibilidade ${availability_zone_2}.
 
-    echo -n "* Criando subrede privada 02 - ${cidr}.3.0/24 - ${availability_zone_2}: "
+    echo -n "* Criando subrede privada 02 - ${cidr}.12.0/22 - ${availability_zone_2}: "
     subnetid_4=$(aws --profile ${profile} ec2 create-subnet \
         --vpc-id ${vpc_id} \
-        --cidr-block ${cidr}.3.0/24 \
+        --cidr-block ${cidr}.12.0/22 \
         --availability-zone ${availability_zone_2} \
         --output text \
         --query 'Subnet.SubnetId')
@@ -239,12 +261,12 @@ echo; echo =====================================================================
 
 echo; echo =================================================================================; echo
 
-# Subrede Pública 03 - ${cidr}.4.0/24 - zona de disponibilidade ${availability_zone_3}.
+# Subrede Pública 03 - ${cidr}.16.0/22 - zona de disponibilidade ${availability_zone_3}.
 
-    echo -n "* Criando subrede pública 03 - ${cidr}.4.0/24 - ${availability_zone_3}: "
+    echo -n "* Criando subrede pública 03 - ${cidr}.16.0/22 - ${availability_zone_3}: "
     subnetid_5=$(aws --profile ${profile} ec2 create-subnet \
         --vpc-id ${vpc_id} \
-        --cidr-block ${cidr}.4.0/24 \
+        --cidr-block ${cidr}.16.0/22 \
         --availability-zone ${availability_zone_3} \
         --output text \
         --query 'Subnet.SubnetId')
@@ -262,12 +284,12 @@ echo; echo =====================================================================
 
 echo; echo =================================================================================; echo
 
-# Subrede Privada 03 - ${cidr}.5.0/24 - zona de disponibilidade ${availability_zone_3}.
+# Subrede Privada 03 - ${cidr}.20.0/22 - zona de disponibilidade ${availability_zone_3}.
 
-    echo -n "* Criando subrede privada 03 - ${cidr}.5.0/24 - ${availability_zone_3}: "
+    echo -n "* Criando subrede privada 03 - ${cidr}.20.0/22 - ${availability_zone_3}: "
     subnetid_6=$(aws --profile ${profile} ec2 create-subnet \
         --vpc-id ${vpc_id} \
-        --cidr-block ${cidr}.5.0/24 \
+        --cidr-block ${cidr}.20.0/22 \
         --availability-zone ${availability_zone_3} \
         --output text \
         --query 'Subnet.SubnetId')
@@ -285,12 +307,12 @@ echo; echo =====================================================================
 
 echo; echo =================================================================================; echo
 
-# Subrede Pública 04 - ${cidr}.6.0/24 - zona de disponibilidade ${availability_zone_4}.
+# Subrede Pública 04 - ${cidr}.24.0/22 - zona de disponibilidade ${availability_zone_4}.
 
-    echo -n "* Criando subrede pública 04 - ${cidr}.6.0/24 - ${availability_zone_4}: "
+    echo -n "* Criando subrede pública 04 - ${cidr}.24.0/22 - ${availability_zone_4}: "
     subnetid_7=$(aws --profile ${profile} ec2 create-subnet \
         --vpc-id ${vpc_id} \
-        --cidr-block ${cidr}.6.0/24 \
+        --cidr-block ${cidr}.24.0/22 \
         --availability-zone ${availability_zone_4} \
         --output text \
         --query 'Subnet.SubnetId')
@@ -308,12 +330,12 @@ echo; echo =====================================================================
 
 echo; echo =================================================================================; echo
 
-# Subrede Privada 04 - ${cidr}.7.0/24 - zona de disponibilidade ${availability_zone_4}.
+# Subrede Privada 04 - ${cidr}.28.0/22 - zona de disponibilidade ${availability_zone_4}.
 
-    echo -n "* Criando subrede privada 04 - ${cidr}.7.0/24 - ${availability_zone_4}: "
+    echo -n "* Criando subrede privada 04 - ${cidr}.28.0/22 - ${availability_zone_4}: "
     subnetid_8=$(aws --profile ${profile} ec2 create-subnet \
         --vpc-id ${vpc_id} \
-        --cidr-block ${cidr}.7.0/24 \
+        --cidr-block ${cidr}.28.0/22 \
         --availability-zone ${availability_zone_4} \
         --output text --query 'Subnet.SubnetId')
     echo "SubnetId=${subnetid_8}"
@@ -348,7 +370,7 @@ echo; echo =====================================================================
         --group-id ${security_group_NAT1} \
         --protocol -1 \
         --port -1 \
-        --cidr ${cidr}.1.0/24
+        --cidr ${cidr}.4.0/22
 
     aws --profile ${profile} ec2 authorize-security-group-ingress \
         --group-id ${security_group_NAT1} \
@@ -376,7 +398,7 @@ echo; echo =====================================================================
         --group-id ${security_group_NAT3} \
         --protocol -1 \
         --port -1 \
-        --cidr ${cidr}.3.0/24
+        --cidr ${cidr}.12.0/22
 
     aws --profile ${profile} ec2 authorize-security-group-ingress \
         --group-id ${security_group_NAT3} \
@@ -402,7 +424,7 @@ echo; echo =====================================================================
         --group-id ${security_group_NAT5} \
         --protocol -1 \
         --port -1 \
-        --cidr ${cidr}.5.0/24
+        --cidr ${cidr}.20.0/22
 
     aws --profile ${profile} ec2 authorize-security-group-ingress \
         --group-id ${security_group_NAT5} \
@@ -430,7 +452,7 @@ echo; echo =====================================================================
         --group-id ${security_group_NAT7} \
         --protocol -1 \
         --port -1 \
-        --cidr ${cidr}.7.0/24
+        --cidr ${cidr}.28.0/22
 
     aws --profile ${profile} ec2 authorize-security-group-ingress \
         --group-id ${security_group_NAT7} \
@@ -475,7 +497,10 @@ echo; echo =====================================================================
     rm create_hosted_zone_output.txt
 
     echo -n "* Aguardando pelo INSYNC"
-    while state=$(aws --profile ${profile} route53 get-change --id ${change_info_id} --output text --query 'ChangeInfo.Status'); test "${state}" = "PENDING"; do
+    while state=$(aws --profile ${profile} route53 get-change \
+        --id ${change_info_id} \
+        --output text \
+        --query 'ChangeInfo.Status'); test "${state}" = "PENDING"; do
         echo -n . ; sleep 3;
     done; echo " OK!"
 
