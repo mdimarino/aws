@@ -353,7 +353,8 @@ echo; echo =====================================================================
 
 echo; echo =================================================================================; echo
 
-# Criar grupos de segurança para as instâncias NAT, localizadas nas subredes Públicas, liberando acesso para as subredes privadas acessarem a internet.
+# Criar grupos de segurança para as instâncias NAT, localizadas nas subredes
+# Públicas, liberando acesso para as subredes privadas acessarem a internet.
 
     echo "* Criando grupo de segurança para instancia NAT, na subrede Pública 01/${availability_zone_1}, liberando acesso para a subrede privada 01"
     security_group_NAT1=$(aws --profile ${profile} ec2 create-security-group \
@@ -381,7 +382,8 @@ echo; echo =====================================================================
 
 echo; echo =================================================================================; echo
 
-# Criar grupos de segurança para as instâncias NAT, localizadas nas subredes Públicas, liberando acesso para as subredes privadas acessarem a internet.
+# Criar grupos de segurança para as instâncias NAT, localizadas nas subredes
+# Públicas, liberando acesso para as subredes privadas acessarem a internet.
 
     echo "* Criando grupo de segurança para instancia NAT, na subrede Pública 02/${availability_zone_2}, liberando acesso para a subrede privada 02"
     security_group_NAT3=$(aws --profile ${profile} ec2 create-security-group \
@@ -409,7 +411,8 @@ echo; echo =====================================================================
 
 echo; echo =================================================================================; echo
 
-# Criar grupos de segurança para as instâncias NAT, localizadas nas subredes Públicas, liberando acesso para as subredes privadas acessarem a internet.
+# Criar grupos de segurança para as instâncias NAT, localizadas nas subredes
+# Públicas, liberando acesso para as subredes privadas acessarem a internet.
 
     echo "* Criando grupo de segurança para instancia NAT, na subrede Pública 03/${availability_zone_3}, liberando acesso para a subrede privada 03"
     security_group_NAT5=$(aws --profile ${profile} ec2 create-security-group \
@@ -435,7 +438,8 @@ echo; echo =====================================================================
 
 echo; echo =================================================================================; echo
 
-# Criar grupos de segurança para as instâncias NAT, localizadas nas subredes Públicas, liberando acesso para as subredes privadas acessarem a internet.
+# Criar grupos de segurança para as instâncias NAT, localizadas nas subredes
+# Públicas, liberando acesso para as subredes privadas acessarem a internet.
 
     echo "* Criando grupo de seguranca para instancia NAT, na subrede Pública 04/${availability_zone_4}, liberando acesso para a subrede privada 04"
     security_group_NAT7=$(aws --profile ${profile} ec2 create-security-group \
@@ -463,7 +467,8 @@ echo; echo =====================================================================
 
 echo; echo =================================================================================; echo
 
-# Criar conjunto de opções do DHCP para a vpc. O nome da vpc será usado como nome de domínio.
+# Criar conjunto de opções do DHCP para a vpc.
+# O nome da vpc será usado como nome de domínio.
 
     echo "* Criando conjunto de opções de DHCP para a vpc. O nome da vpc, ${vpc_name}, será usado como nome de domínio"
     dhcp_options_id=$(aws --profile ${profile} ec2 create-dhcp-options \
