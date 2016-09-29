@@ -8,7 +8,9 @@
   - aws
 
 - name: apply common configuration to all nodes
-  hosts: launched
+  hosts:
+    - web_group
+    - db_group
   become: true
   gather_facts: true
   roles:
