@@ -1,0 +1,15 @@
+---
+# This playbook deploys the whole application stack in this site.
+
+- name: create ec2 instances
+  hosts: localhost
+  gather_facts: false
+  roles:
+  - aws
+
+- name: apply common configuration to all nodes
+  hosts: launched
+  become: true
+  gather_facts: true
+  roles:
+  - common

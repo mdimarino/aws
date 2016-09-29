@@ -1,0 +1,18 @@
+---
+# vars file for aws
+
+ansible_ssh_user: ubuntu
+ansible_ssh_private_key_file: /home/mazevedo/Dropbox/zoom/producao-infra.pem
+web_hosts:
+  - Name: web1.ansible.local
+    private_ip: 172.31.1.201
+    vpc_subnet_id: subnet-c52a329c
+  - Name: web2.ansible.local
+    private_ip: 172.31.3.201
+    vpc_subnet_id: subnet-482b9775
+  - Name: web3.ansible.local
+    private_ip: 172.31.5.201
+    vpc_subnet_id: subnet-40448236
+  - Name: web4.ansible.local
+    private_ip: 172.31.7.201
+    vpc_subnet_id: subnet-8a515ba1
