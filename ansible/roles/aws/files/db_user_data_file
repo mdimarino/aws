@@ -1,6 +1,34 @@
 #!/bin/bash
 
-### Criar particao de SWAP ###
+### Criar e montar particao de SWAP ###
+
+umount /mnt
+mkswap /dev/xvdb
+swapon /dev/xvdb
+
+sed -i '/exit 0/d' /etc/rc.local
+
+echo "" >> /etc/rc.local
+# echo "umount /media/ephemeral0" >> /etc/rc.local
+echo "/sbin/mkswap /dev/xvdb" >> /etc/rc.local
+echo "/sbin/swapon /dev/xvdb" >> /etc/rc.local
+echo "" >> /etc/rc.local
+
+### Criar e montar particao /var/tmp ###
+
+mkfs -F -t ext4 /dev/xvdc
+mount /dev/xvdc /var/tmp
+chmod 1777 /var/tmp
+
+echo "/sbin/mkfs -F -t ext4 /dev/xvdc" >> /etc/rc.local
+echo "/bin/mount /dev/xvdc /var/tmp" >> /etc/rc.local
+echo "/bin/chmod 1777 /var/tmp" >> /etc/rc.local
+echo "" >> /etc/rc.local
+
+echo "exit 0" >> /etc/rc.local
+echo "" >> /etc/rc.local
+
+### Criar particao /var/lib/mysql ###
 
 echo "n
 e
@@ -11,15 +39,33 @@ n
 l
 
 
-t
-5
-82
 w
-" | fdisk /dev/xvdb
+" | fdisk /dev/xvdd
 
-### Formatar e habilitar partição de SWAP ###
+### Formatar e montar particao /var/lib/mysql ###
 
-mkswap /dev/xvdb5
-swapon /dev/xvdb5
+mkfs -t ext4 /dev/xvdd5
+mkdir /var/lib/mysql
+mount /dev/xvdd5 /var/lib/mysql
+echo "/dev/xvdd5  /var/lib/mysql        ext4    defaults        0   0" >> /etc/fstab
 
-echo "/dev/xvdb5  swap        swap    defaults        0   0" >> /etc/fstab
+### Criar particao /var/lib/mysql-bin ###
+
+echo "n
+e
+1
+
+
+n
+l
+
+
+w
+" | fdisk /dev/xvde
+
+### Formatar e montar particao /var/lib/mysql-bin ###
+
+mkfs -t ext4 /dev/xvde5
+mkdir /var/lib/mysql-bin
+mount /dev/xvde5 /var/lib/mysql-bin
+echo "/dev/xvde5  /var/lib/mysql-bin        ext4    defaults        0   0" >> /etc/fstab
