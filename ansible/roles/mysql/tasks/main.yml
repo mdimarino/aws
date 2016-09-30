@@ -1,0 +1,69 @@
+---
+# tasks file for mysql
+
+- name: add apt key for webmin
+  apt_key: url=http://www.webmin.com/jcameron-key.asc state=present
+
+- name: set mysql version
+  debconf: name='mysql-apt-config' question='mysql-apt-config/select-server' value='mysql-5.6' vtype='select'
+
+- name: set confirm mysql options
+  debconf: name='mysql-apt-config' question='mysql-apt-config/select-product' value='Ok' vtype='select'
+
+- name: add mysql-apt-config from oracle
+  apt: deb=http://dev.mysql.com/get/mysql-apt-config_0.8.0-1_all.deb
+
+- name: add apt repository for webmin
+  apt_repository: repo='deb http://download.webmin.com/download/repository sarge contrib' filename='webmin' state=present update_cache=yes
+
+- name: install packages
+  apt: name={{ item }} state=present update_cache=yes
+  with_items:
+  - mysql-server
+  - mysql-utilities
+  - webmin
+  - libdbi-perl
+  - libdbd-mysql-perl
+  - python-mysqldb
+  - apparmor-utils
+
+- name: change /var/lib/mysql and /var/lib/mysql-bin permissions
+  file: path={{ item }} owner=mysql group=mysql recurse=yes
+  with_items:
+    - /var/lib/mysql
+    - /var/lib/mysql-bin
+
+- name: put mysqld in disable mode under apparmor
+  command: /usr/sbin/aa-disable /usr/sbin/mysqld
+
+- name: sets webmin root's password
+  command: /usr/share/webmin/changepass.pl /etc/webmin root root
+
+- name: remove access to test database
+  command: 'mysql -ne "{{ item }}"'
+  with_items:
+    - DELETE FROM mysql.db WHERE Db='test' OR Db='test\\_%'
+  changed_when: False
+  ignore_errors: true="absent"
+
+- name: set 'root'@'localhost' password
+  mysql_user: name=root host=localhost password=root state=present
+
+- name: create /root/.my.cnf file
+  copy: src=.my.cnf dest=/root/.my.cnf owner=root group=root mode=0600
+
+- name: set 'root'@'127.0.0.1' password
+  mysql_user: name=root host=127.0.0.1 password=root state=present
+
+- name: set 'root'@'::1' password
+  mysql_user: name=root host=::1 password=root state=present
+
+- name: set 'root'@'{{ ansible_hostname }}' password
+  mysql_user: name=root host={{ ansible_hostname }} password=root state=present
+
+- name: create 'root'@'192.168.%.%' password
+  mysql_user: name=root host=192.168.%.% password=root priv=*.*:ALL,GRANT state=present
+
+- name: set mysql configuration
+  copy: src={{ ansible_hostname }}.cnf dest=/etc/mysql/conf.d/default.cnf owner=root group=root mode=0644
+  notify: restart mysql

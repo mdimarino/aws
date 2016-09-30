@@ -9,9 +9,16 @@
 
 - name: apply common configuration to all nodes
   hosts:
-    - web_group
+#    - web_group
     - db_group
   become: true
   gather_facts: true
   roles:
   - common
+
+- name: apply mysql configuration to database hosts
+  hosts:
+    - db_group
+  become: true
+  roles:
+  - mysql

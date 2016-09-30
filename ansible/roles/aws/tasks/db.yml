@@ -34,7 +34,7 @@
     wait: true
   with_items: "{{ db_hosts }}"
 
-- name: add new instances to launched group
+- name: add new instances to db_group
   add_host: name={{ item['Name'] }} ansible_ssh_user={{ ansible_ssh_user }} ansible_ssh_host={{ item['private_ip'] }} ansible_ssh_private_key_file={{ ansible_ssh_private_key_file }} group=db_group
   with_items: "{{ db_hosts }}"
 

@@ -1,0 +1,171 @@
+[client]
+
+# Default Charset
+#default-character-set = utf8
+
+# Default MySQL port
+port = 3306
+
+# Socket file
+socket = /var/lib/mysql/mysql.sock
+
+[mysqld]
+bind-address = 0.0.0.0
+binlog_format = mixed
+character-set-server = utf8
+collation-server = utf8_general_ci
+
+# Timeout connection
+wait_timeout = 1800
+
+# More restrictive sql interaction
+sql_mode = 'traditional'
+
+# Disable name resolution
+skip-name-resolve
+
+# Disable federated engine
+skip-federated
+
+# Temp dir
+tmpdir = /var/tmp
+
+# Default Charset
+character_set_server = utf8
+
+# For maintance
+#skip-networking
+
+# To lower case in table names (create and select)
+lower_case_table_names = 1
+
+# Minimum word length for full text index search
+ft_min_word_len = 2
+
+# Default MySQL port
+port = 3306
+
+# Socket file
+socket          = /var/lib/mysql/mysql.sock
+
+# External lock unnecessary (single instance)
+skip-external-locking
+# Memory buffer for MyISAM index blocks
+key_buffer_size = 256M
+
+# MyISAM Config
+bulk_insert_buffer_size = 64M
+myisam_sort_buffer_size = 128M
+myisam_max_sort_file_size = 10G
+myisam_repair_threads = 1
+
+# Have no BLOB data
+max_allowed_packet = 128M
+
+# The number of open tables for all threads
+table_open_cache = 2048
+
+# Max errors from single host before blocking
+max_connect_errors = 100
+
+# Accelerating ORDER BY or GROUP BY operations
+sort_buffer_size = 2M
+
+query_cache_limit = 2M
+
+# Buffer for sequential and random scans
+read_buffer_size = 64M
+read_rnd_buffer_size = 64M
+
+# Reparing MyIsam index
+myisam_sort_buffer_size = 2M
+
+# Number of threads that should be run at the same time.
+#thread_concurrency = 4
+
+# Log queries with response time less than 1 seconds
+slow_query_log
+long_query_time = 1
+log_queries_not_using_indexes
+log-slow-admin-statements
+
+# New webserver startup
+thread_cache_size = 128
+
+# The amount of memory allocated for caching query results (Please normalize searches input text)
+query_cache_size = 64M
+
+# The number of simultaneous client connections allowed
+max_connections = 768
+
+# The size of the buffer that is used for joins that do not use indexes and thus perform full table scans
+join_buffer_size = 2M
+
+# Enables concurrent inserts for all MyISAM tables, even those that have holes
+concurrent_insert = 2
+
+# The maximum size of internal in-memory temporary tables
+tmp_table_size = 2GB
+
+# Hard limit for tmp_table_size
+max_heap_table_size = 2GB
+
+######################################
+# Replication Master-Master settings #
+######################################
+
+# Server ID (Unique)
+server-id       = 101
+log-bin = /var/lib/mysql-bin/mysql-bin.log
+log-bin-index = /var/lib/mysql-bin/mysql-bin.log.index
+log-slave-updates
+expire_logs_days = 14
+
+
+# Relay Log
+relay-log=/var/lib/mysql-bin/relay-bin
+relay-log-index=/var/lib/mysql-bin/relay-bin.index
+relay-log-info-file=/var/lib/mysql-bin/relay-log.info
+
+# The common part of the directory path for all InnoDB data files
+innodb_data_home_dir = /var/lib/mysql/
+
+# The paths to individual data files and their sizes
+innodb_data_file_path = ibdata1:4G;ibdata2:4G;ibdata3:4G;ibdata4:4G:autoextend
+
+# InnoDB log settings
+innodb_log_group_home_dir = /var/lib/mysql/
+innodb_log_file_size = 256M
+innodb_log_buffer_size = 8M
+innodb_file_per_table
+innodb_purge_threads=1
+
+# To use o_direct to open data and fsync to flush
+innodb_flush_method = O_DIRECT
+
+# Performance InnoDB
+#transaction-isolation = read-committed
+
+# Memory buffer InnoDB uses to cache data and indexes of its tables
+innodb_buffer_pool_size = 24G
+innodb_additional_mem_pool_size = 4G
+
+# Log buffer is written out to the log file at each transaction commit and the flush to disk operation is performed on the log file
+innodb_flush_log_at_trx_commit = 1
+sync_binlog=1
+
+# The timeout in seconds an InnoDB  transaction may wait for a row lock before giving up
+innodb_lock_wait_timeout = 600
+
+[mysqld_safe]
+nice = 0
+
+[mysqldump]
+quick
+max_allowed_packet = 16M
+
+[mysql]
+no-auto-rehash
+
+[mysqlhotcopy]
+interactive-timeout

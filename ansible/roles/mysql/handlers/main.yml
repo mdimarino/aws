@@ -1,0 +1,8 @@
+---
+# handlers file for mysql
+
+- name: restart mysql
+  service: name=mysql state=restarted
+
+- name: reload apparmor
+  service: name=apparmor state=reloaded
