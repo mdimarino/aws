@@ -89,8 +89,10 @@ echo; echo =====================================================================
 
 # Criar tabelas de roteamento para subredes públicas e privadas.
 
-    echo -n "* Criando tabela de roteamento para Subredes Públicas: "
     # Quando a vpc é criada uma tabela de roteamento default é criada automaticamente, vamos usá-la para as subredes públicas
+
+    echo -n "* Criando tabela de roteamento para Subredes Públicas: "
+
     public_routetable_id=$(aws --profile ${profile} ec2 describe-route-tables \
         --filters Name=vpc-id,Values=${vpc_id} \
         --output text \
@@ -183,6 +185,11 @@ echo; echo =====================================================================
         --query 'Subnet.SubnetId')
     echo "SubnetId=${subnetid_1}"
 
+    echo "* Instâncias criadas na subrede ${subnetid_1} devem ser criadas com um IP público"
+    aws --profile ${profile} ec2 modify-subnet-attribute \
+        --subnet-id ${subnetid_1} \
+        --map-public-ip-on-launch
+
     echo "* Alterando Tag Name da subrede para '${vpc_name} - Subrede Pública 01'"
     aws --profile ${profile} ec2 create-tags \
         --resources ${subnetid_1} \
@@ -206,6 +213,11 @@ echo; echo =====================================================================
         --query 'Subnet.SubnetId')
     echo "SubnetId=${subnetid_2}"
 
+    echo "* Instâncias criadas na subrede ${subnetid_2} devem ser criadas sem IP público"
+    aws --profile ${profile} ec2 modify-subnet-attribute \
+        --subnet-id ${subnetid_2} \
+        --no-map-public-ip-on-launch
+
     echo "* Alterando Tag Name da subrede para '${vpc_name} - Subrede Privada 01'"
     aws --profile ${profile} ec2 create-tags \
         --resources ${subnetid_2} \
@@ -227,6 +239,11 @@ echo; echo =====================================================================
         --output text \
         --query 'Subnet.SubnetId')
     echo SubnetId=${subnetid_3}
+
+    echo "* Instâncias criadas na subrede ${subnetid_3} devem ser criadas com um IP público"
+    aws --profile ${profile} ec2 modify-subnet-attribute \
+        --subnet-id ${subnetid_3} \
+        --map-public-ip-on-launch
 
     echo "* Alterando Tag Name da subrede para '${vpc_name} - Subrede Pública 02'"
     aws --profile ${profile} ec2 create-tags \
@@ -251,6 +268,11 @@ echo; echo =====================================================================
         --query 'Subnet.SubnetId')
     echo "SubnetId=${subnetid_4}"
 
+    echo "* Instâncias criadas na subrede ${subnetid_4} devem ser criadas sem IP público"
+    aws --profile ${profile} ec2 modify-subnet-attribute \
+        --subnet-id ${subnetid_4} \
+        --no-map-public-ip-on-launch
+
     echo "* Alterando Tag Name da subrede para '${vpc_name} - Subrede Privada 02'"
     aws --profile ${profile} ec2 create-tags \
         --resources ${subnetid_4} \
@@ -273,6 +295,11 @@ echo; echo =====================================================================
         --output text \
         --query 'Subnet.SubnetId')
     echo "SubnetId=${subnetid_5}"
+
+    echo "* Instâncias criadas na subrede ${subnetid_5} devem ser criadas com um IP público"
+    aws --profile ${profile} ec2 modify-subnet-attribute \
+        --subnet-id ${subnetid_5} \
+        --map-public-ip-on-launch
 
     echo "* Alterando Tag Name da subrede para '${vpc_name} - Subrede Pública 03'"
     aws --profile ${profile} ec2 create-tags \
@@ -297,6 +324,11 @@ echo; echo =====================================================================
         --query 'Subnet.SubnetId')
     echo "SubnetId=${subnetid_6}"
 
+    echo "* Instâncias criadas na subrede ${subnetid_6} devem ser criadas sem IP público"
+    aws --profile ${profile} ec2 modify-subnet-attribute \
+        --subnet-id ${subnetid_6} \
+        --no-map-public-ip-on-launch
+
     echo "* Alterando Tag Name da subrede para '${vpc_name} - Subrede Privada 03'"
     aws --profile ${profile} ec2 create-tags \
         --resources ${subnetid_6} \
@@ -320,6 +352,11 @@ echo; echo =====================================================================
         --query 'Subnet.SubnetId')
     echo "SubnetId=${subnetid_7}"
 
+    echo "* Instâncias criadas na subrede ${subnetid_7} devem ser criadas com um IP público"
+    aws --profile ${profile} ec2 modify-subnet-attribute \
+        --subnet-id ${subnetid_7} \
+        --map-public-ip-on-launch
+
     echo "* Alterando Tag Name da subrede para '${vpc_name} - Subrede Pública 04'"
     aws --profile ${profile} ec2 create-tags \
         --resources ${subnetid_7} \
@@ -341,6 +378,11 @@ echo; echo =====================================================================
         --availability-zone ${availability_zone_4} \
         --output text --query 'Subnet.SubnetId')
     echo "SubnetId=${subnetid_8}"
+
+    echo "* Instâncias criadas na subrede ${subnetid_8} devem ser criadas sem IP público"
+    aws --profile ${profile} ec2 modify-subnet-attribute \
+        --subnet-id ${subnetid_8} \
+        --no-map-public-ip-on-launch
 
     echo "* Alterando Tag Name da subrede para '${vpc_name} - Subrede Privada 04'"
     aws --profile ${profile} ec2 create-tags \
