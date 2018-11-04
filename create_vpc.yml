@@ -40,8 +40,8 @@
     private_subnet_4_cidr_block: 172.16.112.0/20
     public_subnet_5_cidr_block: 172.16.128.0/20
     private_subnet_5_cidr_block: 172.16.144.0/20
-    public_subnet_5_cidr_block: 172.16.160.0/20
-    private_subnet_5_cidr_block: 172.16.176.0/20
+    public_subnet_6_cidr_block: 172.16.160.0/20
+    private_subnet_6_cidr_block: 172.16.176.0/20
 
     availability_zone_1: us-east-1a
     availability_zone_2: us-east-1b
