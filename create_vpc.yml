@@ -1,0 +1,446 @@
+---
+
+- name: criação de VPC
+  hosts: localhost
+  gather_facts: False
+
+  vars:
+
+    region: us-east-1
+    profile: dimarino
+    vpc_name: vpc-dimarino-dev
+    vpc_tag_environment: development
+    vpc_cidr_block: 172.16.0.0/16
+    public_subnet_1_cidr_block: 172.16.0.0/20
+    private_subnet_1_cidr_block: 172.16.16.0/20
+    public_subnet_2_cidr_block: 172.16.32.0/20
+    private_subnet_2_cidr_block: 172.16.48.0/20
+    public_subnet_3_cidr_block: 172.16.64.0/20
+    private_subnet_3_cidr_block: 172.16.80.0/20
+    public_subnet_4_cidr_block: 172.16.96.0/20
+    private_subnet_4_cidr_block: 172.16.112.0/20
+    public_subnet_5_cidr_block: 172.16.128.0/20
+    private_subnet_5_cidr_block: 172.16.144.0/20
+    availability_zone_1: us-east-1a
+    availability_zone_2: us-east-1b
+    availability_zone_3: us-east-1c
+    availability_zone_4: us-east-1e
+    availability_zone_5: us-east-1f
+
+  tasks:
+
+  - name: cria vpc e tags
+    ec2_vpc_net:
+      name: "{{ vpc_name }}"
+      profile: "{{ profile }}"
+      cidr_block: "{{ vpc_cidr_block }}"
+      region: "{{ region }}"
+      dns_hostnames: yes
+      dns_support: yes
+      tags:
+        Environment: "{{ vpc_tag_environment }}"
+    register: ec2_vpc_net_return
+
+  # - name: print vpc return values
+  #   debug:
+  #     var: ec2_vpc_net_return
+
+  - name: cria internet gateway e tags
+    ec2_vpc_igw:
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      profile: "{{ profile }}"
+      region: "{{ region }}"
+      tags:
+        Name: "{{ vpc_name }} - igw"
+        Environment: "{{ vpc_tag_environment }}"
+    register: ec2_vpc_igw_return
+
+  # - name: print igw return values
+  #   debug:
+  #     var: ec2_vpc_igw_return
+
+  - name: cria subrede publica 1
+    ec2_vpc_subnet:
+      profile: "{{ profile }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      cidr: "{{ public_subnet_1_cidr_block }}"
+      az: "{{ availability_zone_1 }}"
+      region: "{{ region }}"
+      map_public: yes
+      wait: yes
+      wait_timeout: 300
+      resource_tags:
+        Name: "{{ vpc_name }} - Subrede Publica 01"
+        Environment: "{{ vpc_tag_environment }}"
+    register: ec2_vpc_subnet_public_1_return
+
+  # - name: print public subnet 1 return values
+  #   debug:
+  #     var: ec2_vpc_subnet_public_1_return
+
+  - name: cria subrede privada 1
+    ec2_vpc_subnet:
+      profile: "{{ profile }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      cidr: "{{ private_subnet_1_cidr_block }}"
+      az: "{{ availability_zone_1 }}"
+      region: "{{ region }}"
+      map_public: no
+      wait: yes
+      wait_timeout: 300
+      resource_tags:
+        Name: "{{ vpc_name }} - Subrede Privada 01"
+        Environment: "{{ vpc_tag_environment }}"
+    register: ec2_vpc_subnet_private_1_return
+
+  # - name: print private subnet 1 return values
+  #   debug:
+  #     var: ec2_vpc_subnet_private_1_return
+
+  - name: cria subrede publica 2
+    ec2_vpc_subnet:
+      profile: "{{ profile }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      cidr: "{{ public_subnet_2_cidr_block }}"
+      az: "{{ availability_zone_2 }}"
+      region: "{{ region }}"
+      map_public: yes
+      wait: yes
+      wait_timeout: 300
+      resource_tags:
+        Name: "{{ vpc_name }} - Subrede Publica 02"
+        Environment: "{{ vpc_tag_environment }}"
+    register: ec2_vpc_subnet_public_2_return
+
+  # - name: print public subnet 2 return values
+  #   debug:
+  #     var: ec2_vpc_subnet_public_2_return
+
+  - name: cria subrede privada 2
+    ec2_vpc_subnet:
+      profile: "{{ profile }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      cidr: "{{ private_subnet_2_cidr_block }}"
+      az: "{{ availability_zone_2 }}"
+      region: "{{ region }}"
+      map_public: no
+      wait: yes
+      wait_timeout: 300
+      resource_tags:
+        Name: "{{ vpc_name }} - Subrede Privada 02"
+        Environment: "{{ vpc_tag_environment }}"
+    register: ec2_vpc_subnet_private_2_return
+
+  # - name: print private subnet 2 return values
+  #   debug:
+  #     var: ec2_vpc_subnet_private_2_return
+
+  - name: cria subrede publica 3
+    ec2_vpc_subnet:
+      profile: "{{ profile }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      cidr: "{{ public_subnet_3_cidr_block }}"
+      az: "{{ availability_zone_3 }}"
+      region: "{{ region }}"
+      map_public: yes
+      wait: yes
+      wait_timeout: 300
+      resource_tags:
+        Name: "{{ vpc_name }} - Subrede Publica 03"
+        Environment: "{{ vpc_tag_environment }}"
+    register: ec2_vpc_subnet_public_3_return
+
+  # - name: print public subnet 3 return values
+  #   debug:
+  #     var: ec2_vpc_subnet_public_3_return
+
+  - name: cria subrede privada 3
+    ec2_vpc_subnet:
+      profile: "{{ profile }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      cidr: "{{ private_subnet_3_cidr_block }}"
+      az: "{{ availability_zone_3 }}"
+      region: "{{ region }}"
+      map_public: no
+      wait: yes
+      wait_timeout: 300
+      resource_tags:
+        Name: "{{ vpc_name }} - Subrede Privada 03"
+        Environment: "{{ vpc_tag_environment }}"
+    register: ec2_vpc_subnet_private_3_return
+
+  # - name: print private subnet 3 return values
+  #   debug:
+  #     var: ec2_vpc_subnet_private_3_return
+
+  - name: cria subrede publica 4
+    ec2_vpc_subnet:
+      profile: "{{ profile }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      cidr: "{{ public_subnet_4_cidr_block }}"
+      az: "{{ availability_zone_4 }}"
+      region: "{{ region }}"
+      map_public: yes
+      wait: yes
+      wait_timeout: 300
+      resource_tags:
+        Name: "{{ vpc_name }} - Subrede Publica 04"
+        Environment: "{{ vpc_tag_environment }}"
+    register: ec2_vpc_subnet_public_4_return
+
+  # - name: print public subnet 4 return values
+  #   debug:
+  #     var: ec2_vpc_subnet_public_4_return
+
+  - name: cria subrede privada 4
+    ec2_vpc_subnet:
+      profile: "{{ profile }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      cidr: "{{ private_subnet_4_cidr_block }}"
+      az: "{{ availability_zone_4 }}"
+      region: "{{ region }}"
+      map_public: no
+      wait: yes
+      wait_timeout: 300
+      resource_tags:
+        Name: "{{ vpc_name }} - Subrede Privada 04"
+        Environment: "{{ vpc_tag_environment }}"
+    register: ec2_vpc_subnet_private_4_return
+
+  # - name: print private subnet 4 return values
+  #   debug:
+  #     var: ec2_vpc_subnet_private_4_return
+
+  - name: cria subrede publica 5
+    ec2_vpc_subnet:
+      profile: "{{ profile }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      cidr: "{{ public_subnet_5_cidr_block }}"
+      az: "{{ availability_zone_5 }}"
+      region: "{{ region }}"
+      map_public: yes
+      wait: yes
+      wait_timeout: 300
+      resource_tags:
+        Name: "{{ vpc_name }} - Subrede Publica 05"
+        Environment: "{{ vpc_tag_environment }}"
+    register: ec2_vpc_subnet_public_5_return
+
+  # - name: print public subnet 5 return values
+  #   debug:
+  #     var: ec2_vpc_subnet_public_5_return
+
+  - name: cria subrede privada 5
+    ec2_vpc_subnet:
+      profile: "{{ profile }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      cidr: "{{ private_subnet_5_cidr_block }}"
+      az: "{{ availability_zone_5 }}"
+      region: "{{ region }}"
+      map_public: no
+      wait: yes
+      wait_timeout: 300
+      resource_tags:
+        Name: "{{ vpc_name }} - Subrede Privada 05"
+        Environment: "{{ vpc_tag_environment }}"
+    register: ec2_vpc_subnet_private_5_return
+
+  # - name: print private subnet 5 return values
+  #   debug:
+  #     var: ec2_vpc_subnet_private_5_return
+
+  - name: cria nat gateway na subrede publica 1, se um não existir nesta subrede
+    ec2_vpc_nat_gateway:
+      subnet_id: "{{ ec2_vpc_subnet_public_1_return.subnet.id }}"
+      wait: yes
+      wait_timeout : 300
+      region: "{{ region }}"
+      if_exist_do_not_create: true
+    register: ec2_vpc_nat_gateway_subnet_public_1_return
+
+  # - name: print nat gateway under public subnet 1 return values
+  #   debug:
+  #     var: ec2_vpc_nat_gateway_subnet_public_1_return
+
+  - name: cria nat gateway na subrede publica 2, se um não existir nesta subrede
+    ec2_vpc_nat_gateway:
+      subnet_id: "{{ ec2_vpc_subnet_public_2_return.subnet.id }}"
+      wait: yes
+      wait_timeout : 300
+      region: "{{ region }}"
+      if_exist_do_not_create: true
+    register: ec2_vpc_nat_gateway_subnet_public_2_return
+
+  # - name: print nat gateway under public subnet 2 return values
+  #   debug:
+  #     var: ec2_vpc_nat_gateway_subnet_public_2_return
+
+  - name: cria nat gateway na subrede publica 3, se um não existir nesta subrede
+    ec2_vpc_nat_gateway:
+      subnet_id: "{{ ec2_vpc_subnet_public_3_return.subnet.id }}"
+      wait: yes
+      wait_timeout : 300
+      region: "{{ region }}"
+      if_exist_do_not_create: true
+    register: ec2_vpc_nat_gateway_subnet_public_3_return
+
+  # - name: print nat gateway under public subnet 3 return values
+  #   debug:
+  #     var: ec2_vpc_nat_gateway_subnet_public_3_return
+
+  - name: cria nat gateway na subrede publica 4, se um não existir nesta subrede
+    ec2_vpc_nat_gateway:
+      subnet_id: "{{ ec2_vpc_subnet_public_4_return.subnet.id }}"
+      wait: yes
+      wait_timeout : 300
+      region: "{{ region }}"
+      if_exist_do_not_create: true
+    register: ec2_vpc_nat_gateway_subnet_public_4_return
+
+  # - name: print nat gateway under public subnet 4 return values
+  #   debug:
+  #     var: ec2_vpc_nat_gateway_subnet_public_4_return
+
+  - name: cria nat gateway na subrede publica 5, se um não existir nesta subrede
+    ec2_vpc_nat_gateway:
+      subnet_id: "{{ ec2_vpc_subnet_public_5_return.subnet.id }}"
+      wait: yes
+      wait_timeout : 300
+      region: "{{ region }}"
+      if_exist_do_not_create: true
+    register: ec2_vpc_nat_gateway_subnet_public_5_return
+
+  # - name: print nat gateway under public subnet 5 return values
+  #   debug:
+  #     var: ec2_vpc_nat_gateway_subnet_public_5_return
+
+  - name: recolhe fatos sobre a tabela de roteamento default (criada simultâneamente com a VPC)
+    ec2_vpc_route_table_facts:
+      profile: "{{ profile }}"
+      region: "{{ region }}"
+      filters:
+        vpc-id: "{{ ec2_vpc_net_return.vpc.id }}"
+    register: vpc_route_table_facts_default_return
+
+  # - name: print vpc_route_table_facts_default_return values
+  #   debug:
+  #     var: vpc_route_table_facts_default_return
+
+  - name: altera nome da tabela de roteamento default, adiciona subredes públicas e cria rota para internet gateway
+    ec2_vpc_route_table:
+      profile: "{{ profile }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      region: "{{ region }}"
+      route_table_id: "{{ vpc_route_table_facts_default_return.route_tables[0].id }}"
+      lookup: id
+      subnets:
+        - "{{ ec2_vpc_subnet_public_1_return.subnet.id }}"
+        - "{{ ec2_vpc_subnet_public_2_return.subnet.id }}"
+        - "{{ ec2_vpc_subnet_public_3_return.subnet.id }}"
+        - "{{ ec2_vpc_subnet_public_4_return.subnet.id }}"
+        - "{{ ec2_vpc_subnet_public_5_return.subnet.id }}"
+      routes:
+        - dest: 0.0.0.0/0
+          gateway_id: "{{ ec2_vpc_igw_return.gateway_id }}"
+      tags:
+        Name: "{{ vpc_name }} - Tabela de Roteamento das Subredes Publicas"
+        Environment: "{{ vpc_tag_environment }}"
+    register: vpc_route_table_public_return
+
+  # - name: print vpc_route_table_public_return values
+  #   debug:
+  #     var: vpc_route_table_public_return
+
+  - name: cria tabela de roteamento para subrede privada 01
+    ec2_vpc_route_table:
+      profile: "{{ profile }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      region: "{{ region }}"
+      subnets:
+        - "{{ ec2_vpc_subnet_private_1_return.subnet.id }}"
+      routes:
+        - dest: 0.0.0.0/0
+          gateway_id: "{{ ec2_vpc_nat_gateway_subnet_public_1_return.nat_gateway_id }}"
+      tags:
+        Name: "{{ vpc_name }} - Tabela de Roteamento da Subrede Privada 01"
+        Environment: "{{ vpc_tag_environment }}"
+    register: vpc_route_table_private_1_return
+
+  - name: cria tabela de roteamento para subrede privada 02
+    ec2_vpc_route_table:
+      profile: "{{ profile }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      region: "{{ region }}"
+      subnets:
+        - "{{ ec2_vpc_subnet_private_2_return.subnet.id }}"
+      routes:
+        - dest: 0.0.0.0/0
+          gateway_id: "{{ ec2_vpc_nat_gateway_subnet_public_2_return.nat_gateway_id }}"
+      tags:
+        Name: "{{ vpc_name }} - Tabela de Roteamento da Subrede Privada 02"
+        Environment: "{{ vpc_tag_environment }}"
+    register: vpc_route_table_private_2_return
+
+  - name: cria tabela de roteamento para subrede privada 03
+    ec2_vpc_route_table:
+      profile: "{{ profile }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      region: "{{ region }}"
+      subnets:
+        - "{{ ec2_vpc_subnet_private_3_return.subnet.id }}"
+      routes:
+        - dest: 0.0.0.0/0
+          gateway_id: "{{ ec2_vpc_nat_gateway_subnet_public_3_return.nat_gateway_id }}"
+      tags:
+        Name: "{{ vpc_name }} - Tabela de Roteamento da Subrede Privada 03"
+        Environment: "{{ vpc_tag_environment }}"
+    register: vpc_route_table_private_3_return
+
+  - name: cria tabela de roteamento para subrede privada 04
+    ec2_vpc_route_table:
+      profile: "{{ profile }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      region: "{{ region }}"
+      subnets:
+        - "{{ ec2_vpc_subnet_private_4_return.subnet.id }}"
+      routes:
+        - dest: 0.0.0.0/0
+          gateway_id: "{{ ec2_vpc_nat_gateway_subnet_public_4_return.nat_gateway_id }}"
+      tags:
+        Name: "{{ vpc_name }} - Tabela de Roteamento da Subrede Privada 04"
+        Environment: "{{ vpc_tag_environment }}"
+    register: vpc_route_table_private_4_return
+
+  - name: cria tabela de roteamento para subrede privada 05
+    ec2_vpc_route_table:
+      profile: "{{ profile }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      region: "{{ region }}"
+      subnets:
+        - "{{ ec2_vpc_subnet_private_5_return.subnet.id }}"
+      routes:
+        - dest: 0.0.0.0/0
+          gateway_id: "{{ ec2_vpc_nat_gateway_subnet_public_5_return.nat_gateway_id }}"
+      tags:
+        Name: "{{ vpc_name }} - Tabela de Roteamento da Subrede Privada 05"
+        Environment: "{{ vpc_tag_environment }}"
+    register: vpc_route_table_private_5_return
+
+  - name: cria opções de DHCP e associa a vpc
+    ec2_vpc_dhcp_option:
+      domain_name: "{{ vpc_name }}"
+      region: "{{ region }}"
+      dns_servers: AmazonProvidedDNS
+      tags:
+        Name: "{{ vpc_name }} - Conjunto de Opcoes de DHCP"
+        Environment: "{{ vpc_tag_environment }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+    register: ec2_vpc_dhcp_option_return
+
+  - name: cria zona de DNS privada para a vpc
+    route53_zone:
+      zone: "{{ vpc_name }}"
+      vpc_id: "{{ ec2_vpc_net_return.vpc.id }}"
+      vpc_region: "{{ region }}"
+      region: "{{ region }}"
+      comment: "Dominio da vpc {{ vpc_name }}"
