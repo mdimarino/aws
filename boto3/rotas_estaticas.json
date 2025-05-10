@@ -1,0 +1,110 @@
+[
+    {
+        "DestinationCidrBlock": "10.10.0.0/16",
+        "Type": "static",
+        "State": "blackhole"
+    },
+    {
+        "DestinationCidrBlock": "10.190.32.0/24",
+        "TransitGatewayRouteTableAnnouncementId": "",
+        "TransitGatewayAttachments": [
+            {
+                "ResourceId": "vpn-044b87b931240223d(52.7.180.250)",
+                "TransitGatewayAttachmentId": "tgw-attach-017236ae9db71b5a3",
+                "ResourceType": "vpn"
+            }
+        ],
+        "Type": "static",
+        "State": "active"
+    },
+    {
+        "DestinationCidrBlock": "10.28.128.0/20",
+        "TransitGatewayRouteTableAnnouncementId": "",
+        "TransitGatewayAttachments": [
+            {
+                "ResourceId": "tgw-022ede5c6a4966dd5",
+                "TransitGatewayAttachmentId": "tgw-attach-0f045cf61b3512d4b",
+                "ResourceType": "peering"
+            }
+        ],
+        "Type": "static",
+        "State": "active"
+    },
+    {
+        "DestinationCidrBlock": "10.28.216.0/21",
+        "Type": "static",
+        "State": "blackhole"
+    },
+    {
+        "DestinationCidrBlock": "10.28.224.0/21",
+        "Type": "static",
+        "State": "blackhole"
+    },
+    {
+        "DestinationCidrBlock": "10.28.240.0/21",
+        "Type": "static",
+        "State": "blackhole"
+    },
+    {
+        "DestinationCidrBlock": "10.28.64.0/20",
+        "Type": "static",
+        "State": "blackhole"
+    },
+    {
+        "DestinationCidrBlock": "10.29.128.0/18",
+        "TransitGatewayRouteTableAnnouncementId": "",
+        "TransitGatewayAttachments": [
+            {
+                "ResourceId": "tgw-04b5f8a4e6b4f8504",
+                "TransitGatewayAttachmentId": "tgw-attach-024e2a02408c27701",
+                "ResourceType": "peering"
+            }
+        ],
+        "Type": "static",
+        "State": "active"
+    },
+    {
+        "DestinationCidrBlock": "10.30.0.0/16",
+        "TransitGatewayRouteTableAnnouncementId": "",
+        "TransitGatewayAttachments": [
+            {
+                "ResourceId": "vpc-82aa46fb",
+                "TransitGatewayAttachmentId": "tgw-attach-07cb1fdd6ca59db1c",
+                "ResourceType": "vpc"
+            }
+        ],
+        "Type": "static",
+        "State": "active"
+    },
+    {
+        "DestinationCidrBlock": "10.41.10.41/32",
+        "TransitGatewayRouteTableAnnouncementId": "",
+        "TransitGatewayAttachments": [
+            {
+                "ResourceId": "vpn-0942803426520b132(34.197.15.92)",
+                "TransitGatewayAttachmentId": "tgw-attach-0dc980e7c8b995e43",
+                "ResourceType": "vpn"
+            },
+            {
+                "ResourceId": "vpn-0942803426520b132(35.172.5.146)",
+                "TransitGatewayAttachmentId": "tgw-attach-0dc980e7c8b995e43",
+                "ResourceType": "vpn"
+            }
+        ],
+        "Type": "static",
+        "State": "blackhole"
+    },
+    {
+        "DestinationCidrBlock": "179.26.0.0/16",
+        "TransitGatewayRouteTableAnnouncementId": "",
+        "TransitGatewayAttachments": [
+            {
+                "ResourceId": "tgw-02875f7c884995ded",
+                "TransitGatewayAttachmentId": "tgw-attach-0eb8eda26323b2ed5",
+                "ResourceType": "peering"
+            }
+        ],
+        "Type": "static",
+        "State": "active"
+    }
+]

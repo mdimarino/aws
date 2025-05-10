@@ -1,0 +1,40 @@
+[
+    {
+        "DestinationCidrBlock": "10.10.0.0/16",
+        "Type": "static",
+        "State": "blackhole"
+    },
+    {
+        "DestinationCidrBlock": "10.28.216.0/21",
+        "Type": "static",
+        "State": "blackhole"
+    },
+    {
+        "DestinationCidrBlock": "10.28.224.0/21",
+        "Type": "static",
+        "State": "blackhole"
+    },
+    {
+        "DestinationCidrBlock": "10.28.240.0/21",
+        "Type": "static",
+        "State": "blackhole"
+    },
+    {
+        "DestinationCidrBlock": "10.28.64.0/20",
+        "Type": "static",
+        "State": "blackhole"
+    },
+    {
+        "DestinationCidrBlock": "10.29.128.0/18",
+        "TransitGatewayRouteTableAnnouncementId": "",
+        "TransitGatewayAttachments": [
+            {
+                "ResourceId": "tgw-017e91c71d746ff04",
+                "TransitGatewayAttachmentId": "tgw-attach-0a7ba78006e8eb944",
+                "ResourceType": "peering"
+            }
+        ],
+        "Type": "static",
+        "State": "active"
+    }
+]

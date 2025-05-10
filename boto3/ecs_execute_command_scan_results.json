@@ -1,0 +1,19 @@
+{
+  "roles": [
+    {
+      "name": "AWSCodePipelineServiceRole-us-east-1-Automation_Account",
+      "policy_type": "managed",
+      "policy_name": "AWSCodePipelineServiceRole-us-east-1-Automation_Account",
+      "policy_arn": "arn:aws:iam::786154173690:policy/service-role/AWSCodePipelineServiceRole-us-east-1-Automation_Account"
+    }
+  ],
+  "groups": [],
+  "users": [],
+  "managed_policies": [
+    {
+      "name": "AWSCodePipelineServiceRole-us-east-1-Automation_Account",
+      "arn": "arn:aws:iam::786154173690:policy/service-role/AWSCodePipelineServiceRole-us-east-1-Automation_Account",
+      "type": "Customer managed"
+    }
+  ]
+}
