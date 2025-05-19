@@ -49,29 +49,29 @@ def extract_resource_identifier_from_arn(arn_string):
         parts = arn_string.split(':', 5)
         if len(parts) > 5:
             return parts[5]
-        else:
-            # Handles cases like S3 bucket ARNs (arn:aws:s3:::bucket-name)
-            # or ARNs that don't have a resource type/id qualifier after the 5th colon.
-            if len(parts) == 5 and parts[4] == '' and parts[3] != '':  # e.g. arn:aws:s3:::bucket (parts[5] doesn't exist)
-                # This is likely an S3 bucket ARN format, where the bucket name is the resource.
-                # However, our split by 5 colons might not give us the bucket name directly if there are no further colons.
-                # The standard split by 6 parts (':' , 5) should handle it.
-                # If parts[5] is empty, it implies the resource part is empty or not present in typical form.
-                # For S3: arn:aws:s3:::mybucket -> parts = ['arn', 'aws', 's3', '', '', 'mybucket']
-                # Let's adjust for S3 like ARNs specifically if needed, but the current split should be okay.
-                # If ARN is "arn:aws:s3:::my-bucket", split(':',5) gives ['arn', 'aws', 's3', '', '', 'my-bucket']
-                # If ARN is "arn:aws:iam::123456789012:root" split(':',5) gives ['arn', 'aws', 'iam', '', '123456789012', 'root']
-                # This part might need more refinement if we encounter ARNs that don't fit the typical patterns.
-                # For now, if parts[5] is missing, it's an issue.
-                return "Unknown_Short_Or_Malformed_ARN"
 
-            # If the ARN is for a service itself, not a specific resource, parts[5] might be absent or different.
-            # e.g. arn:aws:iam::123456789012:root - parts[5] is 'root'
-            # e.g. arn:aws:s3:::bucket_name - parts[5] is 'bucket_name'
-            # The original logic: if len(parts) > 5: return parts[5] should cover most cases.
-            # If not, it means the resource identifier is not in the 6th segment.
-            # This could be an account-level ARN or a malformed one.
-            return "Identifier_Not_In_Expected_Segment"
+        # Handles cases like S3 bucket ARNs (arn:aws:s3:::bucket-name)
+        # or ARNs that don't have a resource type/id qualifier after the 5th colon.
+        if len(parts) == 5 and parts[4] == '' and parts[3] != '':  # e.g. arn:aws:s3:::bucket (parts[5] doesn't exist)
+            # This is likely an S3 bucket ARN format, where the bucket name is the resource.
+            # However, our split by 5 colons might not give us the bucket name directly if there are no further colons.
+            # The standard split by 6 parts (':' , 5) should handle it.
+            # If parts[5] is empty, it implies the resource part is empty or not present in typical form.
+            # For S3: arn:aws:s3:::mybucket -> parts = ['arn', 'aws', 's3', '', '', 'mybucket']
+            # Let's adjust for S3 like ARNs specifically if needed, but the current split should be okay.
+            # If ARN is "arn:aws:s3:::my-bucket", split(':',5) gives ['arn', 'aws', 's3', '', '', 'my-bucket']
+            # If ARN is "arn:aws:iam::123456789012:root" split(':',5) gives ['arn', 'aws', 'iam', '', '123456789012', 'root']
+            # This part might need more refinement if we encounter ARNs that don't fit the typical patterns.
+            # For now, if parts[5] is missing, it's an issue.
+            return "Unknown_Short_Or_Malformed_ARN"
+
+        # If the ARN is for a service itself, not a specific resource, parts[5] might be absent or different.
+        # e.g. arn:aws:iam::123456789012:root - parts[5] is 'root'
+        # e.g. arn:aws:s3:::bucket_name - parts[5] is 'bucket_name'
+        # The original logic: if len(parts) > 5: return parts[5] should cover most cases.
+        # If not, it means the resource identifier is not in the 6th segment.
+        # This could be an account-level ARN or a malformed one.
+        return "Identifier_Not_In_Expected_Segment"
 
     except Exception:  # Catch any parsing error
         return "Unknown_Error_Parsing_ARN"
@@ -179,6 +179,7 @@ def collect_resource_arns(service_name, region, arns_dict):
                             'subclass': service,
                             'region': bucket_region,  # Store actual bucket region
                             'endpoint': endpoint,
+                            'account': account_id,
                             'creation_date': bucket.get('CreationDate', 'Unknown').isoformat() if hasattr(bucket.get('CreationDate', 'Unknown'), 'isoformat') else str(bucket.get('CreationDate', 'Unknown'))
                         })
                 except Exception as e:
@@ -207,25 +208,25 @@ def collect_resource_arns(service_name, region, arns_dict):
                 if "OptInRequired" not in str(e):
                     print(f"Error listing EC2 instances in {region}: {e}")
 
-            try:  # VPCs
-                paginator = client.get_paginator('describe_vpcs')
-                for page in paginator.paginate():
-                    for vpc in page.get('Vpcs', []):
-                        vpc_id = vpc['VpcId']
-                        arn = f"arn:aws:ec2:{region}:{account_id}:vpc/{vpc_id}"
-                        service = extract_service_from_arn(arn)
-                        resource_id_name = extract_resource_identifier_from_arn(arn)
-                        arns_dict.setdefault('vpc', []).append({
-                            'arn': arn,
-                            'name': resource_id_name,
-                            'subclass': service,
-                            'region': region,
-                            'cidr': vpc.get('CidrBlock', 'Unknown'),
-                            'creation_date': 'Unknown'  # VPCs don't have a direct creation date via this API
-                        })
-            except Exception as e:
-                if "OptInRequired" not in str(e):
-                    print(f"Error listing VPCs in {region}: {e}")
+            # try:  # VPCs
+            #     paginator = client.get_paginator('describe_vpcs')
+            #     for page in paginator.paginate():
+            #         for vpc in page.get('Vpcs', []):
+            #             vpc_id = vpc['VpcId']
+            #             arn = f"arn:aws:ec2:{region}:{account_id}:vpc/{vpc_id}"
+            #             service = extract_service_from_arn(arn)
+            #             resource_id_name = extract_resource_identifier_from_arn(arn)
+            #             arns_dict.setdefault('vpc', []).append({
+            #                 'arn': arn,
+            #                 'name': resource_id_name,
+            #                 'subclass': service,
+            #                 'region': region,
+            #                 'cidr': vpc.get('CidrBlock', 'Unknown'),
+            #                 'creation_date': 'Unknown'  # VPCs don't have a direct creation date via this API
+            #             })
+            # except Exception as e:
+            #     if "OptInRequired" not in str(e):
+            #         print(f"Error listing VPCs in {region}: {e}")
 
         elif service_name == 'lambda':
             try:
@@ -498,11 +499,11 @@ def collect_resource_arns(service_name, region, arns_dict):
                             'region': region,
                             'cluster_name': actual_cluster_name,
                             'status': cluster_data.get('status', 'Unknown'),
-                            'creation_date': 'Unknown' # ECS Clusters don't have a direct creation date via this API
+                            'creation_date': 'Unknown'  # ECS Clusters don't have a direct creation date via this API
                         })
             except Exception as e:
-                if "OptInRequired" not in str(e): print(f"Error listing ECS clusters in {region}: {e}")
-
+                if "OptInRequired" not in str(e):
+                    print(f"Error listing ECS clusters in {region}: {e}")
 
         elif service_name == 'ecr':
             try:
@@ -512,7 +513,7 @@ def collect_resource_arns(service_name, region, arns_dict):
                         repo_arn = repo['repositoryArn']
                         service = extract_service_from_arn(repo_arn)
                         resource_id_name = extract_resource_identifier_from_arn(repo_arn)
-                        image_count = 0 # Default
+                        image_count = 0  # Default
                         try:
                             # Count images (can be slow for many images)
                             # For simplicity, we can get the count from list_images if needed,
@@ -523,7 +524,7 @@ def collect_resource_arns(service_name, region, arns_dict):
                             # For now, let's skip detailed image count for speed.
                             pass
                         except Exception as img_e:
-                             print(f"Warning: Could not count images for ECR repo {repo['repositoryName']}: {img_e}")
+                            print(f"Warning: Could not count images for ECR repo {repo['repositoryName']}: {img_e}")
 
                         arns_dict.setdefault(service_name, []).append({
                             'arn': repo_arn,
@@ -532,16 +533,17 @@ def collect_resource_arns(service_name, region, arns_dict):
                             'region': region,
                             'repo_name': repo.get('repositoryName', 'Unknown'),
                             'uri': repo.get('repositoryUri', 'Unknown'),
-                            'image_count': 'Not_Fetched', # Or implement counting if needed
+                            'image_count': 'Not_Fetched',  # Or implement counting if needed
                             'creation_date': repo.get('createdAt', 'Unknown').isoformat() if hasattr(repo.get('createdAt', 'Unknown'), 'isoformat') else str(repo.get('createdAt', 'Unknown'))
                         })
             except Exception as e:
-                if "OptInRequired" not in str(e): print(f"Error listing ECR repositories in {region}: {e}")
+                if "OptInRequired" not in str(e):
+                    print(f"Error listing ECR repositories in {region}: {e}")
 
         elif service_name == 'elasticache':
-            try: # ElastiCache Cache Clusters (Memcached or single-node Redis)
+            try:  # ElastiCache Cache Clusters (Memcached or single-node Redis)
                 paginator_cc = client.get_paginator('describe_cache_clusters')
-                for page_cc in paginator_cc.paginate(ShowCacheNodeInfo=True): # ShowCacheNodeInfo for endpoint
+                for page_cc in paginator_cc.paginate(ShowCacheNodeInfo=True):  # ShowCacheNodeInfo for endpoint
                     for cluster_node_data in page_cc.get('CacheClusters', []):
                         cluster_id = cluster_node_data['CacheClusterId']
                         # ElastiCache ARNs are constructed
@@ -560,10 +562,10 @@ def collect_resource_arns(service_name, region, arns_dict):
                         
                         full_endpoint = f"{endpoint_address}:{endpoint_port}" if endpoint_address != 'Unknown' and endpoint_port != 'Unknown' else 'Unknown'
 
-                        arns_dict.setdefault('elasticache_cluster', []).append({ # Specific key for cache clusters
+                        arns_dict.setdefault('elasticache_cluster', []).append({  # Specific key for cache clusters
                             'arn': arn,
                             'name': resource_id_name,
-                            'subclass': service, # Will be 'elasticache'
+                            'subclass': service,  # Will be 'elasticache'
                             'item_type': 'cache_cluster',
                             'region': region,
                             'id': cluster_id,
@@ -573,9 +575,10 @@ def collect_resource_arns(service_name, region, arns_dict):
                             'creation_date': cluster_node_data.get('CacheClusterCreateTime', 'Unknown').isoformat() if hasattr(cluster_node_data.get('CacheClusterCreateTime', 'Unknown'), 'isoformat') else str(cluster_node_data.get('CacheClusterCreateTime', 'Unknown'))
                         })
             except Exception as e_cc:
-                if "OptInRequired" not in str(e_cc): print(f"Error listing ElastiCache Cache Clusters in {region}: {e_cc}")
+                if "OptInRequired" not in str(e_cc):
+                    print(f"Error listing ElastiCache Cache Clusters in {region}: {e_cc}")
 
-            try: # ElastiCache Replication Groups (Redis clustered or non-clustered with replication)
+            try:  # ElastiCache Replication Groups (Redis clustered or non-clustered with replication)
                 paginator_rg = client.get_paginator('describe_replication_groups')
                 for page_rg in paginator_rg.paginate():
                     for repl_group in page_rg.get('ReplicationGroups', []):
@@ -593,27 +596,27 @@ def collect_resource_arns(service_name, region, arns_dict):
                             endpoint_address = repl_group['ConfigurationEndpoint'].get('Address', 'Unknown')
                             endpoint_port = repl_group['ConfigurationEndpoint'].get('Port', 'Unknown')
                         elif repl_group.get('NodeGroups') and repl_group['NodeGroups'][0].get('PrimaryEndpoint'):
-                             primary_ep = repl_group['NodeGroups'][0]['PrimaryEndpoint']
-                             endpoint_address = primary_ep.get('Address', 'Unknown')
-                             endpoint_port = primary_ep.get('Port', 'Unknown')
+                            primary_ep = repl_group['NodeGroups'][0]['PrimaryEndpoint']
+                            endpoint_address = primary_ep.get('Address', 'Unknown')
+                            endpoint_port = primary_ep.get('Port', 'Unknown')
                         
                         full_endpoint = f"{endpoint_address}:{endpoint_port}" if endpoint_address != 'Unknown' and endpoint_port != 'Unknown' else 'Unknown'
 
                         arns_dict.setdefault('elasticache_replication_group', []).append({
                             'arn': arn,
                             'name': resource_id_name,
-                            'subclass': service, # Will be 'elasticache'
+                            'subclass': service,  # Will be 'elasticache'
                             'item_type': 'replication_group',
                             'region': region,
                             'id': group_id,
                             'description': repl_group.get('Description', 'No description'),
                             'status': repl_group.get('Status', 'Unknown'),
                             'endpoint': full_endpoint,
-                            'creation_date': 'Unknown' # Replication Groups don't have a direct creation date via this API
+                            'creation_date': 'Unknown'  # Replication Groups don't have a direct creation date via this API
                         })
             except Exception as e_rg:
-                if "OptInRequired" not in str(e_rg): print(f"Error listing ElastiCache Replication Groups in {region}: {e_rg}")
-
+                if "OptInRequired" not in str(e_rg):
+                    print(f"Error listing ElastiCache Replication Groups in {region}: {e_rg}")
 
     except botocore.exceptions.ClientError as e:
         error_code = e.response.get("Error", {}).get("Code")
@@ -660,25 +663,25 @@ def main():
     ]
     print(f"Scanning {len(services_to_scan)} services: {', '.join(services_to_scan)}")
 
-    all_arns_data = {} # Renamed to avoid conflict with 'all_arns' if used as a variable name elsewhere
+    all_arns_data = {}  # Renamed to avoid conflict with 'all_arns' if used as a variable name elsewhere
 
     # Use a ThreadPoolExecutor for concurrent API calls
     # Adjust max_workers based on your environment and API rate limits
     # AWS SDKs often handle some level of concurrency and retries internally.
     # Too many workers might lead to throttling.
-    max_workers = min(20, len(regions) * len(services_to_scan) // 2 + 1) # Heuristic
+    max_workers = min(20, len(regions) * len(services_to_scan) // 2 + 1)  # Heuristic
     print(f"Using up to {max_workers} worker threads for scanning.")
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
         future_to_task = {}
         for service_item in services_to_scan:
-            if service_item in ['iam', 's3']: # Global services (S3 list_buckets is global)
+            if service_item in ['iam', 's3']:  # Global services (S3 list_buckets is global)
                 # For S3, we list buckets globally (us-east-1) but then get individual bucket regions.
                 # For IAM, all operations are against the global endpoint.
                 task_region = 'us-east-1'
                 future = executor.submit(collect_resource_arns, service_item, task_region, all_arns_data)
                 future_to_task[future] = f"{service_item}@{task_region}"
-            else: # Regional services
+            else:  # Regional services
                 for region_item in regions:
                     future = executor.submit(collect_resource_arns, service_item, region_item, all_arns_data)
                     future_to_task[future] = f"{service_item}@{region_item}"
@@ -691,14 +694,13 @@ def main():
             task_name = future_to_task[future]
             completed_tasks += 1
             try:
-                future.result() # We call result to raise any exceptions from the thread
+                future.result()  # We call result to raise any exceptions from the thread
                 # print(f"Task {task_name} completed successfully. ({completed_tasks}/{total_tasks})")
             except Exception as exc:
                 print(f"Task {task_name} generated an exception: {exc}")
             
             if completed_tasks % (total_tasks // 10 if total_tasks > 10 else 1) == 0 or completed_tasks == total_tasks : # Print progress roughly every 10% or on completion
                  print(f"Progress: {completed_tasks}/{total_tasks} tasks processed.")
-
 
     total_resources_found = sum(len(resources_list) for resources_list in all_arns_data.values())
     print(f"\nScan complete. Found {total_resources_found} resources across {len(all_arns_data)} service/item categories.")
@@ -726,8 +728,8 @@ def main():
                 print(f"    ARN: {resource.get('arn', 'N/A')}")
                 print(f"    Name (from ARN): {resource.get('name', 'N/A')}")
                 print(f"    Subclass (Service in ARN): {resource.get('subclass', 'N/A')}")
-                if 'item_type' in resource: # For IAM, ElastiCache etc.
-                     print(f"    Item Type: {resource.get('item_type')}")
+                if 'item_type' in resource:  # For IAM, ElastiCache etc.
+                    print(f"    Item Type: {resource.get('item_type')}")
                 print(f"    Created: {resource.get('creation_date', 'N/A')}")
 
                 # Specific fields based on service_print_key (which is the key in all_arns_data)
@@ -735,30 +737,31 @@ def main():
                     print(f"    Private IP: {resource.get('private_ip', 'N/A')}, Public IP: {resource.get('public_ip', 'N/A')}")
                 elif service_print_key == 's3':
                     print(f"    Endpoint: {resource.get('endpoint', 'N/A')}")
-                elif service_print_key == 'vpc':
-                    print(f"    CIDR: {resource.get('cidr', 'N/A')}")
+                    print(f"    Account: {account_id}")
+                # elif service_print_key == 'vpc':
+                #     print(f"    CIDR: {resource.get('cidr', 'N/A')}")
                 elif service_print_key in ['alb', 'nlb', 'classic_elb']:
                     print(f"    Endpoint: {resource.get('endpoint', 'N/A')}, Scheme: {resource.get('scheme', 'N/A')}")
                 elif service_print_key == 'eks':
                     print(f"    Cluster Name: {resource.get('cluster_name', 'N/A')}, Version: {resource.get('version', 'N/A')}, Endpoint: {resource.get('endpoint', 'N/A')}")
                 elif service_print_key == 'ecs':
-                     print(f"    Cluster Name: {resource.get('cluster_name', 'N/A')}, Status: {resource.get('status', 'N/A')}")
+                    print(f"    Cluster Name: {resource.get('cluster_name', 'N/A')}, Status: {resource.get('status', 'N/A')}")
                 elif service_print_key == 'ecr':
                     print(f"    Repo Name: {resource.get('repo_name', 'N/A')}, URI: {resource.get('uri', 'N/A')}")
                 elif service_print_key in ['elasticache_cluster', 'elasticache_replication_group']:
                     print(f"    ID: {resource.get('id', 'N/A')}, Engine: {resource.get('engine', 'N/A') if 'engine' in resource else 'N/A (RG)'}, Status: {resource.get('status', 'N/A')}, Endpoint: {resource.get('endpoint', 'N/A')}")
                 print("    " + "." * 38) # Separator
-            print() # Extra line after each service's resources
+            print()  # Extra line after each service's resources
 
     # Save results to JSON files
     current_timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
     filename_all_services = f"aws_resources_all_services_{account_id}_{current_timestamp}.json"
     with open(filename_all_services, 'w') as f:
-        json.dump(all_arns_data, f, indent=2, default=str) # Use all_arns_data which is service-keyed
+        json.dump(all_arns_data, f, indent=2, default=str)  # Use all_arns_data which is service-keyed
 
     filename_by_region = f"aws_resources_by_region_{account_id}_{current_timestamp}.json"
     with open(filename_by_region, 'w') as f:
-        json.dump(resources_by_region_output, f, indent=2, default=str) # Use resources_by_region_output
+        json.dump(resources_by_region_output, f, indent=2, default=str)  # Use resources_by_region_output
 
     print("\nResults saved to:")
     print(f"- {filename_all_services} (organized by service first)")

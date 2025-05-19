@@ -1,0 +1,3057 @@
+{
+  "ec2": [
+    {
+      "arn": "arn:aws:ec2:sa-east-1:281949160503:instance/i-056155dd67d4ead93",
+      "name": "instance/i-056155dd67d4ead93",
+      "subclass": "ec2",
+      "region": "sa-east-1",
+      "private_ip": "172.31.50.49",
+      "public_ip": "None",
+      "creation_date": "2021-03-31T20:45:57+00:00"
+    }
+  ],
+  "s3": [
+    {
+      "arn": "arn:aws:s3:::281949160503-embratel-athena-query-results-bucket",
+      "name": "281949160503-embratel-athena-query-results-bucket",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://281949160503-embratel-athena-query-results-bucket.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2021-06-16T15:33:40+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::aws-accelerator-assets-281949160503-us-east-1",
+      "name": "aws-accelerator-assets-281949160503-us-east-1",
+      "subclass": "s3",
+      "region": "us-east-1",
+      "endpoint": "https://aws-accelerator-assets-281949160503-us-east-1.s3.us-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2023-10-16T19:47:45+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::aws-accelerator-assets-logs-281949160503-us-east-1",
+      "name": "aws-accelerator-assets-logs-281949160503-us-east-1",
+      "subclass": "s3",
+      "region": "us-east-1",
+      "endpoint": "https://aws-accelerator-assets-logs-281949160503-us-east-1.s3.us-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2023-10-16T19:45:42+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::aws-accelerator-installer-281949160503-us-east-1",
+      "name": "aws-accelerator-installer-281949160503-us-east-1",
+      "subclass": "s3",
+      "region": "us-east-1",
+      "endpoint": "https://aws-accelerator-installer-281949160503-us-east-1.s3.us-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2023-10-16T17:48:59+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::aws-accelerator-pipeline-281949160503-us-east-1",
+      "name": "aws-accelerator-pipeline-281949160503-us-east-1",
+      "subclass": "s3",
+      "region": "us-east-1",
+      "endpoint": "https://aws-accelerator-pipeline-281949160503-us-east-1.s3.us-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2023-10-16T17:57:51+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::aws-accelerator-s3-access-logs-281949160503-sa-east-1",
+      "name": "aws-accelerator-s3-access-logs-281949160503-sa-east-1",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://aws-accelerator-s3-access-logs-281949160503-sa-east-1.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2023-10-23T17:20:20+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::aws-accelerator-s3-access-logs-281949160503-us-east-1",
+      "name": "aws-accelerator-s3-access-logs-281949160503-us-east-1",
+      "subclass": "s3",
+      "region": "us-east-1",
+      "endpoint": "https://aws-accelerator-s3-access-logs-281949160503-us-east-1.s3.us-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2023-10-16T19:45:42+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::aws-accelerator-s3-logs-281949160503-us-east-1",
+      "name": "aws-accelerator-s3-logs-281949160503-us-east-1",
+      "subclass": "s3",
+      "region": "us-east-1",
+      "endpoint": "https://aws-accelerator-s3-logs-281949160503-us-east-1.s3.us-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2023-10-16T17:46:56+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::aws-athena-query-results-281949160503-sa-east-1",
+      "name": "aws-athena-query-results-281949160503-sa-east-1",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://aws-athena-query-results-281949160503-sa-east-1.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2022-05-17T18:23:03+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::awsconfigconforms-claro-config-gov-me",
+      "name": "awsconfigconforms-claro-config-gov-me",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://awsconfigconforms-claro-config-gov-me.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2020-06-10T14:52:52+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::billing-athena-gov-query-results",
+      "name": "billing-athena-gov-query-results",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://billing-athena-gov-query-results.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2020-06-30T22:06:17+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::billing-athena-gov-query-results-us-east-1",
+      "name": "billing-athena-gov-query-results-us-east-1",
+      "subclass": "s3",
+      "region": "us-east-1",
+      "endpoint": "https://billing-athena-gov-query-results-us-east-1.s3.us-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2020-07-02T20:35:05+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::billing-bucket-abgf",
+      "name": "billing-bucket-abgf",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://billing-bucket-abgf.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2019-10-10T18:26:58+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::billing-bucket-ebt-gov",
+      "name": "billing-bucket-ebt-gov",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://billing-bucket-ebt-gov.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2019-02-01T13:57:17+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::billing-gov-athena",
+      "name": "billing-gov-athena",
+      "subclass": "s3",
+      "region": "us-east-1",
+      "endpoint": "https://billing-gov-athena.s3.us-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2019-10-11T13:45:59+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::billing-gov-cur",
+      "name": "billing-gov-cur",
+      "subclass": "s3",
+      "region": "us-east-1",
+      "endpoint": "https://billing-gov-cur.s3.us-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2019-10-11T13:44:46+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::billing-gov-cur-csv",
+      "name": "billing-gov-cur-csv",
+      "subclass": "s3",
+      "region": "us-east-1",
+      "endpoint": "https://billing-gov-cur-csv.s3.us-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2020-02-13T21:04:51+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::ccoebasesebtgov",
+      "name": "ccoebasesebtgov",
+      "subclass": "s3",
+      "region": "us-east-1",
+      "endpoint": "https://ccoebasesebtgov.s3.us-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2022-05-09T17:58:24+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::cdk-accel-assets-281949160503-sa-east-1",
+      "name": "cdk-accel-assets-281949160503-sa-east-1",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://cdk-accel-assets-281949160503-sa-east-1.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2023-10-16T19:20:22+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::cdk-accel-assets-281949160503-us-east-1",
+      "name": "cdk-accel-assets-281949160503-us-east-1",
+      "subclass": "s3",
+      "region": "us-east-1",
+      "endpoint": "https://cdk-accel-assets-281949160503-us-east-1.s3.us-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2023-10-16T17:55:12+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::cf-templates-4lcqdwta1oq-sa-east-1",
+      "name": "cf-templates-4lcqdwta1oq-sa-east-1",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://cf-templates-4lcqdwta1oq-sa-east-1.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2020-06-10T15:56:55+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::cf-templates-4lcqdwta1oq-us-east-1",
+      "name": "cf-templates-4lcqdwta1oq-us-east-1",
+      "subclass": "s3",
+      "region": "us-east-1",
+      "endpoint": "https://cf-templates-4lcqdwta1oq-us-east-1.s3.us-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2020-07-02T20:26:28+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::cf-templates-4lcqdwta1oq-us-east-2",
+      "name": "cf-templates-4lcqdwta1oq-us-east-2",
+      "subclass": "s3",
+      "region": "us-east-2",
+      "endpoint": "https://cf-templates-4lcqdwta1oq-us-east-2.s3.us-east-2.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2024-12-18T18:01:41+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::claro-config-templates-scripts",
+      "name": "claro-config-templates-scripts",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://claro-config-templates-scripts.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2020-06-15T16:01:35+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::claro-newaccount-baseline-templates",
+      "name": "claro-newaccount-baseline-templates",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://claro-newaccount-baseline-templates.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2020-06-14T21:15:21+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::config-bucket-281949160503",
+      "name": "config-bucket-281949160503",
+      "subclass": "s3",
+      "region": "us-east-1",
+      "endpoint": "https://config-bucket-281949160503.s3.us-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2020-11-06T21:45:27+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::config-bucket-gov-me",
+      "name": "config-bucket-gov-me",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://config-bucket-gov-me.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2020-06-04T16:31:52+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::ebt-gov-athena-automation",
+      "name": "ebt-gov-athena-automation",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://ebt-gov-athena-automation.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2021-12-11T22:05:09+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::gov-me-aws-cloudtrail-logs",
+      "name": "gov-me-aws-cloudtrail-logs",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://gov-me-aws-cloudtrail-logs.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2021-09-10T12:14:01+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::govme-es-lambda-cloudformation",
+      "name": "govme-es-lambda-cloudformation",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://govme-es-lambda-cloudformation.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2021-03-30T17:36:09+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::map-migrated-cnj-s3",
+      "name": "map-migrated-cnj-s3",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://map-migrated-cnj-s3.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2020-12-22T13:59:09+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::observability-gov-billing",
+      "name": "observability-gov-billing",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://observability-gov-billing.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2022-01-28T16:05:04+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::s3-ebt-teste-guardduty",
+      "name": "s3-ebt-teste-guardduty",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://s3-ebt-teste-guardduty.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2021-12-15T13:22:17+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::s3-guarddutty-ebt-gov",
+      "name": "s3-guarddutty-ebt-gov",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://s3-guarddutty-ebt-gov.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2021-12-22T17:17:30+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::ssm-datasync-gov-me",
+      "name": "ssm-datasync-gov-me",
+      "subclass": "s3",
+      "region": "sa-east-1",
+      "endpoint": "https://ssm-datasync-gov-me.s3.sa-east-1.amazonaws.com",
+      "account": "281949160503",
+      "creation_date": "2020-06-12T17:26:06+00:00"
+    }
+  ],
+  "lambda": [
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:AWSAccelerator-Organizati-CustomOrganizationsAttac-0GVqm1RrvsGk",
+      "name": "function:AWSAccelerator-Organizati-CustomOrganizationsAttac-0GVqm1RrvsGk",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T12:56:17.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:gov-me-es-lb-healthcheck",
+      "name": "function:gov-me-es-lb-healthcheck",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2021-04-05T14:58:57.231+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:lambda-teste-sns",
+      "name": "function:lambda-teste-sns",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2021-03-31T19:12:25.163+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:cur-cnj-AWSS3CURNotification-MSQ5V0ATEUR5",
+      "name": "function:cur-cnj-AWSS3CURNotification-MSQ5V0ATEUR5",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2021-03-29T22:47:55.564+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:AWSAccelerator-SecuritySt-CustomSsmGetParameterVal-8FKKT8iD1cLT",
+      "name": "function:AWSAccelerator-SecuritySt-CustomSsmGetParameterVal-8FKKT8iD1cLT",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T13:02:29.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:AWSAccelerator-LoggingSta-CustomSsmGetParameterVal-6lWcgF3O1sCM",
+      "name": "function:AWSAccelerator-LoggingSta-CustomSsmGetParameterVal-6lWcgF3O1sCM",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T12:52:55.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:gov-me-es-lambda-stacks-LambdaSns-X5PR8ZVVOSF3",
+      "name": "function:gov-me-es-lambda-stacks-LambdaSns-X5PR8ZVVOSF3",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2021-04-23T19:28:02.512+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:AWSAccelerator-Organizati-CustomGuardDutyEnableOrg-C0ems1rmudee",
+      "name": "function:AWSAccelerator-Organizati-CustomGuardDutyEnableOrg-C0ems1rmudee",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T12:56:17.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:AWSAccelerator-SecuritySt-CustomGuardDutyCreatePub-aEW3J3RmXIeg",
+      "name": "function:AWSAccelerator-SecuritySt-CustomGuardDutyCreatePub-aEW3J3RmXIeg",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T13:02:29.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:observabilty-set-account-alias",
+      "name": "function:observabilty-set-account-alias",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2021-10-28T21:48:09.525+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:AWSAccelerator-SecurityRe-CustomSsmGetParameterVal-njXDLIxfWcvD",
+      "name": "function:AWSAccelerator-SecurityRe-CustomSsmGetParameterVal-njXDLIxfWcvD",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T13:05:40.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:AWSAccelerator-SecurityRe-SecurityHubEventsLogSecu-KDPnjuaXohBS",
+      "name": "function:AWSAccelerator-SecurityRe-SecurityHubEventsLogSecu-KDPnjuaXohBS",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T13:05:39.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:cur-cnj-AWSCURInitializer-IKH7HLUGF2FP",
+      "name": "function:cur-cnj-AWSCURInitializer-IKH7HLUGF2FP",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2021-03-29T22:47:42.481+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:AWSAccelerator-LoggingSta-NewCloudWatchLogsCreateE-L0q1zpRxJJJi",
+      "name": "function:AWSAccelerator-LoggingSta-NewCloudWatchLogsCreateE-L0q1zpRxJJJi",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T12:53:07.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:AWSAccelerator-SecuritySt-CustomSecurityHubBatchEn-7PxpxKLLwtx0",
+      "name": "function:AWSAccelerator-SecuritySt-CustomSecurityHubBatchEn-7PxpxKLLwtx0",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T13:02:29.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:gov-me-es-lambda-stacks-LambdaGrantIngestRole-1L1QDEVJ8VCF2",
+      "name": "function:gov-me-es-lambda-stacks-LambdaGrantIngestRole-1L1QDEVJ8VCF2",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2021-03-31T03:01:44.833+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:AWSAccelerator-LoggingSta-CustomUpdateSubscription-KrbsDwl139rQ",
+      "name": "function:AWSAccelerator-LoggingSta-CustomUpdateSubscription-KrbsDwl139rQ",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T12:52:55.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:AWSAccelerator-Organizati-CustomEnablePolicyTypeCu-AgjD3HlzVxGu",
+      "name": "function:AWSAccelerator-Organizati-CustomEnablePolicyTypeCu-AgjD3HlzVxGu",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T12:56:17.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:athena-cloudtrail-partitioner-PartitionLambda-2JJzmwI1MRIY",
+      "name": "function:athena-cloudtrail-partitioner-PartitionLambda-2JJzmwI1MRIY",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2021-12-12T17:11:43.750+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:AWSAccelerator-Organizati-CustomSsmGetParameterVal-coU2rQkpQgWe",
+      "name": "function:AWSAccelerator-Organizati-CustomSsmGetParameterVal-coU2rQkpQgWe",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T12:56:17.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:AWSAccelerator-LoggingSta-SnsTopicForwarderFunctio-SG4JzYaRd1ti",
+      "name": "function:AWSAccelerator-LoggingSta-SnsTopicForwarderFunctio-SG4JzYaRd1ti",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T12:53:16.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:AWSAccelerator-Organizati-CustomOrganizationsCreat-fu1lSTzR0w0q",
+      "name": "function:AWSAccelerator-Organizati-CustomOrganizationsCreat-fu1lSTzR0w0q",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T12:56:17.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:LogsToElasticsearch_logs-operacao",
+      "name": "function:LogsToElasticsearch_logs-operacao",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-19T17:57:22.531+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:AWSAccelerator-Organizati-CustomSecurityHubEnableO-TdIdd7G7puKQ",
+      "name": "function:AWSAccelerator-Organizati-CustomSecurityHubEnableO-TdIdd7G7puKQ",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T12:56:17.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:sa-east-1:281949160503:function:gov-me-es-lambda-stacks-LambdaOrg-TZC3YTIW4IX1",
+      "name": "function:gov-me-es-lambda-stacks-LambdaOrg-TZC3YTIW4IX1",
+      "subclass": "lambda",
+      "region": "sa-east-1",
+      "creation_date": "2021-04-06T16:26:20.267+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-CreateCTAccountsCreateCo-VNEK2EygijcO",
+      "name": "function:AWSAccelerator-PrepareSta-CreateCTAccountsCreateCo-VNEK2EygijcO",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:24:41.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-AccountsSt-AccessAnalyzerServiceLin-auMaAgwpyR2p",
+      "name": "function:AWSAccelerator-AccountsSt-AccessAnalyzerServiceLin-auMaAgwpyR2p",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:28:52.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-Organizati-IdentityCenterAdminIdent-bbgucmc3vzSO",
+      "name": "function:AWSAccelerator-Organizati-IdentityCenterAdminIdent-bbgucmc3vzSO",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:56:36.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-Organizati-CustomOrganizationsAttac-w5Bi0KhfMCxb",
+      "name": "function:AWSAccelerator-Organizati-CustomOrganizationsAttac-w5Bi0KhfMCxb",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:56:35.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-CustomLoadAcceleratorCon-vFohBPpABvC4",
+      "name": "function:AWSAccelerator-PrepareSta-CustomLoadAcceleratorCon-vFohBPpABvC4",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:22:57.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-Organizati-CustomGuardDutyEnableOrg-KlsktlIJd0xp",
+      "name": "function:AWSAccelerator-Organizati-CustomGuardDutyEnableOrg-KlsktlIJd0xp",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:56:36.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-InstallerS-ResourceNamePrefixesReso-56x3lND5av2r",
+      "name": "function:AWSAccelerator-InstallerS-ResourceNamePrefixesReso-56x3lND5av2r",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-16T17:46:42.760+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-ValidateEnvironmentConfi-qaT9RfveqM7M",
+      "name": "function:AWSAccelerator-PrepareSta-ValidateEnvironmentConfi-qaT9RfveqM7M",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:23:01.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:athena-config-glue-db-AWSS3CURNotification-15EZNZ0KX4T71",
+      "name": "function:athena-config-glue-db-AWSS3CURNotification-15EZNZ0KX4T71",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2020-07-02T20:27:44.331+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-CreateCTAccountsCreateCo-wFmFlTTqGV5z",
+      "name": "function:AWSAccelerator-PrepareSta-CreateCTAccountsCreateCo-wFmFlTTqGV5z",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:24:29.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-ValidateEnvironmentConfi-bQRv6anwxZYg",
+      "name": "function:AWSAccelerator-PrepareSta-ValidateEnvironmentConfi-bQRv6anwxZYg",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:22:51.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:athena-config-glue-db-AWSCURInitializer-1P035JUJ61E2Q",
+      "name": "function:athena-config-glue-db-AWSCURInitializer-1P035JUJ61E2Q",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2020-07-02T20:27:31.351+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PipelineSt-PipelineAWSServiceRoleFo-cTZc4WMDG66F",
+      "name": "function:AWSAccelerator-PipelineSt-PipelineAWSServiceRoleFo-cTZc4WMDG66F",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:11:57.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-SecurityRe-CustomSsmGetParameterVal-HpUZGcdVJveQ",
+      "name": "function:AWSAccelerator-SecurityRe-CustomSsmGetParameterVal-HpUZGcdVJveQ",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T13:05:31.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-ControlTowerOuEventsFunc-2Pwj0UxCgTMf",
+      "name": "function:AWSAccelerator-PrepareSta-ControlTowerOuEventsFunc-2Pwj0UxCgTMf",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:22:51.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-CreateCTAccountsCreateCo-twC3O34n52TD",
+      "name": "function:AWSAccelerator-PrepareSta-CreateCTAccountsCreateCo-twC3O34n52TD",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:24:41.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-LoggingSta-CustomSsmGetParameterVal-Ds4e5BpQNIJN",
+      "name": "function:AWSAccelerator-LoggingSta-CustomSsmGetParameterVal-Ds4e5BpQNIJN",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:52:56.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-InstallerS-ValidateInstallerValidat-TTpWlFuLo5DC",
+      "name": "function:AWSAccelerator-InstallerS-ValidateInstallerValidat-TTpWlFuLo5DC",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-16T17:46:24.398+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-SecuritySt-CustomSecurityHubBatchEn-OgmPyV18gOlu",
+      "name": "function:AWSAccelerator-SecuritySt-CustomSecurityHubBatchEn-OgmPyV18gOlu",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T13:02:21.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-CreateOrganizationAccoun-iLVDgE0gOLJA",
+      "name": "function:AWSAccelerator-PrepareSta-CreateOrganizationAccoun-iLVDgE0gOLJA",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:23:58.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-AccountsSt-GuardDutyServiceLinkedRo-a6TCTk0imIz5",
+      "name": "function:AWSAccelerator-AccountsSt-GuardDutyServiceLinkedRo-a6TCTk0imIz5",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:28:51.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-AccountsSt-CustomOrganizationsAttac-HohB1RPgCdyc",
+      "name": "function:AWSAccelerator-AccountsSt-CustomOrganizationsAttac-HohB1RPgCdyc",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:28:42.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-LoggingSta-SnsTopicForwarderFunctio-ipUKeFK5igW8",
+      "name": "function:AWSAccelerator-LoggingSta-SnsTopicForwarderFunctio-ipUKeFK5igW8",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:53:17.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-AccountsSt-CustomOrganizationsCreat-VIhjKERBs7Jj",
+      "name": "function:AWSAccelerator-AccountsSt-CustomOrganizationsCreat-VIhjKERBs7Jj",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:28:42.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-Organizati-IdentityCenterAdminframe-B2ZNzpcGKK8G",
+      "name": "function:AWSAccelerator-Organizati-IdentityCenterAdminframe-B2ZNzpcGKK8G",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:56:45.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-AccountsSt-AttachQuarantineScpFunct-gt4cZJM4vOt0",
+      "name": "function:AWSAccelerator-AccountsSt-AttachQuarantineScpFunct-gt4cZJM4vOt0",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:29:09.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-CreateOrganizationAccoun-qprZ582oriPs",
+      "name": "function:AWSAccelerator-PrepareSta-CreateOrganizationAccoun-qprZ582oriPs",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:23:46.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-LoggingSta-CustomUpdateSubscription-ss8DB25RWFSH",
+      "name": "function:AWSAccelerator-LoggingSta-CustomUpdateSubscription-ss8DB25RWFSH",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:52:56.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-Organizati-CustomOrganizationsEnabl-nX9vP9idIYp7",
+      "name": "function:AWSAccelerator-Organizati-CustomOrganizationsEnabl-nX9vP9idIYp7",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:56:36.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-CreateCTAccountsCreateCo-a7plOlkn7a8B",
+      "name": "function:AWSAccelerator-PrepareSta-CreateCTAccountsCreateCo-a7plOlkn7a8B",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:24:54.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-AccountsSt-GuardDutyServiceLinkedRo-BlWzDKxFnG7E",
+      "name": "function:AWSAccelerator-AccountsSt-GuardDutyServiceLinkedRo-BlWzDKxFnG7E",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:28:42.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-Organizati-CustomSecurityHubEnableO-5mcTcXEsGEvj",
+      "name": "function:AWSAccelerator-Organizati-CustomSecurityHubEnableO-5mcTcXEsGEvj",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:56:35.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-SecuritySt-CustomSsmGetParameterVal-fn4hlIEYmHjQ",
+      "name": "function:AWSAccelerator-SecuritySt-CustomSsmGetParameterVal-fn4hlIEYmHjQ",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T13:02:21.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-CustomInviteAccountsToOr-7VFkPuaPZb8F",
+      "name": "function:AWSAccelerator-PrepareSta-CustomInviteAccountsToOr-7VFkPuaPZb8F",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:22:51.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-CreateOrganizationAccoun-6udxhdBlR1fd",
+      "name": "function:AWSAccelerator-PrepareSta-CreateOrganizationAccoun-6udxhdBlR1fd",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:24:10.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PipelineSt-PipelineAWSServiceRoleFo-wZGwycGt3Cet",
+      "name": "function:AWSAccelerator-PipelineSt-PipelineAWSServiceRoleFo-wZGwycGt3Cet",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:11:47.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-Organizati-CustomEnableSharingWithA-IyNMONrOB6EC",
+      "name": "function:AWSAccelerator-Organizati-CustomEnableSharingWithA-IyNMONrOB6EC",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:56:35.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-SecuritySt-CustomIamUpdateAccountPa-KugvZUL0fBAD",
+      "name": "function:AWSAccelerator-SecuritySt-CustomIamUpdateAccountPa-KugvZUL0fBAD",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T13:02:21.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-InstallerS-UpdatePipelineGithubToke-i64umxLDr754",
+      "name": "function:AWSAccelerator-InstallerS-UpdatePipelineGithubToke-i64umxLDr754",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-16T17:50:09.497+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-Organizati-CustomSsmGetParameterVal-HqetmVqdhjzt",
+      "name": "function:AWSAccelerator-Organizati-CustomSsmGetParameterVal-HqetmVqdhjzt",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:56:36.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-CustomGetPortfolioIdCust-OfMNUpIML9TO",
+      "name": "function:AWSAccelerator-PrepareSta-CustomGetPortfolioIdCust-OfMNUpIML9TO",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:22:51.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-InstallerSta-SolutionHelper4825923B-BovDRcPePEsH",
+      "name": "function:AWSAccelerator-InstallerSta-SolutionHelper4825923B-BovDRcPePEsH",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-16T17:46:25.039+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-AccountsSt-SecurityHubServiceLinked-2xQXMKIB4If6",
+      "name": "function:AWSAccelerator-AccountsSt-SecurityHubServiceLinked-2xQXMKIB4If6",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:28:51.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-Organizati-CustomOrganizationsCreat-w24YOIbaNp8C",
+      "name": "function:AWSAccelerator-Organizati-CustomOrganizationsCreat-w24YOIbaNp8C",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:56:36.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-CreateCTAccountsCreateCo-QqCfMzv9dsOo",
+      "name": "function:AWSAccelerator-PrepareSta-CreateCTAccountsCreateCo-QqCfMzv9dsOo",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:24:31.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-AccountsSt-AccessAnalyzerServiceLin-KKExei1hhbdr",
+      "name": "function:AWSAccelerator-AccountsSt-AccessAnalyzerServiceLin-KKExei1hhbdr",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:28:42.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-ControlTowerNotification-0GOhw7RFejmr",
+      "name": "function:AWSAccelerator-PrepareSta-ControlTowerNotification-0GOhw7RFejmr",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:22:51.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-SecurityRe-SecurityHubEventsLogSecu-fnz8PGj7Nwlv",
+      "name": "function:AWSAccelerator-SecurityRe-SecurityHubEventsLogSecu-fnz8PGj7Nwlv",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T13:05:31.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-AccountsSt-SecurityHubServiceLinked-qnsUou0TafJ2",
+      "name": "function:AWSAccelerator-AccountsSt-SecurityHubServiceLinked-qnsUou0TafJ2",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:28:42.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-FinalizeSt-CustomDetachQuarantineSc-co2DXGYOaxvy",
+      "name": "function:AWSAccelerator-FinalizeSt-CustomDetachQuarantineSc-co2DXGYOaxvy",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T13:17:41.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-Organizati-CustomOrganizationsRegis-md4GRKXjYbyW",
+      "name": "function:AWSAccelerator-Organizati-CustomOrganizationsRegis-md4GRKXjYbyW",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:56:35.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-CreateOrganizationAccoun-iWSXs9BLS6wt",
+      "name": "function:AWSAccelerator-PrepareSta-CreateOrganizationAccoun-iWSXs9BLS6wt",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:23:48.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-SecuritySt-CustomGuardDutyCreatePub-FNRhq2oCL9eg",
+      "name": "function:AWSAccelerator-SecuritySt-CustomGuardDutyCreatePub-FNRhq2oCL9eg",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T13:02:21.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-Organizati-CustomEnablePolicyTypeCu-hT19UmzUXnIG",
+      "name": "function:AWSAccelerator-Organizati-CustomEnablePolicyTypeCu-hT19UmzUXnIG",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:56:36.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-CustomOrganizationsCreat-O5k1xVYqzEd5",
+      "name": "function:AWSAccelerator-PrepareSta-CustomOrganizationsCreat-O5k1xVYqzEd5",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:22:51.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-AccountsSt-CustomEnablePolicyTypeCu-vguO3JoqTTYS",
+      "name": "function:AWSAccelerator-AccountsSt-CustomEnablePolicyTypeCu-vguO3JoqTTYS",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:28:42.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-PrepareSta-CreateOrganizationAccoun-7rZgDKclERoN",
+      "name": "function:AWSAccelerator-PrepareSta-CreateOrganizationAccoun-7rZgDKclERoN",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:23:58.000+0000"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:281949160503:function:AWSAccelerator-LoggingSta-NewCloudWatchLogsCreateE-jbxQacU4sFl0",
+      "name": "function:AWSAccelerator-LoggingSta-NewCloudWatchLogsCreateE-jbxQacU4sFl0",
+      "subclass": "lambda",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T12:53:06.000+0000"
+    }
+  ],
+  "dynamodb": [
+    {
+      "arn": "arn:aws:dynamodb:sa-east-1:281949160503:table/Athena-CloudTrail-Partitions",
+      "name": "table/Athena-CloudTrail-Partitions",
+      "subclass": "dynamodb",
+      "region": "sa-east-1",
+      "creation_date": "2021-12-11T19:15:15.763000-03:00"
+    },
+    {
+      "arn": "arn:aws:dynamodb:sa-east-1:281949160503:table/gov-me-es-lambda-stacks-AccountsTable-1T7AQGC00XOB2",
+      "name": "table/gov-me-es-lambda-stacks-AccountsTable-1T7AQGC00XOB2",
+      "subclass": "dynamodb",
+      "region": "sa-east-1",
+      "creation_date": "2021-03-31T00:00:27.915000-03:00"
+    },
+    {
+      "arn": "arn:aws:dynamodb:us-east-1:281949160503:table/AWSAccelerator-PrepareStack-281949160503-us-east-1-AcceleratorConfigTable590367C4-11NXFQU9YVQD7",
+      "name": "table/AWSAccelerator-PrepareStack-281949160503-us-east-1-AcceleratorConfigTable590367C4-11NXFQU9YVQD7",
+      "subclass": "dynamodb",
+      "region": "us-east-1",
+      "creation_date": "2023-10-16T15:49:40.206000-03:00"
+    },
+    {
+      "arn": "arn:aws:dynamodb:us-east-1:281949160503:table/AWSAccelerator-PrepareStack-281949160503-us-east-1-NewCTAccountsE326CD07-Q66VVMHG4SHY",
+      "name": "table/AWSAccelerator-PrepareStack-281949160503-us-east-1-NewCTAccountsE326CD07-Q66VVMHG4SHY",
+      "subclass": "dynamodb",
+      "region": "us-east-1",
+      "creation_date": "2023-10-16T15:49:40.417000-03:00"
+    },
+    {
+      "arn": "arn:aws:dynamodb:us-east-1:281949160503:table/AWSAccelerator-PrepareStack-281949160503-us-east-1-NewOrgAccountsE5BA262F-HK60IICJCKZD",
+      "name": "table/AWSAccelerator-PrepareStack-281949160503-us-east-1-NewOrgAccountsE5BA262F-HK60IICJCKZD",
+      "subclass": "dynamodb",
+      "region": "us-east-1",
+      "creation_date": "2023-10-16T15:49:40.179000-03:00"
+    }
+  ],
+  "sns": [
+    {
+      "arn": "arn:aws:sns:sa-east-1:281949160503:CloudWatchAlarmsForCloudTrail-AlarmNotificationTopic-1SUUEFWDB8OVC",
+      "name": "CloudWatchAlarmsForCloudTrail-AlarmNotificationTopic-1SUUEFWDB8OVC",
+      "subclass": "sns",
+      "region": "sa-east-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:sa-east-1:281949160503:aws-accelerator-Security",
+      "name": "aws-accelerator-Security",
+      "subclass": "sns",
+      "region": "sa-east-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:sa-east-1:281949160503:aws-cloudtrail-logs-gov-me",
+      "name": "aws-cloudtrail-logs-gov-me",
+      "subclass": "sns",
+      "region": "sa-east-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:sa-east-1:281949160503:aws-embratel-securitychannel",
+      "name": "aws-embratel-securitychannel",
+      "subclass": "sns",
+      "region": "sa-east-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:us-east-1:281949160503:AWSAccelerator-ControlTowerNotification",
+      "name": "AWSAccelerator-ControlTowerNotification",
+      "subclass": "sns",
+      "region": "us-east-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:us-east-1:281949160503:aws-accelerator-Security",
+      "name": "aws-accelerator-Security",
+      "subclass": "sns",
+      "region": "us-east-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:us-east-1:281949160503:aws-accelerator-pipeline-failed-status-topic",
+      "name": "aws-accelerator-pipeline-failed-status-topic",
+      "subclass": "sns",
+      "region": "us-east-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:us-east-1:281949160503:aws-accelerator-pipeline-status-topic",
+      "name": "aws-accelerator-pipeline-status-topic",
+      "subclass": "sns",
+      "region": "us-east-1",
+      "creation_date": "Unknown"
+    }
+  ],
+  "iam": [
+    {
+      "arn": "arn:aws:iam::281949160503:role/Acesso-redshift-s3-readonly",
+      "name": "role/Acesso-redshift-s3-readonly",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2022-08-08T18:43:15+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/athena-config-glue-db-AWSCURCrawlerComponentFuncti-JFTZZQ7AXNRS",
+      "name": "role/athena-config-glue-db-AWSCURCrawlerComponentFuncti-JFTZZQ7AXNRS",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-07-02T20:27:05+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/athena-config-glue-db-AWSCURCrawlerLambdaExecutor-15SXM67GNW05V",
+      "name": "role/athena-config-glue-db-AWSCURCrawlerLambdaExecutor-15SXM67GNW05V",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-07-02T20:27:05+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/athena-config-glue-db-AWSS3CURLambdaExecutor-1R8WBDBME6S1S",
+      "name": "role/athena-config-glue-db-AWSS3CURLambdaExecutor-1R8WBDBME6S1S",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-07-02T20:27:05+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws.msp.ventura",
+      "name": "role/aws.msp.ventura",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-01T17:16:34+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-AccountsSt-AccessAnalyzerServiceLink-2AiJpZm6rOQo",
+      "name": "role/AWSAccelerator-AccountsSt-AccessAnalyzerServiceLink-2AiJpZm6rOQo",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:58:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-AccountsSt-AccessAnalyzerServiceLink-Z2ql3jj9UEid",
+      "name": "role/AWSAccelerator-AccountsSt-AccessAnalyzerServiceLink-Z2ql3jj9UEid",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:58:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-AccountsSt-AttachQuarantineScpFuncti-1JR4afGnpRiP",
+      "name": "role/AWSAccelerator-AccountsSt-AttachQuarantineScpFuncti-1JR4afGnpRiP",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:58:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-AccountsSt-CustomEnablePolicyTypeCus-GUHv2j803r8A",
+      "name": "role/AWSAccelerator-AccountsSt-CustomEnablePolicyTypeCus-GUHv2j803r8A",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:58:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-AccountsSt-CustomOrganizationsAttach-2Bw5V3WjhZwl",
+      "name": "role/AWSAccelerator-AccountsSt-CustomOrganizationsAttach-2Bw5V3WjhZwl",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:58:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-AccountsSt-CustomOrganizationsCreate-xWNmzlks6JoK",
+      "name": "role/AWSAccelerator-AccountsSt-CustomOrganizationsCreate-xWNmzlks6JoK",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:58:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-AccountsSt-GuardDutyServiceLinkedRol-mOD2RFEGYmTi",
+      "name": "role/AWSAccelerator-AccountsSt-GuardDutyServiceLinkedRol-mOD2RFEGYmTi",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:58:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-AccountsSt-GuardDutyServiceLinkedRol-Z7dz3D4Dcagy",
+      "name": "role/AWSAccelerator-AccountsSt-GuardDutyServiceLinkedRol-Z7dz3D4Dcagy",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:58:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-AccountsSt-SecurityHubServiceLinkedR-3HGYwqfqQwUL",
+      "name": "role/AWSAccelerator-AccountsSt-SecurityHubServiceLinkedR-3HGYwqfqQwUL",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:58:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-AccountsSt-SecurityHubServiceLinkedR-FtijqP9C555y",
+      "name": "role/AWSAccelerator-AccountsSt-SecurityHubServiceLinkedR-FtijqP9C555y",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:58:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-AssetsAccessRole",
+      "name": "role/AWSAccelerator-AssetsAccessRole",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-24T17:46:08+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-AssetsBucket-KeyArnParam-Role",
+      "name": "role/AWSAccelerator-AssetsBucket-KeyArnParam-Role",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T19:47:48+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-CrossAccount-ServiceCatalog-Role",
+      "name": "role/AWSAccelerator-CrossAccount-ServiceCatalog-Role",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-24T17:46:08+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-CrossAccountSsmParameterShare",
+      "name": "role/AWSAccelerator-CrossAccountSsmParameterShare",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T19:25:44+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-FinalizeSt-CustomDetachQuarantineScp-ydrvzdSJPo2K",
+      "name": "role/AWSAccelerator-FinalizeSt-CustomDetachQuarantineScp-ydrvzdSJPo2K",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-26T11:59:57+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-InstallerS-GitHubPipelineRole6F4DEF1-VXtSWPu1HBga",
+      "name": "role/AWSAccelerator-InstallerS-GitHubPipelineRole6F4DEF1-VXtSWPu1HBga",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T17:46:06+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-InstallerS-InstallerAdminRole7DEE4AC-S3NEuYhut006",
+      "name": "role/AWSAccelerator-InstallerS-InstallerAdminRole7DEE4AC-S3NEuYhut006",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T17:46:05+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-InstallerS-ResourceNamePrefixesResou-WQV0KU7bCkGr",
+      "name": "role/AWSAccelerator-InstallerS-ResourceNamePrefixesResou-WQV0KU7bCkGr",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T17:46:06+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-InstallerS-SolutionHelperServiceRole-aafopKC1ndhP",
+      "name": "role/AWSAccelerator-InstallerS-SolutionHelperServiceRole-aafopKC1ndhP",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T17:46:06+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-InstallerS-UpdatePipelineLambdaRole8-WCp7IXtK1lyR",
+      "name": "role/AWSAccelerator-InstallerS-UpdatePipelineLambdaRole8-WCp7IXtK1lyR",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T17:46:06+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-InstallerS-ValidateInstallerValidati-UoHsrUfApJ78",
+      "name": "role/AWSAccelerator-InstallerS-ValidateInstallerValidati-UoHsrUfApJ78",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T17:46:06+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-LoggingSta-CustomSsmGetParameterValu-gXaJwhSjnsgH",
+      "name": "role/AWSAccelerator-LoggingSta-CustomSsmGetParameterValu-gXaJwhSjnsgH",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:20:21+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-LoggingSta-CustomSsmGetParameterValu-rLE1004Pldvx",
+      "name": "role/AWSAccelerator-LoggingSta-CustomSsmGetParameterValu-rLE1004Pldvx",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T19:45:43+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-LoggingSta-CustomUpdateSubscriptionF-3BZGGkcJnS7Q",
+      "name": "role/AWSAccelerator-LoggingSta-CustomUpdateSubscriptionF-3BZGGkcJnS7Q",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:20:21+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-LoggingSta-CustomUpdateSubscriptionF-tE37h3yiqETL",
+      "name": "role/AWSAccelerator-LoggingSta-CustomUpdateSubscriptionF-tE37h3yiqETL",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T19:45:43+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-LoggingSta-NewCloudWatchLogsCreateEv-ve2qt2KrU40c",
+      "name": "role/AWSAccelerator-LoggingSta-NewCloudWatchLogsCreateEv-ve2qt2KrU40c",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:22:40+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-LoggingSta-NewCloudWatchLogsCreateEv-Vex8cudaWgeG",
+      "name": "role/AWSAccelerator-LoggingSta-NewCloudWatchLogsCreateEv-Vex8cudaWgeG",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T19:46:39+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-LoggingSta-SnsTopicForwarderFunction-KoOa7vtt7aA5",
+      "name": "role/AWSAccelerator-LoggingSta-SnsTopicForwarderFunction-KoOa7vtt7aA5",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T19:45:43+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-LoggingSta-SnsTopicForwarderFunction-r5y1OJaVUtOc",
+      "name": "role/AWSAccelerator-LoggingSta-SnsTopicForwarderFunction-r5y1OJaVUtOc",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:20:21+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-LoggingSta-SubscriptionFilterRoleB0B-oj2uLwLctayJ",
+      "name": "role/AWSAccelerator-LoggingSta-SubscriptionFilterRoleB0B-oj2uLwLctayJ",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:20:21+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-LoggingSta-SubscriptionFilterRoleB0B-wH1m7xC6QwbW",
+      "name": "role/AWSAccelerator-LoggingSta-SubscriptionFilterRoleB0B-wH1m7xC6QwbW",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T19:45:43+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-MoveAccountConfigRule-Role",
+      "name": "role/AWSAccelerator-MoveAccountConfigRule-Role",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:47:38+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-Organizati-CustomEnablePolicyTypeCus-7SSYwtyxJhIJ",
+      "name": "role/AWSAccelerator-Organizati-CustomEnablePolicyTypeCus-7SSYwtyxJhIJ",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:27:36+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-Organizati-CustomEnablePolicyTypeCus-hZlYr1gUBq8V",
+      "name": "role/AWSAccelerator-Organizati-CustomEnablePolicyTypeCus-hZlYr1gUBq8V",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:27:33+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-Organizati-CustomEnableSharingWithAw-3LstGIiUwtwM",
+      "name": "role/AWSAccelerator-Organizati-CustomEnableSharingWithAw-3LstGIiUwtwM",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:27:36+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-Organizati-CustomGuardDutyEnableOrga-2KdrdijIRZ3F",
+      "name": "role/AWSAccelerator-Organizati-CustomGuardDutyEnableOrga-2KdrdijIRZ3F",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:27:36+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-Organizati-CustomGuardDutyEnableOrga-8iVfXbdEfD7Q",
+      "name": "role/AWSAccelerator-Organizati-CustomGuardDutyEnableOrga-8iVfXbdEfD7Q",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:27:33+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-Organizati-CustomOrganizationsAttach-i0Ofsre6Gidz",
+      "name": "role/AWSAccelerator-Organizati-CustomOrganizationsAttach-i0Ofsre6Gidz",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:27:36+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-Organizati-CustomOrganizationsAttach-r0telKBosGnf",
+      "name": "role/AWSAccelerator-Organizati-CustomOrganizationsAttach-r0telKBosGnf",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:27:33+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-Organizati-CustomOrganizationsCreate-kk0QMe3LpeGO",
+      "name": "role/AWSAccelerator-Organizati-CustomOrganizationsCreate-kk0QMe3LpeGO",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:27:33+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-Organizati-CustomOrganizationsCreate-ZhflyHLco9DN",
+      "name": "role/AWSAccelerator-Organizati-CustomOrganizationsCreate-ZhflyHLco9DN",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:27:36+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-Organizati-CustomOrganizationsEnable-jOQWyVnwvPAY",
+      "name": "role/AWSAccelerator-Organizati-CustomOrganizationsEnable-jOQWyVnwvPAY",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:27:36+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-Organizati-CustomOrganizationsRegist-Zmsvn22LNGHt",
+      "name": "role/AWSAccelerator-Organizati-CustomOrganizationsRegist-Zmsvn22LNGHt",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:27:36+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-Organizati-CustomSecurityHubEnableOr-cgOdkdM5Kv47",
+      "name": "role/AWSAccelerator-Organizati-CustomSecurityHubEnableOr-cgOdkdM5Kv47",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:27:33+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-Organizati-CustomSecurityHubEnableOr-wYq1DIFG89HS",
+      "name": "role/AWSAccelerator-Organizati-CustomSecurityHubEnableOr-wYq1DIFG89HS",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:27:36+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-Organizati-CustomSsmGetParameterValu-k1ijv84eETQn",
+      "name": "role/AWSAccelerator-Organizati-CustomSsmGetParameterValu-k1ijv84eETQn",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:27:33+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-Organizati-CustomSsmGetParameterValu-opzf3WsbuSQH",
+      "name": "role/AWSAccelerator-Organizati-CustomSsmGetParameterValu-opzf3WsbuSQH",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:27:36+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-Organizati-IdentityCenterAdminframew-gdnYEHSQwTUe",
+      "name": "role/AWSAccelerator-Organizati-IdentityCenterAdminframew-gdnYEHSQwTUe",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:27:36+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-Organizati-IdentityCenterAdminIdenti-Nk4Bh0QaitnG",
+      "name": "role/AWSAccelerator-Organizati-IdentityCenterAdminIdenti-Nk4Bh0QaitnG",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T17:27:36+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PipelineSt-AdminCdkToolkitRole292E16-RSP3SdGt0EVG",
+      "name": "role/AWSAccelerator-PipelineSt-AdminCdkToolkitRole292E16-RSP3SdGt0EVG",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T17:57:52+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PipelineSt-PipelineAWSServiceRoleFor-dWBLvm5QfhGQ",
+      "name": "role/AWSAccelerator-PipelineSt-PipelineAWSServiceRoleFor-dWBLvm5QfhGQ",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T17:57:52+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PipelineSt-PipelineAWSServiceRoleFor-IPP4rKKrKXP9",
+      "name": "role/AWSAccelerator-PipelineSt-PipelineAWSServiceRoleFor-IPP4rKKrKXP9",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T17:57:51+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PipelineSt-PipelineBuildRoleDC686070-P17CezokmObf",
+      "name": "role/AWSAccelerator-PipelineSt-PipelineBuildRoleDC686070-P17CezokmObf",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T17:58:09+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PipelineSt-PipelinePipelineRole6D983-IWjlnTIe2NFQ",
+      "name": "role/AWSAccelerator-PipelineSt-PipelinePipelineRole6D983-IWjlnTIe2NFQ",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T17:57:51+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PipelineSt-PipelineSourceConfigurati-cgzzt4PrWyw2",
+      "name": "role/AWSAccelerator-PipelineSt-PipelineSourceConfigurati-cgzzt4PrWyw2",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:00:25+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-ControlTowerNotifications-zwMRkJa9ioI4",
+      "name": "role/AWSAccelerator-PrepareSta-ControlTowerNotifications-zwMRkJa9ioI4",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:47:38+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-ControlTowerOuEventsFunct-1Py2xhv69Jke",
+      "name": "role/AWSAccelerator-PrepareSta-ControlTowerOuEventsFunct-1Py2xhv69Jke",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:47:37+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-CreateCTAccountsCreateCon-4BXr8Vzgvpdg",
+      "name": "role/AWSAccelerator-PrepareSta-CreateCTAccountsCreateCon-4BXr8Vzgvpdg",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:53:28+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-CreateCTAccountsCreateCon-ep1TYlmhgVMO",
+      "name": "role/AWSAccelerator-PrepareSta-CreateCTAccountsCreateCon-ep1TYlmhgVMO",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:53:28+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-CreateCTAccountsCreateCon-Q3gmkJVxUek1",
+      "name": "role/AWSAccelerator-PrepareSta-CreateCTAccountsCreateCon-Q3gmkJVxUek1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:53:28+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-CreateCTAccountsCreateCon-RvT38WM8sURM",
+      "name": "role/AWSAccelerator-PrepareSta-CreateCTAccountsCreateCon-RvT38WM8sURM",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:53:28+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-CreateCTAccountsCreateCon-vXFiu87BjfUy",
+      "name": "role/AWSAccelerator-PrepareSta-CreateCTAccountsCreateCon-vXFiu87BjfUy",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:53:28+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-CreateCTAccountsCreateCon-Y2wN49GLBfom",
+      "name": "role/AWSAccelerator-PrepareSta-CreateCTAccountsCreateCon-Y2wN49GLBfom",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:53:28+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-CreateOrganizationAccount-h6acA6kscNVL",
+      "name": "role/AWSAccelerator-PrepareSta-CreateOrganizationAccount-h6acA6kscNVL",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:51:17+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-CreateOrganizationAccount-hnGIycxLPqxI",
+      "name": "role/AWSAccelerator-PrepareSta-CreateOrganizationAccount-hnGIycxLPqxI",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:51:17+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-CreateOrganizationAccount-ibNv66vsPgdz",
+      "name": "role/AWSAccelerator-PrepareSta-CreateOrganizationAccount-ibNv66vsPgdz",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:51:17+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-CreateOrganizationAccount-lASqcKRTL3Y2",
+      "name": "role/AWSAccelerator-PrepareSta-CreateOrganizationAccount-lASqcKRTL3Y2",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:51:17+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-CreateOrganizationAccount-RW3afammE4dT",
+      "name": "role/AWSAccelerator-PrepareSta-CreateOrganizationAccount-RW3afammE4dT",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:51:17+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-CreateOrganizationAccount-uLZk8eNhWIec",
+      "name": "role/AWSAccelerator-PrepareSta-CreateOrganizationAccount-uLZk8eNhWIec",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:51:17+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-CustomGetPortfolioIdCusto-Sy6Pon984kOA",
+      "name": "role/AWSAccelerator-PrepareSta-CustomGetPortfolioIdCusto-Sy6Pon984kOA",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:47:37+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-CustomInviteAccountsToOrg-5YyaIRgZLVmk",
+      "name": "role/AWSAccelerator-PrepareSta-CustomInviteAccountsToOrg-5YyaIRgZLVmk",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:50:07+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-CustomLoadAcceleratorConf-FHP0WyTOqV3O",
+      "name": "role/AWSAccelerator-PrepareSta-CustomLoadAcceleratorConf-FHP0WyTOqV3O",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:50:06+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-CustomOrganizationsCreate-1O37fDtUZgGa",
+      "name": "role/AWSAccelerator-PrepareSta-CustomOrganizationsCreate-1O37fDtUZgGa",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:50:07+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-ValidateEnvironmentConfig-kuOpUWPEVAXs",
+      "name": "role/AWSAccelerator-PrepareSta-ValidateEnvironmentConfig-kuOpUWPEVAXs",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:47:38+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-PrepareSta-ValidateEnvironmentConfig-RmNFTm6DpKnS",
+      "name": "role/AWSAccelerator-PrepareSta-ValidateEnvironmentConfig-RmNFTm6DpKnS",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T18:47:37+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-SecurityRe-ConfigRecorderRoleC4E33AA-MCoZNXQtrI5A",
+      "name": "role/AWSAccelerator-SecurityRe-ConfigRecorderRoleC4E33AA-MCoZNXQtrI5A",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-26T11:47:50+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-SecurityRe-ConfigRecorderRoleC4E33AA-RAhNNYAftg3G",
+      "name": "role/AWSAccelerator-SecurityRe-ConfigRecorderRoleC4E33AA-RAhNNYAftg3G",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-26T11:47:46+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-SecurityRe-CustomSsmGetParameterValu-tJAPtlPDjzI9",
+      "name": "role/AWSAccelerator-SecurityRe-CustomSsmGetParameterValu-tJAPtlPDjzI9",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-26T11:47:46+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-SecurityRe-CustomSsmGetParameterValu-wAtgvW1zP6lX",
+      "name": "role/AWSAccelerator-SecurityRe-CustomSsmGetParameterValu-wAtgvW1zP6lX",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-26T11:47:50+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-SecurityRe-SecurityHubEventsLogSecur-3HaSkmb9cYPK",
+      "name": "role/AWSAccelerator-SecurityRe-SecurityHubEventsLogSecur-3HaSkmb9cYPK",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-26T11:47:46+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-SecurityRe-SecurityHubEventsLogSecur-ttIxpu9wzSVK",
+      "name": "role/AWSAccelerator-SecurityRe-SecurityHubEventsLogSecur-ttIxpu9wzSVK",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-26T11:47:50+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-SecuritySt-CustomGuardDutyCreatePubl-2r7MudhIgUS6",
+      "name": "role/AWSAccelerator-SecuritySt-CustomGuardDutyCreatePubl-2r7MudhIgUS6",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-24T17:31:01+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-SecuritySt-CustomGuardDutyCreatePubl-ghN5JBh9X4JD",
+      "name": "role/AWSAccelerator-SecuritySt-CustomGuardDutyCreatePubl-ghN5JBh9X4JD",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-24T17:31:09+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-SecuritySt-CustomIamUpdateAccountPas-GveWahWTnlAl",
+      "name": "role/AWSAccelerator-SecuritySt-CustomIamUpdateAccountPas-GveWahWTnlAl",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-24T17:31:01+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-SecuritySt-CustomSecurityHubBatchEna-Bnug8xyJzsib",
+      "name": "role/AWSAccelerator-SecuritySt-CustomSecurityHubBatchEna-Bnug8xyJzsib",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-24T17:31:01+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-SecuritySt-CustomSecurityHubBatchEna-fxe1QLSWeBav",
+      "name": "role/AWSAccelerator-SecuritySt-CustomSecurityHubBatchEna-fxe1QLSWeBav",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-24T17:31:09+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-SecuritySt-CustomSsmGetParameterValu-8XWdKnZeFmsV",
+      "name": "role/AWSAccelerator-SecuritySt-CustomSsmGetParameterValu-8XWdKnZeFmsV",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-24T17:31:01+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSAccelerator-SecuritySt-CustomSsmGetParameterValu-doPOCp9KG4bn",
+      "name": "role/AWSAccelerator-SecuritySt-CustomSsmGetParameterValu-doPOCp9KG4bn",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-24T17:31:09+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSCloudFormationStackSetAdministrationRole",
+      "name": "role/AWSCloudFormationStackSetAdministrationRole",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-24T17:46:08+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSCloudFormationStackSetExecutionRole",
+      "name": "role/AWSCloudFormationStackSetExecutionRole",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-24T17:46:08+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/service-role/AWSControlTowerAdmin",
+      "name": "role/service-role/AWSControlTowerAdmin",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-09-21T13:50:55+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/service-role/AWSControlTowerCloudTrailRole",
+      "name": "role/service-role/AWSControlTowerCloudTrailRole",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-09-21T13:50:55+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/service-role/AWSControlTowerConfigAggregatorRoleForOrganizations",
+      "name": "role/service-role/AWSControlTowerConfigAggregatorRoleForOrganizations",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-09-21T13:50:55+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/service-role/AWSControlTowerStackSetRole",
+      "name": "role/service-role/AWSControlTowerStackSetRole",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-09-21T13:50:55+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_c8f8dac15b611b32",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_c8f8dac15b611b32",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-01-24T17:53:26+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_caa2461ad4d008ca",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_caa2461ad4d008ca",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-01-24T18:08:45+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSAdministratorAccess_3a25560b67a7408a",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSAdministratorAccess_3a25560b67a7408a",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-09-21T13:52:46+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSPowerUserAccess_5b5c1ba26a9256dc",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSPowerUserAccess_5b5c1ba26a9256dc",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-09-21T13:52:48+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSReadOnlyAccess_28def67b89a87e69",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSReadOnlyAccess_28def67b89a87e69",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-09-21T13:52:48+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSServiceCatalogAdminFullAccess_8ae620c43672a59f",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSServiceCatalogAdminFullAccess_8ae620c43672a59f",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-09-21T13:52:47+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSServiceCatalogEndUserAccess_d8de02da871fe59a",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSServiceCatalogEndUserAccess_d8de02da871fe59a",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-09-21T13:52:47+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/AWSSecMonitorRole",
+      "name": "role/AWSSecMonitorRole",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-12-16T13:24:13+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/access-analyzer.amazonaws.com/AWSServiceRoleForAccessAnalyzer",
+      "name": "role/aws-service-role/access-analyzer.amazonaws.com/AWSServiceRoleForAccessAnalyzer",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-01-14T13:40:47+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/es.amazonaws.com/AWSServiceRoleForAmazonElasticsearchService",
+      "name": "role/aws-service-role/es.amazonaws.com/AWSServiceRoleForAmazonElasticsearchService",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-03-23T21:47:03+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDuty",
+      "name": "role/aws-service-role/guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDuty",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-12-11T22:44:38+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/malware-protection.guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDutyMalwareProtection",
+      "name": "role/aws-service-role/malware-protection.guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDutyMalwareProtection",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-23T18:57:53+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+      "name": "role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2019-12-03T17:41:21+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/accountdiscovery.ssm.amazonaws.com/AWSServiceRoleForAmazonSSM_AccountDiscovery",
+      "name": "role/aws-service-role/accountdiscovery.ssm.amazonaws.com/AWSServiceRoleForAmazonSSM_AccountDiscovery",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-06-12T19:09:16+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/stacksets.cloudformation.amazonaws.com/AWSServiceRoleForCloudFormationStackSetsOrgAdmin",
+      "name": "role/aws-service-role/stacksets.cloudformation.amazonaws.com/AWSServiceRoleForCloudFormationStackSetsOrgAdmin",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-02-18T14:32:14+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/cloudtrail.amazonaws.com/AWSServiceRoleForCloudTrail",
+      "name": "role/aws-service-role/cloudtrail.amazonaws.com/AWSServiceRoleForCloudTrail",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-03-19T20:12:50+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/codestar-notifications.amazonaws.com/AWSServiceRoleForCodeStarNotifications",
+      "name": "role/aws-service-role/codestar-notifications.amazonaws.com/AWSServiceRoleForCodeStarNotifications",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T17:59:03+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/compute-optimizer.amazonaws.com/AWSServiceRoleForComputeOptimizer",
+      "name": "role/aws-service-role/compute-optimizer.amazonaws.com/AWSServiceRoleForComputeOptimizer",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-06-12T19:08:08+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig",
+      "name": "role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-06-04T16:31:50+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/config-conforms.amazonaws.com/AWSServiceRoleForConfigConforms",
+      "name": "role/aws-service-role/config-conforms.amazonaws.com/AWSServiceRoleForConfigConforms",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-12-22T19:36:18+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/elasticloadbalancing.amazonaws.com/AWSServiceRoleForElasticLoadBalancing",
+      "name": "role/aws-service-role/elasticloadbalancing.amazonaws.com/AWSServiceRoleForElasticLoadBalancing",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-03-30T23:21:25+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/globalaccelerator.amazonaws.com/AWSServiceRoleForGlobalAccelerator",
+      "name": "role/aws-service-role/globalaccelerator.amazonaws.com/AWSServiceRoleForGlobalAccelerator",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-03-31T20:02:43+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/migrationhub.amazonaws.com/AWSServiceRoleForMigrationHub",
+      "name": "role/aws-service-role/migrationhub.amazonaws.com/AWSServiceRoleForMigrationHub",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-02-12T19:55:46+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/organizations.amazonaws.com/AWSServiceRoleForOrganizations",
+      "name": "role/aws-service-role/organizations.amazonaws.com/AWSServiceRoleForOrganizations",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2019-02-01T13:58:34+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/ram.amazonaws.com/AWSServiceRoleForResourceAccessManager",
+      "name": "role/aws-service-role/ram.amazonaws.com/AWSServiceRoleForResourceAccessManager",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-01-19T20:20:28+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/securityhub.amazonaws.com/AWSServiceRoleForSecurityHub",
+      "name": "role/aws-service-role/securityhub.amazonaws.com/AWSServiceRoleForSecurityHub",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-09-30T20:44:26+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/sso.amazonaws.com/AWSServiceRoleForSSO",
+      "name": "role/aws-service-role/sso.amazonaws.com/AWSServiceRoleForSSO",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-01-14T13:46:13+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
+      "name": "role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2019-02-01T13:03:11+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor",
+      "name": "role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2019-02-01T13:03:11+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/aws-service-role/reporting.trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisorReporting",
+      "name": "role/aws-service-role/reporting.trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisorReporting",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-09-21T14:38:07+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/ccoe-mais-dados-role",
+      "name": "role/ccoe-mais-dados-role",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2022-08-17T19:21:16+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/cdk-accel-cfn-exec-role-281949160503-sa-east-1",
+      "name": "role/cdk-accel-cfn-exec-role-281949160503-sa-east-1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T19:18:18+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/cdk-accel-cfn-exec-role-281949160503-us-east-1",
+      "name": "role/cdk-accel-cfn-exec-role-281949160503-us-east-1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T17:55:13+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/cdk-accel-deploy-role-281949160503-sa-east-1",
+      "name": "role/cdk-accel-deploy-role-281949160503-sa-east-1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T19:18:35+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/cdk-accel-deploy-role-281949160503-us-east-1",
+      "name": "role/cdk-accel-deploy-role-281949160503-us-east-1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T17:55:36+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/cdk-accel-file-publishing-role-281949160503-sa-east-1",
+      "name": "role/cdk-accel-file-publishing-role-281949160503-sa-east-1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T19:18:17+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/cdk-accel-file-publishing-role-281949160503-us-east-1",
+      "name": "role/cdk-accel-file-publishing-role-281949160503-us-east-1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T17:55:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/cdk-accel-image-publishing-role-281949160503-sa-east-1",
+      "name": "role/cdk-accel-image-publishing-role-281949160503-sa-east-1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T19:18:17+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/cdk-accel-image-publishing-role-281949160503-us-east-1",
+      "name": "role/cdk-accel-image-publishing-role-281949160503-us-east-1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T17:55:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/cdk-accel-lookup-role-281949160503-sa-east-1",
+      "name": "role/cdk-accel-lookup-role-281949160503-sa-east-1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T19:18:17+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/cdk-accel-lookup-role-281949160503-us-east-1",
+      "name": "role/cdk-accel-lookup-role-281949160503-us-east-1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T17:55:13+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/CloudTrail_CloudWatchLogs_Role_OrgTrail",
+      "name": "role/CloudTrail_CloudWatchLogs_Role_OrgTrail",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-03-19T20:15:41+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/service-role/CognitoAccessForAmazonES",
+      "name": "role/service-role/CognitoAccessForAmazonES",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-10-16T02:47:38+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/cur-cnj-AWSCURCrawlerComponentFunction-41MRFS2NZNWN",
+      "name": "role/cur-cnj-AWSCURCrawlerComponentFunction-41MRFS2NZNWN",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-03-29T22:47:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/cur-cnj-AWSCURCrawlerLambdaExecutor-TRPNPJAOTMN0",
+      "name": "role/cur-cnj-AWSCURCrawlerLambdaExecutor-TRPNPJAOTMN0",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-03-29T22:47:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/cur-cnj-AWSS3CURLambdaExecutor-ZP1P5GTGTSJM",
+      "name": "role/cur-cnj-AWSS3CURLambdaExecutor-ZP1P5GTGTSJM",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-03-29T22:47:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/embratel.1036514-1",
+      "name": "role/embratel.1036514-1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-12-22T15:24:41+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/embratel.1036514-1.rd",
+      "name": "role/embratel.1036514-1.rd",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-12-22T15:24:41+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/embratel.billing",
+      "name": "role/embratel.billing",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-12-13T16:56:36+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/embratel.billing.pmc",
+      "name": "role/embratel.billing.pmc",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2022-01-19T04:46:07+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/embratel.readonly.mgmt",
+      "name": "role/embratel.readonly.mgmt",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2022-02-07T17:58:11+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/embratel.restrito.root",
+      "name": "role/embratel.restrito.root",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-12-13T20:07:48+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/embratel.supportAWS",
+      "name": "role/embratel.supportAWS",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-02-25T21:38:43+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/es-gov-audit-access",
+      "name": "role/es-gov-audit-access",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-04-06T16:19:27+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/gov-me-es-Admin",
+      "name": "role/gov-me-es-Admin",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-03-31T22:34:56+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/gov-me-es-Cognito-Role",
+      "name": "role/gov-me-es-Cognito-Role",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-03-31T22:34:51+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/Gov-ME-ES-Ingest",
+      "name": "role/Gov-ME-ES-Ingest",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-03-31T03:01:21+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/service-role/gov-me-es-lb-healthcheck-role-vxj67zd4",
+      "name": "role/service-role/gov-me-es-lb-healthcheck-role-vxj67zd4",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-03-31T22:50:55+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/gov-me-es-Limited",
+      "name": "role/gov-me-es-Limited",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-03-31T22:34:56+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/LambdaPartitionerRole-cloudtrail_logs",
+      "name": "role/LambdaPartitionerRole-cloudtrail_logs",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-12-11T22:15:49+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/logs-operacao-lambda",
+      "name": "role/logs-operacao-lambda",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-10-15T21:40:50+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/observability-billing-s3-access",
+      "name": "role/observability-billing-s3-access",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-11-13T17:17:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/service-role/observabilty-set-account-alias-role-jsyoibo4",
+      "name": "role/service-role/observabilty-set-account-alias-role-jsyoibo4",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-10-28T21:42:31+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/service-role/operacaomulticloud-config-role",
+      "name": "role/service-role/operacaomulticloud-config-role",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-06-04T17:03:34+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/service-role/OpsItem-CWE-Role",
+      "name": "role/service-role/OpsItem-CWE-Role",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2020-06-12T19:06:24+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/service-role/print-event-test-role-hw4m2fx4",
+      "name": "role/service-role/print-event-test-role-hw4m2fx4",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-12-14T13:25:55+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/service-role/print-sns-logs-role-kfus92kb",
+      "name": "role/service-role/print-sns-logs-role-kfus92kb",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-12-14T13:59:13+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/SNSFailureFeedback",
+      "name": "role/SNSFailureFeedback",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-03-31T19:21:36+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/SNSSuccessFeedback",
+      "name": "role/SNSSuccessFeedback",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2021-03-31T19:21:36+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:role/spotinst-iam-stack-qccgj-SpotFinOpsRole-56O4ZYZSVM7P",
+      "name": "role/spotinst-iam-stack-qccgj-SpotFinOpsRole-56O4ZYZSVM7P",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2022-01-17T16:05:45+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:user/PMCServiceUser",
+      "name": "user/PMCServiceUser",
+      "subclass": "iam",
+      "item_type": "user",
+      "region": "global",
+      "creation_date": "2021-12-28T15:20:10+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:user/QRadarServiceUser",
+      "name": "user/QRadarServiceUser",
+      "subclass": "iam",
+      "item_type": "user",
+      "region": "global",
+      "creation_date": "2021-12-16T20:19:40+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/BillingFullAccess",
+      "name": "policy/BillingFullAccess",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2019-03-13T14:26:41+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/AWSAccelerator-PipelineStack-281949160503-us-east-1-PipelineValidateConfigPolicyDocument5A45073D-4bO5nE1PtX2U",
+      "name": "policy/AWSAccelerator-PipelineStack-281949160503-us-east-1-PipelineValidateConfigPolicyDocument5A45073D-4bO5nE1PtX2U",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2023-10-16T17:57:50+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/Acesso-Put-S3-Finops",
+      "name": "policy/Acesso-Put-S3-Finops",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2022-08-16T16:48:56+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/sts-all-roles",
+      "name": "policy/sts-all-roles",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2021-04-06T16:14:50+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/gov-me-es-putpolicy",
+      "name": "policy/gov-me-es-putpolicy",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2021-03-31T19:43:55+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/ccoe_glue_permission_createdatabase",
+      "name": "policy/ccoe_glue_permission_createdatabase",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2022-08-25T18:43:47+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/access-ventura-s3-readonly",
+      "name": "policy/access-ventura-s3-readonly",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2023-10-01T17:21:58+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/gov-me-es-lambda-stacks-LambdaExecutionPolicy-11DJED07L34FE",
+      "name": "policy/gov-me-es-lambda-stacks-LambdaExecutionPolicy-11DJED07L34FE",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2021-03-31T03:00:28+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/spotinst-iam-stack-qccgj-SpotFinOpsManagedPolicy-17FL7BQZ38S2Q",
+      "name": "policy/spotinst-iam-stack-qccgj-SpotFinOpsManagedPolicy-17FL7BQZ38S2Q",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2022-01-17T16:05:28+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/gov-me-es-lambda-stacks-DataIngestPolicy-YMWL23KD1WLT",
+      "name": "policy/gov-me-es-lambda-stacks-DataIngestPolicy-YMWL23KD1WLT",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2021-03-31T03:01:01+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/service-role/AWSLambdaBasicExecutionRole-833f6ebf-5fb1-4042-aaca-001b29d7c117",
+      "name": "policy/service-role/AWSLambdaBasicExecutionRole-833f6ebf-5fb1-4042-aaca-001b29d7c117",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2021-03-31T22:50:55+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/service-role/AWSControlTowerCloudTrailRolePolicy",
+      "name": "policy/service-role/AWSControlTowerCloudTrailRolePolicy",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2023-09-21T13:50:55+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/observability-billing-s3-access",
+      "name": "policy/observability-billing-s3-access",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2021-11-13T17:16:05+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/service-role/AWSLambdaVPCAccessExecutionRole-7009900b-48b7-4e03-9279-8d796aabe9e7",
+      "name": "policy/service-role/AWSLambdaVPCAccessExecutionRole-7009900b-48b7-4e03-9279-8d796aabe9e7",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2021-03-31T22:50:56+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/service-role/OpsItem-CWE-RolePolicy",
+      "name": "policy/service-role/OpsItem-CWE-RolePolicy",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2020-06-12T19:06:24+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/embratel.billing.pmc",
+      "name": "policy/embratel.billing.pmc",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2022-01-19T00:10:48+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/ccoebases-billing",
+      "name": "policy/ccoebases-billing",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2022-05-09T19:43:32+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/service-role/AWSControlTowerAdminPolicy",
+      "name": "policy/service-role/AWSControlTowerAdminPolicy",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2023-09-21T13:50:55+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/service-role/AWSControlTowerStackSetRolePolicy",
+      "name": "policy/service-role/AWSControlTowerStackSetRolePolicy",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2023-09-21T13:50:55+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/STS-ASsumeRole",
+      "name": "policy/STS-ASsumeRole",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2021-10-28T21:43:05+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/AmazonS3ReadOnlyAccess-Redshift",
+      "name": "policy/AmazonS3ReadOnlyAccess-Redshift",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2022-08-08T18:42:18+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/Cognito-User-PassRole-ES",
+      "name": "policy/Cognito-User-PassRole-ES",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2020-10-16T16:28:11+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/SMSReadOnly",
+      "name": "policy/SMSReadOnly",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2020-06-24T14:32:42+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/AssumeRole",
+      "name": "policy/AssumeRole",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2020-02-05T19:16:20+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/service-role/AWSLambdaBasicExecutionRole-b322251c-05e0-48b9-8f2e-367e07704fa8",
+      "name": "policy/service-role/AWSLambdaBasicExecutionRole-b322251c-05e0-48b9-8f2e-367e07704fa8",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2021-10-28T21:42:31+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/Access_Organizations_List_Describe",
+      "name": "policy/Access_Organizations_List_Describe",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2022-05-09T19:44:01+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/service-role/AWSLambdaBasicExecutionRole-3bb23702-efcc-47ec-aebd-b860f689a3b9",
+      "name": "policy/service-role/AWSLambdaBasicExecutionRole-3bb23702-efcc-47ec-aebd-b860f689a3b9",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2021-12-14T13:59:13+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/Embratel.Audit",
+      "name": "policy/Embratel.Audit",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2022-01-11T18:05:00+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/service-role/CloudTrailPolicyForCloudWatchLogs_b1532e21-85d4-4cc2-a4af-8c80386c5c08",
+      "name": "policy/service-role/CloudTrailPolicyForCloudWatchLogs_b1532e21-85d4-4cc2-a4af-8c80386c5c08",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2020-10-15T20:03:55+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/service-role/AWSLambdaBasicExecutionRole-c55f0cfb-9a26-4f23-acf4-d43b805520db",
+      "name": "policy/service-role/AWSLambdaBasicExecutionRole-c55f0cfb-9a26-4f23-acf4-d43b805520db",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2021-12-14T13:25:55+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::281949160503:policy/logs-operacao-lambda",
+      "name": "policy/logs-operacao-lambda",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2020-10-15T21:40:11+00:00"
+    }
+  ],
+  "cloudformation": [
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/nova-role-granular/366a63f0-a0de-11ee-861c-0adcae1c75ae",
+      "name": "stack/nova-role-granular/366a63f0-a0de-11ee-861c-0adcae1c75ae",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2023-12-22T15:24:35.207000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/AWSAccelerator-CustomizationsStack-281949160503-sa-east-1/cd442b90-73f6-11ee-9bb3-02adadcf4aae",
+      "name": "stack/AWSAccelerator-CustomizationsStack-281949160503-sa-east-1/cd442b90-73f6-11ee-9bb3-02adadcf4aae",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T11:57:14.035000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/AWSAccelerator-NetworkAssociationsStack-281949160503-sa-east-1/6ad24be0-73f6-11ee-89e9-0ae03ec87e18",
+      "name": "stack/AWSAccelerator-NetworkAssociationsStack-281949160503-sa-east-1/6ad24be0-73f6-11ee-89e9-0ae03ec87e18",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T11:54:28.859000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/AWSAccelerator-NetworkAssociationsGwlbStack-281949160503-sa-east-1/6ace2d30-73f6-11ee-823e-06b9c46d6024",
+      "name": "stack/AWSAccelerator-NetworkAssociationsGwlbStack-281949160503-sa-east-1/6ace2d30-73f6-11ee-823e-06b9c46d6024",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T11:54:28.846000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/AWSAccelerator-SecurityResourcesStack-281949160503-sa-east-1/760f73d0-73f5-11ee-bcbe-02cbe5b05e42",
+      "name": "stack/AWSAccelerator-SecurityResourcesStack-281949160503-sa-east-1/760f73d0-73f5-11ee-bcbe-02cbe5b05e42",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-26T11:47:38.312000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/AWSAccelerator-NetworkVpcDnsStack-281949160503-sa-east-1/fb9b0c00-7295-11ee-bbe2-02adadcf4aae",
+      "name": "stack/AWSAccelerator-NetworkVpcDnsStack-281949160503-sa-east-1/fb9b0c00-7295-11ee-bbe2-02adadcf4aae",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-24T17:51:39.430000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/AWSAccelerator-NetworkVpcEndpointsStack-281949160503-sa-east-1/f0e950a0-7295-11ee-812d-02cab38c472e",
+      "name": "stack/AWSAccelerator-NetworkVpcEndpointsStack-281949160503-sa-east-1/f0e950a0-7295-11ee-812d-02cab38c472e",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-24T17:51:21.469000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/AWSAccelerator-NetworkVpcStack-281949160503-sa-east-1/e65137c0-7295-11ee-9479-0a8ea02222fc",
+      "name": "stack/AWSAccelerator-NetworkVpcStack-281949160503-sa-east-1/e65137c0-7295-11ee-9479-0a8ea02222fc",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-24T17:51:03.710000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/AWSAccelerator-OperationsStack-281949160503-sa-east-1/19d45990-7293-11ee-aed3-02b5e2b65832",
+      "name": "stack/AWSAccelerator-OperationsStack-281949160503-sa-east-1/19d45990-7293-11ee-aed3-02b5e2b65832",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-24T17:31:01.719000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/AWSAccelerator-NetworkPrepStack-281949160503-sa-east-1/188c2220-7293-11ee-9b4d-06706a92321a",
+      "name": "stack/AWSAccelerator-NetworkPrepStack-281949160503-sa-east-1/188c2220-7293-11ee-9b4d-06706a92321a",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-24T17:30:59.518000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/AWSAccelerator-SecurityStack-281949160503-sa-east-1/16cf7e00-7293-11ee-a1da-064a89089136",
+      "name": "stack/AWSAccelerator-SecurityStack-281949160503-sa-east-1/16cf7e00-7293-11ee-a1da-064a89089136",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-24T17:30:56.600000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/AWSAccelerator-OrganizationsStack-281949160503-sa-east-1/6bc9da60-71c9-11ee-a90b-02773968439a",
+      "name": "stack/AWSAccelerator-OrganizationsStack-281949160503-sa-east-1/6bc9da60-71c9-11ee-a90b-02773968439a",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-23T17:27:20.908000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/AWSAccelerator-LoggingStack-281949160503-sa-east-1/62c29020-71c8-11ee-89b8-0a1646379b00",
+      "name": "stack/AWSAccelerator-LoggingStack-281949160503-sa-east-1/62c29020-71c8-11ee-89b8-0a1646379b00",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-23T17:19:56.263000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/AWSAccelerator-DependenciesStack-281949160503-sa-east-1/c9a3abe0-6c59-11ee-ac6d-06c0994113d2",
+      "name": "stack/AWSAccelerator-DependenciesStack-281949160503-sa-east-1/c9a3abe0-6c59-11ee-ac6d-06c0994113d2",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-16T19:25:38.785000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/AWSAccelerator-KeyStack-281949160503-sa-east-1/c9a29a70-6c59-11ee-aa11-0675ef4f9586",
+      "name": "stack/AWSAccelerator-KeyStack-281949160503-sa-east-1/c9a29a70-6c59-11ee-aa11-0675ef4f9586",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-16T19:25:38.761000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/AWSAccelerator-CDKToolkit/bc6a0290-6c58-11ee-aafe-0ab3350e8228",
+      "name": "stack/AWSAccelerator-CDKToolkit/bc6a0290-6c58-11ee-aafe-0ab3350e8228",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2023-10-16T19:18:07.095000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/role-embratel-readonly-mgmt/80a9eda0-883f-11ec-9d7d-02c8ee8dc1c2",
+      "name": "stack/role-embratel-readonly-mgmt/80a9eda0-883f-11ec-9d7d-02c8ee8dc1c2",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2022-02-07T17:58:06.588000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/awsconfigconforms-Security-conformance-pack-l7v0nht7y/795063f0-635e-11ec-abe0-06b7c1499248",
+      "name": "stack/awsconfigconforms-Security-conformance-pack-l7v0nht7y/795063f0-635e-11ec-abe0-06b7c1499248",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2021-12-22T19:36:35.679000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/SecurityMonitorRole/729bb5e0-5e73-11ec-bea8-06b40b194768",
+      "name": "stack/SecurityMonitorRole/729bb5e0-5e73-11ec-bea8-06b40b194768",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2021-12-16T13:24:07.974000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/security-hub-notify/de86a600-5d17-11ec-bbc9-0a1d24141cac",
+      "name": "stack/security-hub-notify/de86a600-5d17-11ec-bbc9-0a1d24141cac",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2021-12-14T19:56:04.124000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/sso-role/97947d00-5bb2-11ec-8aa6-028eae469e90",
+      "name": "stack/sso-role/97947d00-5bb2-11ec-8aa6-028eae469e90",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2021-12-13T01:18:34.826000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/athena-cloudtrail-partitioner/c9e76d00-5acf-11ec-87a9-06bf3cddaae4",
+      "name": "stack/athena-cloudtrail-partitioner/c9e76d00-5acf-11ec-87a9-06bf3cddaae4",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2021-12-11T22:15:03.588000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/gov-me-es-lambda-stacks/39599ef0-91cd-11eb-bf1a-0a173f891baa",
+      "name": "stack/gov-me-es-lambda-stacks/39599ef0-91cd-11eb-bf1a-0a173f891baa",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2021-03-31T03:00:18.517000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/cur-cnj/b06fc0c0-90e0-11eb-bfad-0a0854be6fe0",
+      "name": "stack/cur-cnj/b06fc0c0-90e0-11eb-bfad-0a0854be6fe0",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2021-03-29T22:47:07.438000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/CloudWatchAlarmsForCloudTrail/d52a0fa0-834f-11ea-8201-0a4705104254",
+      "name": "stack/CloudWatchAlarmsForCloudTrail/d52a0fa0-834f-11ea-8201-0a4705104254",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2020-04-20T21:42:29.847000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:sa-east-1:281949160503:stack/AWSCloudFormationStackSetAdministrationRole/b14d7120-36e3-11ea-b641-0aa5a7b99f88",
+      "name": "stack/AWSCloudFormationStackSetAdministrationRole/b14d7120-36e3-11ea-b641-0aa5a7b99f88",
+      "subclass": "cloudformation",
+      "region": "sa-east-1",
+      "creation_date": "2020-01-14T15:36:55.515000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/EmbratelSupportRole/dd615c20-f9ef-11ef-846e-0affcca2c7a1",
+      "name": "stack/EmbratelSupportRole/dd615c20-f9ef-11ef-846e-0affcca2c7a1",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2025-03-05T18:30:07.883000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/role-embratel-supportAWS/e04b0ce0-f3c0-11ef-9af8-0affd196613d",
+      "name": "stack/role-embratel-supportAWS/e04b0ce0-f3c0-11ef-9af8-0affd196613d",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2025-02-25T21:38:39.508000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-FinalizeStack-281949160503-us-east-1/286a3730-73f7-11ee-87b0-0efb6d7a5beb",
+      "name": "stack/AWSAccelerator-FinalizeStack-281949160503-us-east-1/286a3730-73f7-11ee-87b0-0efb6d7a5beb",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T11:59:46.976000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-CustomizationsStack-281949160503-us-east-1/ca480290-73f6-11ee-a268-0a64531e9e3d",
+      "name": "stack/AWSAccelerator-CustomizationsStack-281949160503-us-east-1/ca480290-73f6-11ee-a268-0a64531e9e3d",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T11:57:08.997000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-NetworkAssociationsGwlbStack-281949160503-us-east-1/67f829d0-73f6-11ee-a4ff-12818ea7b59f",
+      "name": "stack/AWSAccelerator-NetworkAssociationsGwlbStack-281949160503-us-east-1/67f829d0-73f6-11ee-a4ff-12818ea7b59f",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T11:54:24.097000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-NetworkAssociationsStack-281949160503-us-east-1/67e95cc0-73f6-11ee-9b7b-0e68b550c1ff",
+      "name": "stack/AWSAccelerator-NetworkAssociationsStack-281949160503-us-east-1/67e95cc0-73f6-11ee-9b7b-0e68b550c1ff",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T11:54:23.972000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-SecurityResourcesStack-281949160503-us-east-1/747b1830-73f5-11ee-beea-0a5ced7f1535",
+      "name": "stack/AWSAccelerator-SecurityResourcesStack-281949160503-us-east-1/747b1830-73f5-11ee-beea-0a5ced7f1535",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-26T11:47:35.705000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-NetworkVpcDnsStack-281949160503-us-east-1/f1644d00-7295-11ee-8211-12a4c36490c5",
+      "name": "stack/AWSAccelerator-NetworkVpcDnsStack-281949160503-us-east-1/f1644d00-7295-11ee-8211-12a4c36490c5",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-24T17:51:22.280000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-NetworkVpcEndpointsStack-281949160503-us-east-1/ea930020-7295-11ee-8785-0a1075860b63",
+      "name": "stack/AWSAccelerator-NetworkVpcEndpointsStack-281949160503-us-east-1/ea930020-7295-11ee-8785-0a1075860b63",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-24T17:51:10.834000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-NetworkVpcStack-281949160503-us-east-1/e350f010-7295-11ee-a89c-12b5e40b316f",
+      "name": "stack/AWSAccelerator-NetworkVpcStack-281949160503-us-east-1/e350f010-7295-11ee-a89c-12b5e40b316f",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-24T17:50:58.707000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-OperationsStack-281949160503-us-east-1/3004ab50-7295-11ee-b818-0ec11d87e8a5",
+      "name": "stack/AWSAccelerator-OperationsStack-281949160503-us-east-1/3004ab50-7295-11ee-b818-0ec11d87e8a5",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-24T17:45:57.895000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-NetworkPrepStack-281949160503-us-east-1/15aa8600-7293-11ee-8bbf-125b69b25e3b",
+      "name": "stack/AWSAccelerator-NetworkPrepStack-281949160503-us-east-1/15aa8600-7293-11ee-8bbf-125b69b25e3b",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-24T17:30:54.643000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-SecurityStack-281949160503-us-east-1/13715ee0-7293-11ee-9caa-0aa9c1ec9da1",
+      "name": "stack/AWSAccelerator-SecurityStack-281949160503-us-east-1/13715ee0-7293-11ee-9caa-0aa9c1ec9da1",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-24T17:30:50.970000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-OrganizationsStack-281949160503-us-east-1/67ba93b0-71c9-11ee-a80a-0a46d441a571",
+      "name": "stack/AWSAccelerator-OrganizationsStack-281949160503-us-east-1/67ba93b0-71c9-11ee-a80a-0a46d441a571",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-23T17:27:14.153000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-LoggingStack-281949160503-us-east-1/8a571d20-6c5c-11ee-8146-0ec47525f6fb",
+      "name": "stack/AWSAccelerator-LoggingStack-281949160503-us-east-1/8a571d20-6c5c-11ee-8146-0ec47525f6fb",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-16T19:45:21.362000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-DependenciesStack-281949160503-us-east-1/c6c9b0e0-6c59-11ee-8af6-1241ff97aef7",
+      "name": "stack/AWSAccelerator-DependenciesStack-281949160503-us-east-1/c6c9b0e0-6c59-11ee-8af6-1241ff97aef7",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-16T19:25:33.994000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-KeyStack-281949160503-us-east-1/c6c989d0-6c59-11ee-8a0d-0a4c0e410663",
+      "name": "stack/AWSAccelerator-KeyStack-281949160503-us-east-1/c6c989d0-6c59-11ee-8a0d-0a4c0e410663",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-16T19:25:33.963000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-AccountsStack-281949160503-us-east-1/e7049040-6c55-11ee-a7cc-0e9ca32294df",
+      "name": "stack/AWSAccelerator-AccountsStack-281949160503-us-east-1/e7049040-6c55-11ee-a7cc-0e9ca32294df",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-16T18:57:50.267000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-PrepareStack-281949160503-us-east-1/64287610-6c54-11ee-ad5e-0eae682eefed",
+      "name": "stack/AWSAccelerator-PrepareStack-281949160503-us-east-1/64287610-6c54-11ee-ad5e-0eae682eefed",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-16T18:47:01.248000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-PipelineStack-281949160503-us-east-1/779e51d0-6c4d-11ee-a9bf-0e91a378eda1",
+      "name": "stack/AWSAccelerator-PipelineStack-281949160503-us-east-1/779e51d0-6c4d-11ee-a9bf-0e91a378eda1",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-16T17:57:27.410000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-CDKToolkit/1fc52740-6c4d-11ee-9ece-1274a45c23e9",
+      "name": "stack/AWSAccelerator-CDKToolkit/1fc52740-6c4d-11ee-9ece-1274a45c23e9",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-16T17:54:59.949000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSAccelerator-InstallerStack/db9583e0-6c4b-11ee-876c-0afc5dbf04b1",
+      "name": "stack/AWSAccelerator-InstallerStack/db9583e0-6c4b-11ee-876c-0afc5dbf04b1",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-16T17:45:55.975000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/acesso-ventura/43c0f910-607e-11ee-b4af-12b94e1c70c5",
+      "name": "stack/acesso-ventura/43c0f910-607e-11ee-b4af-12b94e1c70c5",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-10-01T17:16:31.515000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSControlTowerBP-BASELINE-CLOUDTRAIL-MASTER/7ec6c560-5d65-11ee-9eca-0a3ca5396a5d",
+      "name": "stack/AWSControlTowerBP-BASELINE-CLOUDTRAIL-MASTER/7ec6c560-5d65-11ee-9eca-0a3ca5396a5d",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-09-27T18:41:39.653000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/AWSControlTowerBP-BASELINE-CONFIG-MASTER/e6017060-5886-11ee-a3d1-12270174a293",
+      "name": "stack/AWSControlTowerBP-BASELINE-CONFIG-MASTER/e6017060-5886-11ee-a3d1-12270174a293",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2023-09-21T13:58:10.416000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/spotinst-iam-stack-qccgj-/46594380-77af-11ec-86ce-0ada36f1a3c7",
+      "name": "stack/spotinst-iam-stack-qccgj-/46594380-77af-11ec-86ce-0ada36f1a3c7",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2022-01-17T16:05:22.639000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/gov-me-es-roles/490d4be0-9271-11eb-a6bf-0e9822115cf7",
+      "name": "stack/gov-me-es-roles/490d4be0-9271-11eb-a6bf-0e9822115cf7",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2021-03-31T22:34:42.020000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/gov-me-es-lambda-roles/3d187720-918a-11eb-baf5-1298984999a5",
+      "name": "stack/gov-me-es-lambda-roles/3d187720-918a-11eb-baf5-1298984999a5",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2021-03-30T19:00:48.185000+00:00"
+    },
+    {
+      "arn": "arn:aws:cloudformation:us-east-1:281949160503:stack/athena-config-glue-db/6160f751-bca2-11ea-b93c-0a60596032c9",
+      "name": "stack/athena-config-glue-db/6160f751-bca2-11ea-b93c-0a60596032c9",
+      "subclass": "cloudformation",
+      "region": "us-east-1",
+      "creation_date": "2020-07-02T20:26:59.476000+00:00"
+    }
+  ],
+  "alb": [
+    {
+      "arn": "arn:aws:elasticloadbalancing:sa-east-1:281949160503:loadbalancer/app/es-gov-me-loadbalancer/e6a7b2190e1fcf44",
+      "name": "loadbalancer/app/es-gov-me-loadbalancer/e6a7b2190e1fcf44",
+      "subclass": "elasticloadbalancing",
+      "region": "sa-east-1",
+      "endpoint": "es-gov-me-loadbalancer-2066316623.sa-east-1.elb.amazonaws.com",
+      "scheme": "internet-facing",
+      "creation_date": "2021-03-30T23:21:25.100000+00:00"
+    }
+  ],
+  "classic_elb": [
+    {
+      "arn": "arn:aws:elasticloadbalancing:sa-east-1:281949160503:loadbalancer/13a0cf2f-b950-4214-b500-ced52d9",
+      "name": "loadbalancer/13a0cf2f-b950-4214-b500-ced52d9",
+      "subclass": "elasticloadbalancing",
+      "region": "sa-east-1",
+      "endpoint": "internal-13a0cf2f-b950-4214-b500-ced52d9-1118323614.sa-east-1.elb.amazonaws.com",
+      "scheme": "internal",
+      "creation_date": "2021-08-12T18:41:29.050000+00:00"
+    }
+  ],
+  "ecr": [
+    {
+      "arn": "arn:aws:ecr:sa-east-1:281949160503:repository/cdk-accel-container-assets-281949160503-sa-east-1",
+      "name": "repository/cdk-accel-container-assets-281949160503-sa-east-1",
+      "subclass": "ecr",
+      "region": "sa-east-1",
+      "repo_name": "cdk-accel-container-assets-281949160503-sa-east-1",
+      "uri": "281949160503.dkr.ecr.sa-east-1.amazonaws.com/cdk-accel-container-assets-281949160503-sa-east-1",
+      "image_count": "Not_Fetched",
+      "creation_date": "2023-10-16T16:18:18.395000-03:00"
+    },
+    {
+      "arn": "arn:aws:ecr:us-east-1:281949160503:repository/cdk-accel-container-assets-281949160503-us-east-1",
+      "name": "repository/cdk-accel-container-assets-281949160503-us-east-1",
+      "subclass": "ecr",
+      "region": "us-east-1",
+      "repo_name": "cdk-accel-container-assets-281949160503-us-east-1",
+      "uri": "281949160503.dkr.ecr.us-east-1.amazonaws.com/cdk-accel-container-assets-281949160503-us-east-1",
+      "image_count": "Not_Fetched",
+      "creation_date": "2023-10-16T14:55:11.533000-03:00"
+    }
+  ]
+}

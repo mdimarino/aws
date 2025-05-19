@@ -1,0 +1,986 @@
+{
+  "us-east-1": {
+    "s3": [
+      {
+        "arn": "arn:aws:s3:::381785467984-us-east-1-terraform-remote-state",
+        "name": "381785467984-us-east-1-terraform-remote-state",
+        "subclass": "s3",
+        "region": "us-east-1",
+        "endpoint": "https://381785467984-us-east-1-terraform-remote-state.s3.us-east-1.amazonaws.com",
+        "account": "381785467984",
+        "creation_date": "2025-02-12T13:11:01+00:00"
+      }
+    ],
+    "lambda": [
+      {
+        "arn": "arn:aws:lambda:us-east-1:381785467984:function:aws-controltower-NotificationForwarder",
+        "name": "function:aws-controltower-NotificationForwarder",
+        "subclass": "lambda",
+        "region": "us-east-1",
+        "creation_date": "2023-12-28T20:41:26.832+0000"
+      },
+      {
+        "arn": "arn:aws:lambda:us-east-1:381785467984:function:Root-monitor-RootActivityLambda-eplAgXsXtssc",
+        "name": "function:Root-monitor-RootActivityLambda-eplAgXsXtssc",
+        "subclass": "lambda",
+        "region": "us-east-1",
+        "creation_date": "2024-06-25T19:20:20.870+0000"
+      }
+    ],
+    "sns": [
+      {
+        "arn": "arn:aws:sns:us-east-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "us-east-1",
+        "creation_date": "Unknown"
+      },
+      {
+        "arn": "arn:aws:sns:us-east-1:381785467984:IAMChangesTopic",
+        "name": "IAMChangesTopic",
+        "subclass": "sns",
+        "region": "us-east-1",
+        "creation_date": "Unknown"
+      },
+      {
+        "arn": "arn:aws:sns:us-east-1:381785467984:Monitoring-User-Root-Security",
+        "name": "Monitoring-User-Root-Security",
+        "subclass": "sns",
+        "region": "us-east-1",
+        "creation_date": "Unknown"
+      },
+      {
+        "arn": "arn:aws:sns:us-east-1:381785467984:aws-controltower-SecurityNotifications",
+        "name": "aws-controltower-SecurityNotifications",
+        "subclass": "sns",
+        "region": "us-east-1",
+        "creation_date": "Unknown"
+      }
+    ],
+    "cloudformation": [
+      {
+        "arn": "arn:aws:cloudformation:us-east-1:381785467984:stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-e1b685ed-6943-464f-b523-593eefb4a5e9/e9025430-b72d-11ef-9bff-0e6a9d97788b",
+        "name": "stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-e1b685ed-6943-464f-b523-593eefb4a5e9/e9025430-b72d-11ef-9bff-0e6a9d97788b",
+        "subclass": "cloudformation",
+        "region": "us-east-1",
+        "creation_date": "2024-12-10T19:35:28.325000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:us-east-1:381785467984:stack/iam-change/f7b91020-491b-11ef-90c9-0affc983b91d",
+        "name": "stack/iam-change/f7b91020-491b-11ef-90c9-0affc983b91d",
+        "subclass": "cloudformation",
+        "region": "us-east-1",
+        "creation_date": "2024-07-23T17:49:54.276000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:us-east-1:381785467984:stack/Root-monitor/b6e189b0-3327-11ef-b9da-127c9997fa99",
+        "name": "stack/Root-monitor/b6e189b0-3327-11ef-b9da-127c9997fa99",
+        "subclass": "cloudformation",
+        "region": "us-east-1",
+        "creation_date": "2024-06-25T19:18:33.836000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:us-east-1:381785467984:stack/StackSet-embratel-sec-rd-atualizacao-78934092-c30e-404d-b962-82a7e3774953/6972a4e0-b6de-11ee-aa94-0a02274312e1",
+        "name": "stack/StackSet-embratel-sec-rd-atualizacao-78934092-c30e-404d-b962-82a7e3774953/6972a4e0-b6de-11ee-aa94-0a02274312e1",
+        "subclass": "cloudformation",
+        "region": "us-east-1",
+        "creation_date": "2024-01-19T15:21:26.419000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:us-east-1:381785467984:stack/StackSet-AWSControlTowerBP-BASELINE-CONFIG-25e65d73-74d4-4c25-a8d4-441e7af9fe64/713b0ab0-a5c1-11ee-9f85-12082d0753f9",
+        "name": "stack/StackSet-AWSControlTowerBP-BASELINE-CONFIG-25e65d73-74d4-4c25-a8d4-441e7af9fe64/713b0ab0-a5c1-11ee-9f85-12082d0753f9",
+        "subclass": "cloudformation",
+        "region": "us-east-1",
+        "creation_date": "2023-12-28T20:41:14.325000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:us-east-1:381785467984:stack/StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-c9c913e9-9d53-4ef6-9d6d-e0fe761ae22a/71398410-a5c1-11ee-8101-0a8648e25ce5",
+        "name": "stack/StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-c9c913e9-9d53-4ef6-9d6d-e0fe761ae22a/71398410-a5c1-11ee-8101-0a8648e25ce5",
+        "subclass": "cloudformation",
+        "region": "us-east-1",
+        "creation_date": "2023-12-28T20:41:14.311000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:us-east-1:381785467984:stack/StackSet-AWSControlTowerBP-BASELINE-SERVICE-ROLES-c483792c-a91c-4b2c-b2b2-c6e6a3e6afa9/3a14fff0-a5c1-11ee-b0c7-0e84c7a02837",
+        "name": "stack/StackSet-AWSControlTowerBP-BASELINE-SERVICE-ROLES-c483792c-a91c-4b2c-b2b2-c6e6a3e6afa9/3a14fff0-a5c1-11ee-b0c7-0e84c7a02837",
+        "subclass": "cloudformation",
+        "region": "us-east-1",
+        "creation_date": "2023-12-28T20:39:41.780000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:us-east-1:381785467984:stack/StackSet-AWSControlTowerBP-BASELINE-SERVICE-LINKED-ROLE-9d9ae4c2-b8d1-4db4-89ee-26864298756f/39e64ed0-a5c1-11ee-8d1a-125b69b25e3b",
+        "name": "stack/StackSet-AWSControlTowerBP-BASELINE-SERVICE-LINKED-ROLE-9d9ae4c2-b8d1-4db4-89ee-26864298756f/39e64ed0-a5c1-11ee-8d1a-125b69b25e3b",
+        "subclass": "cloudformation",
+        "region": "us-east-1",
+        "creation_date": "2023-12-28T20:39:41.465000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:us-east-1:381785467984:stack/StackSet-AWSControlTowerBP-BASELINE-ROLES-da61d93c-443d-4a95-a62e-be49bc914ff0/39c5f590-a5c1-11ee-8b13-1271e2efcc1d",
+        "name": "stack/StackSet-AWSControlTowerBP-BASELINE-ROLES-da61d93c-443d-4a95-a62e-be49bc914ff0/39c5f590-a5c1-11ee-8b13-1271e2efcc1d",
+        "subclass": "cloudformation",
+        "region": "us-east-1",
+        "creation_date": "2023-12-28T20:39:41.335000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:us-east-1:381785467984:stack/StackSet-AWSControlTowerGuardHook-2019798c-46da-4eb4-8b7a-150a6d437677/ddf6c5b0-a420-11ee-97b4-0e09de19fee1",
+        "name": "stack/StackSet-AWSControlTowerGuardHook-2019798c-46da-4eb4-8b7a-150a6d437677/ddf6c5b0-a420-11ee-97b4-0e09de19fee1",
+        "subclass": "cloudformation",
+        "region": "us-east-1",
+        "creation_date": "2023-12-26T18:59:16.630000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:us-east-1:381785467984:stack/CloudConformity/b5b77150-527a-11ee-ae8e-0e4c6e567c89",
+        "name": "stack/CloudConformity/b5b77150-527a-11ee-ae8e-0e4c6e567c89",
+        "subclass": "cloudformation",
+        "region": "us-east-1",
+        "creation_date": "2023-09-13T21:15:48.767000+00:00"
+      }
+    ]
+  },
+  "sa-east-1": {
+    "lambda": [
+      {
+        "arn": "arn:aws:lambda:sa-east-1:381785467984:function:aws-controltower-NotificationForwarder",
+        "name": "function:aws-controltower-NotificationForwarder",
+        "subclass": "lambda",
+        "region": "sa-east-1",
+        "creation_date": "2023-12-28T20:41:30.428+0000"
+      }
+    ],
+    "sns": [
+      {
+        "arn": "arn:aws:sns:sa-east-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "sa-east-1",
+        "creation_date": "Unknown"
+      },
+      {
+        "arn": "arn:aws:sns:sa-east-1:381785467984:aws-controltower-SecurityNotifications",
+        "name": "aws-controltower-SecurityNotifications",
+        "subclass": "sns",
+        "region": "sa-east-1",
+        "creation_date": "Unknown"
+      }
+    ],
+    "cloudformation": [
+      {
+        "arn": "arn:aws:cloudformation:sa-east-1:381785467984:stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-15d5455c-dde5-4d93-8e98-b8f972f9b955/e854af10-b72d-11ef-b8ba-062db650dcd7",
+        "name": "stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-15d5455c-dde5-4d93-8e98-b8f972f9b955/e854af10-b72d-11ef-b8ba-062db650dcd7",
+        "subclass": "cloudformation",
+        "region": "sa-east-1",
+        "creation_date": "2024-12-10T19:35:27.192000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:sa-east-1:381785467984:stack/StackSet-AWSControlTowerBP-BASELINE-CONFIG-333faadc-8319-4ad4-8eaf-75907ea02fd3/73b35db0-a5c1-11ee-a5b6-02888f58ec5a",
+        "name": "stack/StackSet-AWSControlTowerBP-BASELINE-CONFIG-333faadc-8319-4ad4-8eaf-75907ea02fd3/73b35db0-a5c1-11ee-a5b6-02888f58ec5a",
+        "subclass": "cloudformation",
+        "region": "sa-east-1",
+        "creation_date": "2023-12-28T20:41:18.425000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:sa-east-1:381785467984:stack/StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-60a4a406-244b-451c-a9c7-4cab787fd78a/71d74ab0-a5c1-11ee-ab2c-02906cd08242",
+        "name": "stack/StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-60a4a406-244b-451c-a9c7-4cab787fd78a/71d74ab0-a5c1-11ee-ab2c-02906cd08242",
+        "subclass": "cloudformation",
+        "region": "sa-east-1",
+        "creation_date": "2023-12-28T20:41:15.330000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:sa-east-1:381785467984:stack/StackSet-AWSControlTowerGuardHook-f2045375-65de-49b0-a7d0-5004933438c6/dedc43b0-a420-11ee-aa79-0629e95ea626",
+        "name": "stack/StackSet-AWSControlTowerGuardHook-f2045375-65de-49b0-a7d0-5004933438c6/dedc43b0-a420-11ee-aa79-0629e95ea626",
+        "subclass": "cloudformation",
+        "region": "sa-east-1",
+        "creation_date": "2023-12-26T18:59:18.094000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:sa-east-1:381785467984:stack/StackSet-SecurityMonitorRole-ae7f7ac8-9f8f-4254-bf3f-ddd148136a09/ea641310-5237-11ee-8554-06322f2db64e",
+        "name": "stack/StackSet-SecurityMonitorRole-ae7f7ac8-9f8f-4254-bf3f-ddd148136a09/ea641310-5237-11ee-8554-06322f2db64e",
+        "subclass": "cloudformation",
+        "region": "sa-east-1",
+        "creation_date": "2023-09-13T13:17:40.537000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:sa-east-1:381785467984:stack/StackSet-embratel-sso-role-75e8f686-d0d9-4027-9731-11132cad0435/e9b9f060-5237-11ee-a6a9-0ab1f25285d8",
+        "name": "stack/StackSet-embratel-sso-role-75e8f686-d0d9-4027-9731-11132cad0435/e9b9f060-5237-11ee-a6a9-0ab1f25285d8",
+        "subclass": "cloudformation",
+        "region": "sa-east-1",
+        "creation_date": "2023-09-13T13:17:39.397000+00:00"
+      }
+    ]
+  },
+  "ca-central-1": {
+    "lambda": [
+      {
+        "arn": "arn:aws:lambda:ca-central-1:381785467984:function:aws-controltower-NotificationForwarder",
+        "name": "function:aws-controltower-NotificationForwarder",
+        "subclass": "lambda",
+        "region": "ca-central-1",
+        "creation_date": "2023-12-28T20:41:27.077+0000"
+      }
+    ],
+    "sns": [
+      {
+        "arn": "arn:aws:sns:ca-central-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "ca-central-1",
+        "creation_date": "Unknown"
+      },
+      {
+        "arn": "arn:aws:sns:ca-central-1:381785467984:aws-controltower-SecurityNotifications",
+        "name": "aws-controltower-SecurityNotifications",
+        "subclass": "sns",
+        "region": "ca-central-1",
+        "creation_date": "Unknown"
+      }
+    ],
+    "cloudformation": [
+      {
+        "arn": "arn:aws:cloudformation:ca-central-1:381785467984:stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-3dfbd149-8d12-4347-a1c8-958356bf2200/e844f7a0-b72d-11ef-b8f3-0636157b3257",
+        "name": "stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-3dfbd149-8d12-4347-a1c8-958356bf2200/e844f7a0-b72d-11ef-b8f3-0636157b3257",
+        "subclass": "cloudformation",
+        "region": "ca-central-1",
+        "creation_date": "2024-12-10T19:35:27.068000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:ca-central-1:381785467984:stack/StackSet-AWSControlTowerBP-BASELINE-CONFIG-507ac782-5b83-4d9f-87ad-0dfd40195f0c/7181d7b0-a5c1-11ee-b446-0a207786558c",
+        "name": "stack/StackSet-AWSControlTowerBP-BASELINE-CONFIG-507ac782-5b83-4d9f-87ad-0dfd40195f0c/7181d7b0-a5c1-11ee-b446-0a207786558c",
+        "subclass": "cloudformation",
+        "region": "ca-central-1",
+        "creation_date": "2023-12-28T20:41:14.789000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:ca-central-1:381785467984:stack/StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-7936073a-896e-4b9b-b8b9-07efd1c0a245/716798f0-a5c1-11ee-9642-0e68163dae44",
+        "name": "stack/StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-7936073a-896e-4b9b-b8b9-07efd1c0a245/716798f0-a5c1-11ee-9642-0e68163dae44",
+        "subclass": "cloudformation",
+        "region": "ca-central-1",
+        "creation_date": "2023-12-28T20:41:14.590000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:ca-central-1:381785467984:stack/StackSet-AWSControlTowerGuardHook-a2d43e6b-fb8c-4f49-871e-467ee5a51493/de14d500-a420-11ee-9d24-06b065d2e410",
+        "name": "stack/StackSet-AWSControlTowerGuardHook-a2d43e6b-fb8c-4f49-871e-467ee5a51493/de14d500-a420-11ee-9d24-06b065d2e410",
+        "subclass": "cloudformation",
+        "region": "ca-central-1",
+        "creation_date": "2023-12-26T18:59:16.827000+00:00"
+      }
+    ]
+  },
+  "us-east-2": {
+    "lambda": [
+      {
+        "arn": "arn:aws:lambda:us-east-2:381785467984:function:aws-controltower-NotificationForwarder",
+        "name": "function:aws-controltower-NotificationForwarder",
+        "subclass": "lambda",
+        "region": "us-east-2",
+        "creation_date": "2023-12-28T20:41:27.634+0000"
+      }
+    ],
+    "sns": [
+      {
+        "arn": "arn:aws:sns:us-east-2:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "us-east-2",
+        "creation_date": "Unknown"
+      },
+      {
+        "arn": "arn:aws:sns:us-east-2:381785467984:aws-controltower-SecurityNotifications",
+        "name": "aws-controltower-SecurityNotifications",
+        "subclass": "sns",
+        "region": "us-east-2",
+        "creation_date": "Unknown"
+      }
+    ],
+    "cloudformation": [
+      {
+        "arn": "arn:aws:cloudformation:us-east-2:381785467984:stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-5da3fe56-b7e1-4b31-b86c-0fc1be815563/e933eb80-b72d-11ef-985c-02a043003133",
+        "name": "stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-5da3fe56-b7e1-4b31-b86c-0fc1be815563/e933eb80-b72d-11ef-985c-02a043003133",
+        "subclass": "cloudformation",
+        "region": "us-east-2",
+        "creation_date": "2024-12-10T19:35:28.644000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:us-east-2:381785467984:stack/StackSet-AWSControlTowerBP-BASELINE-CONFIG-1afbe916-2570-4e05-b8bd-573ae300b3cb/71648bb0-a5c1-11ee-b653-06e465e99fdb",
+        "name": "stack/StackSet-AWSControlTowerBP-BASELINE-CONFIG-1afbe916-2570-4e05-b8bd-573ae300b3cb/71648bb0-a5c1-11ee-b653-06e465e99fdb",
+        "subclass": "cloudformation",
+        "region": "us-east-2",
+        "creation_date": "2023-12-28T20:41:14.595000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:us-east-2:381785467984:stack/StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-110f87fb-a3ff-46eb-beba-17fb63c33bb5/71493b80-a5c1-11ee-856d-066126b73535",
+        "name": "stack/StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-110f87fb-a3ff-46eb-beba-17fb63c33bb5/71493b80-a5c1-11ee-856d-066126b73535",
+        "subclass": "cloudformation",
+        "region": "us-east-2",
+        "creation_date": "2023-12-28T20:41:14.420000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:us-east-2:381785467984:stack/StackSet-AWSControlTowerGuardHook-dabcbd88-2253-4b49-8e71-8fd8b6b70b33/de673ac0-a420-11ee-b42d-069638ab717d",
+        "name": "stack/StackSet-AWSControlTowerGuardHook-dabcbd88-2253-4b49-8e71-8fd8b6b70b33/de673ac0-a420-11ee-b42d-069638ab717d",
+        "subclass": "cloudformation",
+        "region": "us-east-2",
+        "creation_date": "2023-12-26T18:59:17.346000+00:00"
+      }
+    ]
+  },
+  "us-west-2": {
+    "lambda": [
+      {
+        "arn": "arn:aws:lambda:us-west-2:381785467984:function:aws-controltower-NotificationForwarder",
+        "name": "function:aws-controltower-NotificationForwarder",
+        "subclass": "lambda",
+        "region": "us-west-2",
+        "creation_date": "2023-12-28T20:41:29.496+0000"
+      }
+    ],
+    "sns": [
+      {
+        "arn": "arn:aws:sns:us-west-2:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "us-west-2",
+        "creation_date": "Unknown"
+      },
+      {
+        "arn": "arn:aws:sns:us-west-2:381785467984:aws-controltower-SecurityNotifications",
+        "name": "aws-controltower-SecurityNotifications",
+        "subclass": "sns",
+        "region": "us-west-2",
+        "creation_date": "Unknown"
+      }
+    ],
+    "cloudformation": [
+      {
+        "arn": "arn:aws:cloudformation:us-west-2:381785467984:stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-0f770de8-31b4-49c7-882d-b2d0f0cf4c28/e9b5ecc0-b72d-11ef-9a65-020ffa0d8b13",
+        "name": "stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-0f770de8-31b4-49c7-882d-b2d0f0cf4c28/e9b5ecc0-b72d-11ef-9a65-020ffa0d8b13",
+        "subclass": "cloudformation",
+        "region": "us-west-2",
+        "creation_date": "2024-12-10T19:35:29.495000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:us-west-2:381785467984:stack/StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-a11070fb-2419-45b3-9a1c-094c62cc689f/71e4b830-a5c1-11ee-8799-0a1d93df2b85",
+        "name": "stack/StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-a11070fb-2419-45b3-9a1c-094c62cc689f/71e4b830-a5c1-11ee-8799-0a1d93df2b85",
+        "subclass": "cloudformation",
+        "region": "us-west-2",
+        "creation_date": "2023-12-28T20:41:15.439000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:us-west-2:381785467984:stack/StackSet-AWSControlTowerBP-BASELINE-CONFIG-94f8e46e-5ff8-4113-add0-f71ffc93fc65/718e81e0-a5c1-11ee-b087-0a04ec2d4fb1",
+        "name": "stack/StackSet-AWSControlTowerBP-BASELINE-CONFIG-94f8e46e-5ff8-4113-add0-f71ffc93fc65/718e81e0-a5c1-11ee-b087-0a04ec2d4fb1",
+        "subclass": "cloudformation",
+        "region": "us-west-2",
+        "creation_date": "2023-12-28T20:41:14.854000+00:00"
+      },
+      {
+        "arn": "arn:aws:cloudformation:us-west-2:381785467984:stack/StackSet-AWSControlTowerGuardHook-1f8e2e6f-e551-4fe1-aa80-f73b716638ff/de5eaf40-a420-11ee-bff4-0a39225f12e7",
+        "name": "stack/StackSet-AWSControlTowerGuardHook-1f8e2e6f-e551-4fe1-aa80-f73b716638ff/de5eaf40-a420-11ee-bff4-0a39225f12e7",
+        "subclass": "cloudformation",
+        "region": "us-west-2",
+        "creation_date": "2023-12-26T18:59:17.261000+00:00"
+      }
+    ]
+  },
+  "eu-west-3": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:eu-west-3:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "eu-west-3",
+        "creation_date": "Unknown"
+      }
+    ],
+    "cloudformation": [
+      {
+        "arn": "arn:aws:cloudformation:eu-west-3:381785467984:stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-4798e05e-db75-4200-a004-1ce33d8a01d4/e997b660-b72d-11ef-8313-061db9382687",
+        "name": "stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-4798e05e-db75-4200-a004-1ce33d8a01d4/e997b660-b72d-11ef-8313-061db9382687",
+        "subclass": "cloudformation",
+        "region": "eu-west-3",
+        "creation_date": "2024-12-10T19:35:29.287000+00:00"
+      }
+    ]
+  },
+  "eu-west-1": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:eu-west-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "eu-west-1",
+        "creation_date": "Unknown"
+      }
+    ],
+    "cloudformation": [
+      {
+        "arn": "arn:aws:cloudformation:eu-west-1:381785467984:stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-90487452-043c-468e-992c-4060e2be6aff/e92852c0-b72d-11ef-8050-0a31ffc01b45",
+        "name": "stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-90487452-043c-468e-992c-4060e2be6aff/e92852c0-b72d-11ef-8050-0a31ffc01b45",
+        "subclass": "cloudformation",
+        "region": "eu-west-1",
+        "creation_date": "2024-12-10T19:35:28.557000+00:00"
+      }
+    ]
+  },
+  "eu-west-2": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:eu-west-2:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "eu-west-2",
+        "creation_date": "Unknown"
+      }
+    ],
+    "cloudformation": [
+      {
+        "arn": "arn:aws:cloudformation:eu-west-2:381785467984:stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-f0f5a27d-f8aa-4bba-bfeb-e7a2444e5b24/e93fab50-b72d-11ef-872c-06f8a2d8d985",
+        "name": "stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-f0f5a27d-f8aa-4bba-bfeb-e7a2444e5b24/e93fab50-b72d-11ef-872c-06f8a2d8d985",
+        "subclass": "cloudformation",
+        "region": "eu-west-2",
+        "creation_date": "2024-12-10T19:35:28.742000+00:00"
+      }
+    ]
+  },
+  "ap-northeast-3": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:ap-northeast-3:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "ap-northeast-3",
+        "creation_date": "Unknown"
+      }
+    ],
+    "cloudformation": [
+      {
+        "arn": "arn:aws:cloudformation:ap-northeast-3:381785467984:stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-389e30e6-25cc-411b-bdec-5e58167fd970/e91a9720-b72d-11ef-a26d-0ab5836b9b89",
+        "name": "stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-389e30e6-25cc-411b-bdec-5e58167fd970/e91a9720-b72d-11ef-a26d-0ab5836b9b89",
+        "subclass": "cloudformation",
+        "region": "ap-northeast-3",
+        "creation_date": "2024-12-10T19:35:28.468000+00:00"
+      }
+    ]
+  },
+  "eu-central-1": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:eu-central-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "eu-central-1",
+        "creation_date": "Unknown"
+      }
+    ],
+    "cloudformation": [
+      {
+        "arn": "arn:aws:cloudformation:eu-central-1:381785467984:stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-7b453068-d37c-47b8-aa65-b7a02e438da0/e9191080-b72d-11ef-970f-0a8fc6a62f31",
+        "name": "stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-7b453068-d37c-47b8-aa65-b7a02e438da0/e9191080-b72d-11ef-970f-0a8fc6a62f31",
+        "subclass": "cloudformation",
+        "region": "eu-central-1",
+        "creation_date": "2024-12-10T19:35:28.481000+00:00"
+      }
+    ]
+  },
+  "eu-north-1": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:eu-north-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "eu-north-1",
+        "creation_date": "Unknown"
+      }
+    ],
+    "cloudformation": [
+      {
+        "arn": "arn:aws:cloudformation:eu-north-1:381785467984:stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-09293bb0-a828-4147-a5ca-7d1d0f71f9fb/e94bb940-b72d-11ef-87d0-0672edafe7b5",
+        "name": "stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-09293bb0-a828-4147-a5ca-7d1d0f71f9fb/e94bb940-b72d-11ef-87d0-0672edafe7b5",
+        "subclass": "cloudformation",
+        "region": "eu-north-1",
+        "creation_date": "2024-12-10T19:35:28.806000+00:00"
+      }
+    ]
+  },
+  "ap-northeast-1": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:ap-northeast-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "ap-northeast-1",
+        "creation_date": "Unknown"
+      }
+    ],
+    "cloudformation": [
+      {
+        "arn": "arn:aws:cloudformation:ap-northeast-1:381785467984:stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-91c20d82-e634-4ede-82c8-2021cfccfb4a/e8c65ca0-b72d-11ef-9338-0ab2121a61ef",
+        "name": "stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-91c20d82-e634-4ede-82c8-2021cfccfb4a/e8c65ca0-b72d-11ef-9338-0ab2121a61ef",
+        "subclass": "cloudformation",
+        "region": "ap-northeast-1",
+        "creation_date": "2024-12-10T19:35:28.002000+00:00"
+      }
+    ]
+  },
+  "ap-south-1": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:ap-south-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "ap-south-1",
+        "creation_date": "Unknown"
+      }
+    ],
+    "cloudformation": [
+      {
+        "arn": "arn:aws:cloudformation:ap-south-1:381785467984:stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-5195ee6e-e913-4089-a01f-69080ce4c74a/e9d22750-b72d-11ef-927d-02716f548925",
+        "name": "stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-5195ee6e-e913-4089-a01f-69080ce4c74a/e9d22750-b72d-11ef-927d-02716f548925",
+        "subclass": "cloudformation",
+        "region": "ap-south-1",
+        "creation_date": "2024-12-10T19:35:29.677000+00:00"
+      }
+    ]
+  },
+  "ap-southeast-2": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:ap-southeast-2:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "ap-southeast-2",
+        "creation_date": "Unknown"
+      }
+    ],
+    "cloudformation": [
+      {
+        "arn": "arn:aws:cloudformation:ap-southeast-2:381785467984:stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-29c2b93e-38d2-4ea6-aaee-df3396540c70/e9c11050-b72d-11ef-ac9f-06ed34089fa1",
+        "name": "stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-29c2b93e-38d2-4ea6-aaee-df3396540c70/e9c11050-b72d-11ef-ac9f-06ed34089fa1",
+        "subclass": "cloudformation",
+        "region": "ap-southeast-2",
+        "creation_date": "2024-12-10T19:35:29.583000+00:00"
+      }
+    ]
+  },
+  "ap-southeast-1": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:ap-southeast-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "ap-southeast-1",
+        "creation_date": "Unknown"
+      }
+    ],
+    "cloudformation": [
+      {
+        "arn": "arn:aws:cloudformation:ap-southeast-1:381785467984:stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-c2af6cd2-94eb-424b-85dd-fe03d037deeb/e98280b0-b72d-11ef-84ef-0a4ebe0fbfb1",
+        "name": "stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-c2af6cd2-94eb-424b-85dd-fe03d037deeb/e98280b0-b72d-11ef-84ef-0a4ebe0fbfb1",
+        "subclass": "cloudformation",
+        "region": "ap-southeast-1",
+        "creation_date": "2024-12-10T19:35:29.163000+00:00"
+      }
+    ]
+  },
+  "ap-northeast-2": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:ap-northeast-2:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "ap-northeast-2",
+        "creation_date": "Unknown"
+      }
+    ],
+    "cloudformation": [
+      {
+        "arn": "arn:aws:cloudformation:ap-northeast-2:381785467984:stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-18aec9f8-0069-4ede-bb8d-02c2161687e4/e9341290-b72d-11ef-97e0-025381c412a5",
+        "name": "stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-18aec9f8-0069-4ede-bb8d-02c2161687e4/e9341290-b72d-11ef-97e0-025381c412a5",
+        "subclass": "cloudformation",
+        "region": "ap-northeast-2",
+        "creation_date": "2024-12-10T19:35:28.636000+00:00"
+      }
+    ]
+  },
+  "us-west-1": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:us-west-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "us-west-1",
+        "creation_date": "Unknown"
+      }
+    ],
+    "cloudformation": [
+      {
+        "arn": "arn:aws:cloudformation:us-west-1:381785467984:stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-4766fc38-2617-4646-a4e8-e8019a35c2f2/e99e6d20-b72d-11ef-99a0-06bc231eaacb",
+        "name": "stack/StackSet-Console-Login-Fail-PDSI-CF-381785467984-v2-4766fc38-2617-4646-a4e8-e8019a35c2f2/e99e6d20-b72d-11ef-99a0-06bc231eaacb",
+        "subclass": "cloudformation",
+        "region": "us-west-1",
+        "creation_date": "2024-12-10T19:35:29.345000+00:00"
+      }
+    ]
+  },
+  "global": {
+    "iam": [
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-controltower-AdministratorExecutionRole",
+        "name": "role/aws-controltower-AdministratorExecutionRole",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-28T20:39:46+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-controltower-ConfigRecorderRole",
+        "name": "role/aws-controltower-ConfigRecorderRole",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-28T20:39:47+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-controltower-ForwardSnsNotificationRole",
+        "name": "role/aws-controltower-ForwardSnsNotificationRole",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-28T20:39:47+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-controltower-ReadOnlyExecutionRole",
+        "name": "role/aws-controltower-ReadOnlyExecutionRole",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-28T20:39:46+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/AWSControlTowerExecution",
+        "name": "role/AWSControlTowerExecution",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:43+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSAdministratorAccess_8d41ad5a452f831f",
+        "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSAdministratorAccess_8d41ad5a452f831f",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:18:27+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSOrganizationsFullAccess_e8e5bd66bb7fb112",
+        "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSOrganizationsFullAccess_e8e5bd66bb7fb112",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:18:25+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSPowerUserAccess_d86453b1fc3a2bd3",
+        "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSPowerUserAccess_d86453b1fc3a2bd3",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:18:26+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSReadOnlyAccess_64dd9484430a2846",
+        "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSReadOnlyAccess_64dd9484430a2846",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:18:26+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/AWSSecMonitorRole",
+        "name": "role/AWSSecMonitorRole",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:17:43+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/access-analyzer.amazonaws.com/AWSServiceRoleForAccessAnalyzer",
+        "name": "role/aws-service-role/access-analyzer.amazonaws.com/AWSServiceRoleForAccessAnalyzer",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:51+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDuty",
+        "name": "role/aws-service-role/guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDuty",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:17:48+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+        "name": "role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:51+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/controltower.amazonaws.com/AWSServiceRoleForAWSControlTower",
+        "name": "role/aws-service-role/controltower.amazonaws.com/AWSServiceRoleForAWSControlTower",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-28T20:39:44+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/member.org.stacksets.cloudformation.amazonaws.com/AWSServiceRoleForCloudFormationStackSetsOrgMember",
+        "name": "role/aws-service-role/member.org.stacksets.cloudformation.amazonaws.com/AWSServiceRoleForCloudFormationStackSetsOrgMember",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:53+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/cloudtrail.amazonaws.com/AWSServiceRoleForCloudTrail",
+        "name": "role/aws-service-role/cloudtrail.amazonaws.com/AWSServiceRoleForCloudTrail",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:19:46+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/compute-optimizer.amazonaws.com/AWSServiceRoleForComputeOptimizer",
+        "name": "role/aws-service-role/compute-optimizer.amazonaws.com/AWSServiceRoleForComputeOptimizer",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:18:17+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig",
+        "name": "role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:19:48+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/fms.amazonaws.com/AWSServiceRoleForFMS",
+        "name": "role/aws-service-role/fms.amazonaws.com/AWSServiceRoleForFMS",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:17:16+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/organizations.amazonaws.com/AWSServiceRoleForOrganizations",
+        "name": "role/aws-service-role/organizations.amazonaws.com/AWSServiceRoleForOrganizations",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:44+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/securityhub.amazonaws.com/AWSServiceRoleForSecurityHub",
+        "name": "role/aws-service-role/securityhub.amazonaws.com/AWSServiceRoleForSecurityHub",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:17:48+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/sso.amazonaws.com/AWSServiceRoleForSSO",
+        "name": "role/aws-service-role/sso.amazonaws.com/AWSServiceRoleForSSO",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:57+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
+        "name": "role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:43+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor",
+        "name": "role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:43+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/CloudConformity",
+        "name": "role/CloudConformity",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T21:16:09+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/embratel.acessos",
+        "name": "role/embratel.acessos",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:17:42+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/embratel.atendimento",
+        "name": "role/embratel.atendimento",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:17:42+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/embratel.billing",
+        "name": "role/embratel.billing",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:17:42+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/embratel.restrito",
+        "name": "role/embratel.restrito",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:17:42+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/embratel.sec.rd",
+        "name": "role/embratel.sec.rd",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2024-01-19T15:21:31+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/OrganizationAccountAccessRole",
+        "name": "role/OrganizationAccountAccessRole",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:46:14+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/Root-monitor-LambdaRootAPIMonitorRole",
+        "name": "role/Root-monitor-LambdaRootAPIMonitorRole",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2024-06-25T19:18:38+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-1f8-ExecutionRole-tdIIu1n3GF4l",
+        "name": "role/StackSet-AWSControlTowerGuardHook-1f8-ExecutionRole-tdIIu1n3GF4l",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:21+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-1f8e2e6f--LogRole-zvwNNQTKCbov",
+        "name": "role/StackSet-AWSControlTowerGuardHook-1f8e2e6f--LogRole-zvwNNQTKCbov",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:21+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-201-ExecutionRole-qtruLwsu0h93",
+        "name": "role/StackSet-AWSControlTowerGuardHook-201-ExecutionRole-qtruLwsu0h93",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:20+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-2019798c--LogRole-K1SVKlMvPjdg",
+        "name": "role/StackSet-AWSControlTowerGuardHook-2019798c--LogRole-K1SVKlMvPjdg",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:19+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-a2d-ExecutionRole-pWGYCNgi6kwH",
+        "name": "role/StackSet-AWSControlTowerGuardHook-a2d-ExecutionRole-pWGYCNgi6kwH",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:20+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-a2d43e6b--LogRole-2nJpc71Na3fS",
+        "name": "role/StackSet-AWSControlTowerGuardHook-a2d43e6b--LogRole-2nJpc71Na3fS",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:19+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-dab-ExecutionRole-SyJb6bKqytUs",
+        "name": "role/StackSet-AWSControlTowerGuardHook-dab-ExecutionRole-SyJb6bKqytUs",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:21+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-dabcbd88--LogRole-Wz6sntNu3Wac",
+        "name": "role/StackSet-AWSControlTowerGuardHook-dabcbd88--LogRole-Wz6sntNu3Wac",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:21+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-f20-ExecutionRole-vaQB5tc2lKQn",
+        "name": "role/StackSet-AWSControlTowerGuardHook-f20-ExecutionRole-vaQB5tc2lKQn",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:22+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-f2045375--LogRole-OpInwCfRli8J",
+        "name": "role/StackSet-AWSControlTowerGuardHook-f2045375--LogRole-OpInwCfRli8J",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:22+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/stacksets-exec-c08e8c6df47332fb1da865c1af57f2ea",
+        "name": "role/stacksets-exec-c08e8c6df47332fb1da865c1af57f2ea",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:59+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:policy/CloudConformityPart2",
+        "name": "policy/CloudConformityPart2",
+        "subclass": "iam",
+        "item_type": "policy",
+        "region": "global",
+        "creation_date": "2023-09-13T21:15:52+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:policy/CloudConformityPart1",
+        "name": "policy/CloudConformityPart1",
+        "subclass": "iam",
+        "item_type": "policy",
+        "region": "global",
+        "creation_date": "2023-09-13T21:15:52+00:00"
+      }
+    ]
+  }
+}
