@@ -1,0 +1,1642 @@
+{
+  "s3": [
+    {
+      "arn": "arn:aws:s3:::348920800148-us-east-1-terraform-remote-state",
+      "name": "348920800148-us-east-1-terraform-remote-state",
+      "subclass": "s3",
+      "region": "us-east-1",
+      "endpoint": "https://348920800148-us-east-1-terraform-remote-state.s3.us-east-1.amazonaws.com",
+      "account": "348920800148",
+      "creation_date": "2025-02-12T13:18:10+00:00"
+    },
+    {
+      "arn": "arn:aws:s3:::cf-templates-1agjv7e3pgklk-us-east-1",
+      "name": "cf-templates-1agjv7e3pgklk-us-east-1",
+      "subclass": "s3",
+      "region": "us-east-1",
+      "endpoint": "https://cf-templates-1agjv7e3pgklk-us-east-1.s3.us-east-1.amazonaws.com",
+      "account": "348920800148",
+      "creation_date": "2023-05-04T17:56:42+00:00"
+    }
+  ],
+  "sns": [
+    {
+      "arn": "arn:aws:sns:sa-east-1:348920800148:ConsoleLoginFailPDSI-CF",
+      "name": "ConsoleLoginFailPDSI-CF",
+      "subclass": "sns",
+      "region": "sa-east-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:sa-east-1:348920800148:aws-controltower-SecurityNotifications",
+      "name": "aws-controltower-SecurityNotifications",
+      "subclass": "sns",
+      "region": "sa-east-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:ca-central-1:348920800148:ConsoleLoginFailPDSI-CF",
+      "name": "ConsoleLoginFailPDSI-CF",
+      "subclass": "sns",
+      "region": "ca-central-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:ca-central-1:348920800148:aws-controltower-SecurityNotifications",
+      "name": "aws-controltower-SecurityNotifications",
+      "subclass": "sns",
+      "region": "ca-central-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:eu-west-3:348920800148:ConsoleLoginFailPDSI-CF",
+      "name": "ConsoleLoginFailPDSI-CF",
+      "subclass": "sns",
+      "region": "eu-west-3",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:eu-west-2:348920800148:ConsoleLoginFailPDSI-CF",
+      "name": "ConsoleLoginFailPDSI-CF",
+      "subclass": "sns",
+      "region": "eu-west-2",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:ap-south-1:348920800148:ConsoleLoginFailPDSI-CF",
+      "name": "ConsoleLoginFailPDSI-CF",
+      "subclass": "sns",
+      "region": "ap-south-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:ap-northeast-2:348920800148:ConsoleLoginFailPDSI-CF",
+      "name": "ConsoleLoginFailPDSI-CF",
+      "subclass": "sns",
+      "region": "ap-northeast-2",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:ap-northeast-3:348920800148:ConsoleLoginFailPDSI-CF",
+      "name": "ConsoleLoginFailPDSI-CF",
+      "subclass": "sns",
+      "region": "ap-northeast-3",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:eu-west-1:348920800148:ConsoleLoginFailPDSI-CF",
+      "name": "ConsoleLoginFailPDSI-CF",
+      "subclass": "sns",
+      "region": "eu-west-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:eu-north-1:348920800148:ConsoleLoginFailPDSI-CF",
+      "name": "ConsoleLoginFailPDSI-CF",
+      "subclass": "sns",
+      "region": "eu-north-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:ap-northeast-1:348920800148:ConsoleLoginFailPDSI-CF",
+      "name": "ConsoleLoginFailPDSI-CF",
+      "subclass": "sns",
+      "region": "ap-northeast-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:ap-southeast-1:348920800148:ConsoleLoginFailPDSI-CF",
+      "name": "ConsoleLoginFailPDSI-CF",
+      "subclass": "sns",
+      "region": "ap-southeast-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:ap-southeast-2:348920800148:ConsoleLoginFailPDSI-CF",
+      "name": "ConsoleLoginFailPDSI-CF",
+      "subclass": "sns",
+      "region": "ap-southeast-2",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:us-east-1:348920800148:ConsoleLoginFailPDSI-CF",
+      "name": "ConsoleLoginFailPDSI-CF",
+      "subclass": "sns",
+      "region": "us-east-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:us-east-1:348920800148:IAMChangesTopic",
+      "name": "IAMChangesTopic",
+      "subclass": "sns",
+      "region": "us-east-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:us-east-1:348920800148:Monitoring-User-Root-Security",
+      "name": "Monitoring-User-Root-Security",
+      "subclass": "sns",
+      "region": "us-east-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:us-east-1:348920800148:aws-controltower-SecurityNotifications",
+      "name": "aws-controltower-SecurityNotifications",
+      "subclass": "sns",
+      "region": "us-east-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:us-east-2:348920800148:ConsoleLoginFailPDSI-CF",
+      "name": "ConsoleLoginFailPDSI-CF",
+      "subclass": "sns",
+      "region": "us-east-2",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:us-east-2:348920800148:aws-controltower-SecurityNotifications",
+      "name": "aws-controltower-SecurityNotifications",
+      "subclass": "sns",
+      "region": "us-east-2",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:us-west-1:348920800148:ConsoleLoginFailPDSI-CF",
+      "name": "ConsoleLoginFailPDSI-CF",
+      "subclass": "sns",
+      "region": "us-west-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:eu-central-1:348920800148:ConsoleLoginFailPDSI-CF",
+      "name": "ConsoleLoginFailPDSI-CF",
+      "subclass": "sns",
+      "region": "eu-central-1",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:us-west-2:348920800148:ConsoleLoginFailPDSI-CF",
+      "name": "ConsoleLoginFailPDSI-CF",
+      "subclass": "sns",
+      "region": "us-west-2",
+      "creation_date": "Unknown"
+    },
+    {
+      "arn": "arn:aws:sns:us-west-2:348920800148:aws-controltower-SecurityNotifications",
+      "name": "aws-controltower-SecurityNotifications",
+      "subclass": "sns",
+      "region": "us-west-2",
+      "creation_date": "Unknown"
+    }
+  ],
+  "iam": [
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-controltower-AdministratorExecutionRole",
+      "name": "role/aws-controltower-AdministratorExecutionRole",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:18:26+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-controltower-ConfigRecorderRole",
+      "name": "role/aws-controltower-ConfigRecorderRole",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:18:28+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-controltower-ForwardSnsNotificationRole",
+      "name": "role/aws-controltower-ForwardSnsNotificationRole",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:18:28+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-controltower-ReadOnlyExecutionRole",
+      "name": "role/aws-controltower-ReadOnlyExecutionRole",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:18:26+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/AWSControlTowerExecution",
+      "name": "role/AWSControlTowerExecution",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:14:58+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSAdministratorAccess_d3e0d0b3836e25fb",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSAdministratorAccess_d3e0d0b3836e25fb",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:16:50+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSOrganizationsFullAccess_1da5c7050ae4a2dd",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSOrganizationsFullAccess_1da5c7050ae4a2dd",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:16:48+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSPowerUserAccess_bb8043d9695449fa",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSPowerUserAccess_bb8043d9695449fa",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:16:49+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSReadOnlyAccess_5d7fe3d10bf11653",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSReadOnlyAccess_5d7fe3d10bf11653",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:16:50+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1036514.lk.rs_c519b002a123928b",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1036514.lk.rs_c519b002a123928b",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-05-10T14:53:20+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1050558.lk_a3cba1e16ef4649a",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1050558.lk_a3cba1e16ef4649a",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-16T19:56:05+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1050619.lk_0b474d406e5a17e7",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1050619.lk_0b474d406e5a17e7",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-03-15T15:17:05+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1051110.lkrd_fdf6a4a41cf271c1",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1051110.lkrd_fdf6a4a41cf271c1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T15:41:16+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1051110.lk_4f8c5eda8070f505",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1051110.lk_4f8c5eda8070f505",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T15:13:18+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1051110.rd_cfcd752f4871ca17",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1051110.rd_cfcd752f4871ca17",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T14:38:56+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1051110_681a541bfd79a931",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1051110_681a541bfd79a931",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T14:10:58+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1060330.lkrd_4bdbb715b1c37bcd",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1060330.lkrd_4bdbb715b1c37bcd",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-09-15T18:07:14+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1060330.lk_a520b97ae14cd735",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1060330.lk_a520b97ae14cd735",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-09-15T18:06:45+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1066415.lkrd_41d825c7d936d423",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1066415.lkrd_41d825c7d936d423",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-28T17:54:28+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1066415.lk_d342cd2882ed6f49",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1066415.lk_d342cd2882ed6f49",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-28T17:52:52+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1086665.lkrd_49c2f95a667bb3f0",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1086665.lkrd_49c2f95a667bb3f0",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-08-28T14:17:27+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1086665.lk_4cce595920290361",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1086665.lk_4cce595920290361",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-08-28T14:06:51+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1090378.lk_2e2e62db96b58c97",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1090378.lk_2e2e62db96b58c97",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-03-13T12:34:55+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1092057.lkrd_5f77d830679846d8",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1092057.lkrd_5f77d830679846d8",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-23T19:47:46+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1092057.lk_d03c8be092fda252",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1092057.lk_d03c8be092fda252",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-23T19:47:19+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1092057.rd_8c6797f78bdfa814",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1092057.rd_8c6797f78bdfa814",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-23T19:48:06+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1092057_4b9f0095f8af452e",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1092057_4b9f0095f8af452e",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-23T19:46:55+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1096406.lkrd_805670d06ffb467d",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1096406.lkrd_805670d06ffb467d",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-14T20:34:35+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1096406.lk_7c681eaa39d50635",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1096406.lk_7c681eaa39d50635",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-14T20:10:05+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1096406.rd_232134a2e257a36c",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1096406.rd_232134a2e257a36c",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-14T19:44:32+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1096406_1e1813f7f9dd7f2d",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1096406_1e1813f7f9dd7f2d",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-14T19:18:50+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1097017.rd_0cca11cdc9559c3f",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1097017.rd_0cca11cdc9559c3f",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-04T14:45:29+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1097017_0e5b71d6720f4f1d",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1097017_0e5b71d6720f4f1d",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-04T14:45:05+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1097806.lkrd_035b1c2b255a4daf",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1097806.lkrd_035b1c2b255a4daf",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-06-26T18:24:09+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1097806.lk_f09f60f9f60edf94",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1097806.lk_f09f60f9f60edf94",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-06-26T18:21:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1098739.lk_38997b65f5ca7f0b",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1098739.lk_38997b65f5ca7f0b",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-12-28T13:50:46+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1098739.rd_504914b34fcf9af3",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1098739.rd_504914b34fcf9af3",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-12-28T13:51:31+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1098739_38c48e6b38d1a6a1",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1098739_38c48e6b38d1a6a1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-12-28T13:50:18+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1100859.lkrd_54b9db4e9844c4c9",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1100859.lkrd_54b9db4e9844c4c9",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T13:00:22+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1100859.lk_e733be92587731c4",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1100859.lk_e733be92587731c4",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T12:38:03+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1100859.rd_eaadeef5a703502e",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1100859.rd_eaadeef5a703502e",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T12:12:08+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1100859_7704ba89b5c95092",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1100859_7704ba89b5c95092",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T11:48:27+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1105598.lkrd_795a55ae8489ffd1",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1105598.lkrd_795a55ae8489ffd1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-06-01T15:19:58+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1105598.lk_66640dfc09abd7d1",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1105598.lk_66640dfc09abd7d1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-04-17T19:11:24+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1110885.lkrd_af8ee2de118d555d",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1110885.lkrd_af8ee2de118d555d",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-08-25T14:04:01+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1110885.lk_fafbd11981e7cbc2",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1110885.lk_fafbd11981e7cbc2",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-08-25T14:03:24+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1114473.lkrd_ea35c0dcd783e59b",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1114473.lkrd_ea35c0dcd783e59b",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-12-11T16:35:32+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1114473.lk_c68ffa78423536fc",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1114473.lk_c68ffa78423536fc",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-12-11T16:35:08+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1117093.lkrd_557ae79ad79b70f0",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1117093.lkrd_557ae79ad79b70f0",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-06-05T20:25:04+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1117093.lk_1eae59598778dccb",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1117093.lk_1eae59598778dccb",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-06-05T20:24:43+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1117093.rd_c846ca58e345ab74",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1117093.rd_c846ca58e345ab74",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-06-05T20:25:22+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1117093_9a84e0db65e12ae2",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1117093_9a84e0db65e12ae2",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-06-05T20:23:28+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1117566.lkrd_8b1e33e29014d9e9",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1117566.lkrd_8b1e33e29014d9e9",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-06-05T19:18:22+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1117566.lk_d87aaa64a5579832",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1117566.lk_d87aaa64a5579832",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-06-05T19:18:02+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1117566.rd_64cb2406000e1f37",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1117566.rd_64cb2406000e1f37",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-06-05T19:19:15+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1117566_61eb59f706600637",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1117566_61eb59f706600637",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-06-05T19:18:54+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1120814.lk_41be348768007916",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1120814.lk_41be348768007916",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-03-14T17:05:53+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1121934.lkrd_51cc72d8173e90e4",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1121934.lkrd_51cc72d8173e90e4",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-04T19:15:52+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1121934.lk_cf8ed65edf53a93d",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1121934.lk_cf8ed65edf53a93d",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-04T19:15:39+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1121934.rd_17be792f01458190",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1121934.rd_17be792f01458190",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-11-22T21:44:48+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1121934_3b395b0ae238c69a",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1121934_3b395b0ae238c69a",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-11-22T21:40:04+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1122059.lkrd_639e0f081d8d8815",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1122059.lkrd_639e0f081d8d8815",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T19:42:17+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1122059.rd_35e24037dc6cce45",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1122059.rd_35e24037dc6cce45",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T19:39:52+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1122785.lkrd_45f50af1a40b9cdd",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1122785.lkrd_45f50af1a40b9cdd",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-06-01T15:16:28+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1122785.lk_c18ebedcb34ee6ad",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1122785.lk_c18ebedcb34ee6ad",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-10-02T16:59:32+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1123382.lkrd_f1cac87892d408f5",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1123382.lkrd_f1cac87892d408f5",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-16T15:07:29+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1123382.lk_5cbe1de0c27ff1e7",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1123382.lk_5cbe1de0c27ff1e7",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-16T15:06:31+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1123382.rd_fbfdfe5728867894",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1123382.rd_fbfdfe5728867894",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-16T14:23:56+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1123382_9c4f58ac102dcdd1",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1123382_9c4f58ac102dcdd1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-16T14:20:58+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1127740.lkrd_ce1df83f095d2d15",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1127740.lkrd_ce1df83f095d2d15",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-07T20:30:43+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1127740.lk_933915bdfe884fb9",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1127740.lk_933915bdfe884fb9",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-07T20:30:14+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1128448.lkrd_01b43f0b865bea23",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1128448.lkrd_01b43f0b865bea23",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-18T13:46:00+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1128448.lk_b067b7cbaf6b8384",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1128448.lk_b067b7cbaf6b8384",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-18T13:45:24+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1130370_206895013c229584",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1130370_206895013c229584",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-04-03T18:10:08+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1131186.lkrd_3494c66f73c9baf2",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1131186.lkrd_3494c66f73c9baf2",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-26T13:52:07+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1131186.lk_5c0eaa83d18b7224",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1131186.lk_5c0eaa83d18b7224",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-26T13:49:33+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1132081.lkrd_024f383b02ef558f",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1132081.lkrd_024f383b02ef558f",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-05T19:09:52+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1132081.lk_f133656fab076c59",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1132081.lk_f133656fab076c59",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-05T19:09:23+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1132081.rd_1c45bf23ff38d974",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1132081.rd_1c45bf23ff38d974",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-05T19:10:07+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1132081_f60f104f43de9e0b",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1132081_f60f104f43de9e0b",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-05T19:08:59+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1132493.lkrd_f9b0a4affd3acc6a",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1132493.lkrd_f9b0a4affd3acc6a",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-09T13:46:29+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1132493.lk_1e33fae39ee1be1b",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1132493.lk_1e33fae39ee1be1b",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-09T13:46:16+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1132493.rd_6b72f8301902a099",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1132493.rd_6b72f8301902a099",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-09T13:46:44+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1132493_cc11e85badd714f9",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1132493_cc11e85badd714f9",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-09T13:45:32+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133535.lkrd_6608ddaa0c7c4250",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133535.lkrd_6608ddaa0c7c4250",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-14T20:10:01+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133535.lk_7b241915d4d4fb2a",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133535.lk_7b241915d4d4fb2a",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-14T19:44:48+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133535.rd_ca5264608eb3d04f",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133535.rd_ca5264608eb3d04f",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-14T19:16:56+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133535_cea9a2ee3af735eb",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133535_cea9a2ee3af735eb",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-14T18:44:07+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133712.lkrd_5593454b0942758f",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133712.lkrd_5593454b0942758f",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-18T13:53:31+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133712.lk_f2e5ca1938300a93",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133712.lk_f2e5ca1938300a93",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-18T13:51:18+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133713.lkrd_ecb017c5988b2c64",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133713.lkrd_ecb017c5988b2c64",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-18T13:29:18+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133713.lk_c32eba4cf6580332",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133713.lk_c32eba4cf6580332",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-18T13:27:50+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133715.lkrd_5831a455449e7991",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133715.lkrd_5831a455449e7991",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-18T14:01:34+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133715.lk_56cc7ec6555df3b1",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133715.lk_56cc7ec6555df3b1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-18T14:01:58+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133715.rd_0382cc79f88a0c12",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133715.rd_0382cc79f88a0c12",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-18T13:41:52+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133715_a64f485197aeffe4",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133715_a64f485197aeffe4",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-18T13:41:21+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133716.lkrd_a8ee9f62a91ed6a2",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133716.lkrd_a8ee9f62a91ed6a2",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-18T14:04:07+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133716.lk_550d88c40dc0e5a4",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133716.lk_550d88c40dc0e5a4",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-18T14:03:26+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133835.lkrd_fe72429c52afa7e1",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133835.lkrd_fe72429c52afa7e1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-07T21:33:57+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133835.lk_0ec5bec99cffd1df",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133835.lk_0ec5bec99cffd1df",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-07T21:33:18+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133898.lkrd_c3d7e8b1648987c7",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133898.lkrd_c3d7e8b1648987c7",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-18T17:31:09+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133898.lk_e536c415537855af",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133898.lk_e536c415537855af",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-18T17:30:45+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133966-1.lkrd_a6224d6946cd594c",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133966-1.lkrd_a6224d6946cd594c",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-11T17:55:50+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133966-1.lk_65edc12b0db8f889",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1133966-1.lk_65edc12b0db8f889",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-07-11T17:50:02+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134209.lkrd_ffb1dee99041dde1",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134209.lkrd_ffb1dee99041dde1",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-08-10T14:21:42+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134209.lk_8cf05794fd225263",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134209.lk_8cf05794fd225263",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-08-10T14:20:43+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134398.lkrd_3edd0086cac195fd",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134398.lkrd_3edd0086cac195fd",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-08-23T12:21:07+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134398.lk_1526d059d89062cb",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134398.lk_1526d059d89062cb",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-08-23T12:20:49+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134476.rd_8b12808165681104",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134476.rd_8b12808165681104",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-10-29T20:49:27+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134476_96921ed6c8dd82ff",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134476_96921ed6c8dd82ff",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-10-29T20:48:55+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134496.lkrd_e218dd268dc735fd",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134496.lkrd_e218dd268dc735fd",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-09-14T12:35:18+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134496.lk_8c2e6753ed750be3",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134496.lk_8c2e6753ed750be3",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-09-14T12:34:28+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134510.lkrd_1cf9240e36c3a2c5",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134510.lkrd_1cf9240e36c3a2c5",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-11-22T22:25:23+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134510.lk_1f84cb1e3f25705c",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134510.lk_1f84cb1e3f25705c",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-02-14T17:45:56+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134510.rd_58252922f944f3f7",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134510.rd_58252922f944f3f7",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-11-22T22:25:02+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134510_911dcb322fa81ad3",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134510_911dcb322fa81ad3",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-02-14T17:45:40+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134818.lkrd_690fe5cceb03744d",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134818.lkrd_690fe5cceb03744d",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-14T22:17:57+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134818.lk_f22feaf8587f6ff3",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134818.lk_f22feaf8587f6ff3",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-14T21:57:39+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134818.rd_919d841bbc240343",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134818.rd_919d841bbc240343",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-14T21:37:47+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134818_620ea96b1614598d",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1134818_620ea96b1614598d",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-14T21:10:59+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1135094.lk_6d1947fe75e6eefd",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1135094.lk_6d1947fe75e6eefd",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-05-02T13:46:26+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1135094_d12a6c25cd319537",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1135094_d12a6c25cd319537",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-05-02T13:46:05+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1136017.lk_569778bc5639ac53",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1136017.lk_569778bc5639ac53",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-03-14T17:06:21+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1136305_2e71693eb3255236",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1136305_2e71693eb3255236",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-03-27T18:51:51+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1136495.lk_3a90588b5802389f",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1136495.lk_3a90588b5802389f",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-03-28T14:37:17+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1136804_fe20ea438a2e1489",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1136804_fe20ea438a2e1489",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-06-25T14:53:14+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1136815.lk_aac2d24d6e7fb828",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1136815.lk_aac2d24d6e7fb828",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-07-23T20:48:07+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137047.lkrd_72740af01bc212af",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137047.lkrd_72740af01bc212af",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-14T21:58:54+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137047.lk_0ef32231ce1c4ec0",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137047.lk_0ef32231ce1c4ec0",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-14T21:37:57+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137047.rd_c2f5df0b42a1b118",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137047.rd_c2f5df0b42a1b118",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-14T21:09:42+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137047_e81f4a936bf56d2c",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137047_e81f4a936bf56d2c",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-14T20:36:35+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137108.lk_68eeab4efde86070",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137108.lk_68eeab4efde86070",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-06-10T18:37:44+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137373.lk_b89438efebc9611a",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137373.lk_b89438efebc9611a",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-07-19T19:46:05+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137443.lkrd_76c937b04a9fabf5",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137443.lkrd_76c937b04a9fabf5",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T13:00:10+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137443.lk_f1e3cf7673957999",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137443.lk_f1e3cf7673957999",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T12:37:36+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137443.rd_842f6cf97bc842d2",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137443.rd_842f6cf97bc842d2",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T12:11:51+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137443_e366d7c18d5be7f9",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137443_e366d7c18d5be7f9",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T11:41:27+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137677.lkrd_d3f8eb999288779f",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137677.lkrd_d3f8eb999288779f",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-20T14:05:48+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137677.lk_b660152d247c2675",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137677.lk_b660152d247c2675",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-20T13:42:29+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137973.lkrd_f08cede93152d66c",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137973.lkrd_f08cede93152d66c",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T18:53:46+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137973.lk_83f531a7a0f36e6a",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137973.lk_83f531a7a0f36e6a",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T17:45:15+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137973.rd_c356bffb0b2413e3",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137973.rd_c356bffb0b2413e3",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T17:22:05+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137973_db69fff151a49246",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137973_db69fff151a49246",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T16:58:54+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137982.lkrd_2b2c55c1f2c28c1f",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137982.lkrd_2b2c55c1f2c28c1f",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T15:44:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137982.lk_5245df204b011f4e",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137982.lk_5245df204b011f4e",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T15:13:16+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137982.rd_3d2c311fb64e59bd",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137982.rd_3d2c311fb64e59bd",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T14:41:57+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137982_45139c160f20bd38",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.1137982_45139c160f20bd38",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-05-15T14:11:46+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.ard_259294c5221f0e0f",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.ard_259294c5221f0e0f",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-05T12:24:47+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.atendimento_94c73f644eb807b9",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.atendimento_94c73f644eb807b9",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-04T17:30:14+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.frd_18c77b107b20151a",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.frd_18c77b107b20151a",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-05T12:25:33+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.mgmtrd.permset_ef2e5d787b3402b4",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.mgmtrd.permset_ef2e5d787b3402b4",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2025-01-28T20:00:51+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.msp.billing.rd_5e2b64ba34d8989f",
+      "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_embratel.msp.billing.rd_5e2b64ba34d8989f",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-03-21T20:23:24+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/AWSSecMonitorRole",
+      "name": "role/AWSSecMonitorRole",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:16:18+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-service-role/access-analyzer.amazonaws.com/AWSServiceRoleForAccessAnalyzer",
+      "name": "role/aws-service-role/access-analyzer.amazonaws.com/AWSServiceRoleForAccessAnalyzer",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:15:22+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-service-role/guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDuty",
+      "name": "role/aws-service-role/guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDuty",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:16:03+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+      "name": "role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:27:04+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-service-role/controltower.amazonaws.com/AWSServiceRoleForAWSControlTower",
+      "name": "role/aws-service-role/controltower.amazonaws.com/AWSServiceRoleForAWSControlTower",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-10-10T16:34:35+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-service-role/member.org.stacksets.cloudformation.amazonaws.com/AWSServiceRoleForCloudFormationStackSetsOrgMember",
+      "name": "role/aws-service-role/member.org.stacksets.cloudformation.amazonaws.com/AWSServiceRoleForCloudFormationStackSetsOrgMember",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:15:16+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-service-role/cloudtrail.amazonaws.com/AWSServiceRoleForCloudTrail",
+      "name": "role/aws-service-role/cloudtrail.amazonaws.com/AWSServiceRoleForCloudTrail",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:18:01+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-service-role/compute-optimizer.amazonaws.com/AWSServiceRoleForComputeOptimizer",
+      "name": "role/aws-service-role/compute-optimizer.amazonaws.com/AWSServiceRoleForComputeOptimizer",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:15:31+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig",
+      "name": "role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:18:05+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-service-role/fms.amazonaws.com/AWSServiceRoleForFMS",
+      "name": "role/aws-service-role/fms.amazonaws.com/AWSServiceRoleForFMS",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:15:31+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-service-role/organizations.amazonaws.com/AWSServiceRoleForOrganizations",
+      "name": "role/aws-service-role/organizations.amazonaws.com/AWSServiceRoleForOrganizations",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:14:59+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-service-role/securityhub.amazonaws.com/AWSServiceRoleForSecurityHub",
+      "name": "role/aws-service-role/securityhub.amazonaws.com/AWSServiceRoleForSecurityHub",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:16:03+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-service-role/sso.amazonaws.com/AWSServiceRoleForSSO",
+      "name": "role/aws-service-role/sso.amazonaws.com/AWSServiceRoleForSSO",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:15:21+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
+      "name": "role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:14:58+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor",
+      "name": "role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:14:58+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/CloudConformity",
+      "name": "role/CloudConformity",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-09-13T20:49:59+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/embratel.1036514.lk",
+      "name": "role/embratel.1036514.lk",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-04T18:22:26+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/embratel.1036514.lkrd",
+      "name": "role/embratel.1036514.lkrd",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-04T18:22:26+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/embratel.acessos",
+      "name": "role/embratel.acessos",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:16:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/embratel.atendimento",
+      "name": "role/embratel.atendimento",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:16:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/embratel.billing",
+      "name": "role/embratel.billing",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:16:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/embratel.readonly.mgmt",
+      "name": "role/embratel.readonly.mgmt",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-05-04T18:22:04+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/embratel.restrito",
+      "name": "role/embratel.restrito",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:16:12+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/embratel.restrito.mgmt",
+      "name": "role/embratel.restrito.mgmt",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:15:55+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/embratel.sec.rd",
+      "name": "role/embratel.sec.rd",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-01-19T15:21:02+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/root-monitor-LambdaRootAPIMonitorRole",
+      "name": "role/root-monitor-LambdaRootAPIMonitorRole",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2024-06-24T21:22:08+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:role/stacksets-exec-c08e8c6df47332fb1da865c1af57f2ea",
+      "name": "role/stacksets-exec-c08e8c6df47332fb1da865c1af57f2ea",
+      "subclass": "iam",
+      "item_type": "role",
+      "region": "global",
+      "creation_date": "2023-04-27T19:15:31+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:policy/CloudConformityPart2",
+      "name": "policy/CloudConformityPart2",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2023-09-13T20:49:42+00:00"
+    },
+    {
+      "arn": "arn:aws:iam::348920800148:policy/CloudConformityPart1",
+      "name": "policy/CloudConformityPart1",
+      "subclass": "iam",
+      "item_type": "policy",
+      "region": "global",
+      "creation_date": "2023-09-13T20:49:42+00:00"
+    }
+  ]
+}

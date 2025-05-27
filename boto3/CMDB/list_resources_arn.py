@@ -658,9 +658,15 @@ def main():
     print(f"Found {len(regions)} available AWS regions for scanning: {', '.join(regions)}")
 
     services_to_scan = [
-        's3', 'ec2', 'lambda', 'rds', 'dynamodb', 'sns', 'sqs', 'iam',
-        'cloudformation', 'apigateway', 'elbv2', 'elb', 'eks', 'ecs', 'ecr', 'elasticache'
+        's3', 'ec2', 'rds', 'dynamodb', 'sns', 'iam',
+        'apigateway', 'elbv2', 'elb', 'eks', 'ecs', 'ecr'
     ]
+
+# remover lambda, sqs, cloudformation, elasticache
+
+# Originais
+# 's3', 'ec2', 'lambda', 'rds', 'dynamodb', 'sns', 'sqs', 'iam', 'cloudformation', 'apigateway', 'elbv2', 'elb', 'eks', 'ecs', 'ecr', 'elasticache'
+
     print(f"Scanning {len(services_to_scan)} services: {', '.join(services_to_scan)}")
 
     all_arns_data = {}  # Renamed to avoid conflict with 'all_arns' if used as a variable name elsewhere

@@ -1,0 +1,613 @@
+{
+  "us-east-1": {
+    "s3": [
+      {
+        "arn": "arn:aws:s3:::381785467984-us-east-1-terraform-remote-state",
+        "name": "381785467984-us-east-1-terraform-remote-state",
+        "subclass": "s3",
+        "region": "us-east-1",
+        "endpoint": "https://381785467984-us-east-1-terraform-remote-state.s3.us-east-1.amazonaws.com",
+        "account": "381785467984",
+        "creation_date": "2025-02-12T13:11:01+00:00"
+      }
+    ],
+    "sns": [
+      {
+        "arn": "arn:aws:sns:us-east-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "us-east-1",
+        "creation_date": "Unknown"
+      },
+      {
+        "arn": "arn:aws:sns:us-east-1:381785467984:IAMChangesTopic",
+        "name": "IAMChangesTopic",
+        "subclass": "sns",
+        "region": "us-east-1",
+        "creation_date": "Unknown"
+      },
+      {
+        "arn": "arn:aws:sns:us-east-1:381785467984:Monitoring-User-Root-Security",
+        "name": "Monitoring-User-Root-Security",
+        "subclass": "sns",
+        "region": "us-east-1",
+        "creation_date": "Unknown"
+      },
+      {
+        "arn": "arn:aws:sns:us-east-1:381785467984:aws-controltower-SecurityNotifications",
+        "name": "aws-controltower-SecurityNotifications",
+        "subclass": "sns",
+        "region": "us-east-1",
+        "creation_date": "Unknown"
+      }
+    ]
+  },
+  "eu-west-1": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:eu-west-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "eu-west-1",
+        "creation_date": "Unknown"
+      }
+    ]
+  },
+  "sa-east-1": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:sa-east-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "sa-east-1",
+        "creation_date": "Unknown"
+      },
+      {
+        "arn": "arn:aws:sns:sa-east-1:381785467984:aws-controltower-SecurityNotifications",
+        "name": "aws-controltower-SecurityNotifications",
+        "subclass": "sns",
+        "region": "sa-east-1",
+        "creation_date": "Unknown"
+      }
+    ]
+  },
+  "eu-west-2": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:eu-west-2:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "eu-west-2",
+        "creation_date": "Unknown"
+      }
+    ]
+  },
+  "eu-west-3": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:eu-west-3:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "eu-west-3",
+        "creation_date": "Unknown"
+      }
+    ]
+  },
+  "eu-north-1": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:eu-north-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "eu-north-1",
+        "creation_date": "Unknown"
+      }
+    ]
+  },
+  "ca-central-1": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:ca-central-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "ca-central-1",
+        "creation_date": "Unknown"
+      },
+      {
+        "arn": "arn:aws:sns:ca-central-1:381785467984:aws-controltower-SecurityNotifications",
+        "name": "aws-controltower-SecurityNotifications",
+        "subclass": "sns",
+        "region": "ca-central-1",
+        "creation_date": "Unknown"
+      }
+    ]
+  },
+  "ap-northeast-1": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:ap-northeast-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "ap-northeast-1",
+        "creation_date": "Unknown"
+      }
+    ]
+  },
+  "ap-northeast-3": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:ap-northeast-3:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "ap-northeast-3",
+        "creation_date": "Unknown"
+      }
+    ]
+  },
+  "ap-south-1": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:ap-south-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "ap-south-1",
+        "creation_date": "Unknown"
+      }
+    ]
+  },
+  "ap-southeast-2": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:ap-southeast-2:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "ap-southeast-2",
+        "creation_date": "Unknown"
+      }
+    ]
+  },
+  "ap-northeast-2": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:ap-northeast-2:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "ap-northeast-2",
+        "creation_date": "Unknown"
+      }
+    ]
+  },
+  "eu-central-1": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:eu-central-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "eu-central-1",
+        "creation_date": "Unknown"
+      }
+    ]
+  },
+  "ap-southeast-1": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:ap-southeast-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "ap-southeast-1",
+        "creation_date": "Unknown"
+      }
+    ]
+  },
+  "us-east-2": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:us-east-2:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "us-east-2",
+        "creation_date": "Unknown"
+      },
+      {
+        "arn": "arn:aws:sns:us-east-2:381785467984:aws-controltower-SecurityNotifications",
+        "name": "aws-controltower-SecurityNotifications",
+        "subclass": "sns",
+        "region": "us-east-2",
+        "creation_date": "Unknown"
+      }
+    ]
+  },
+  "us-west-1": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:us-west-1:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "us-west-1",
+        "creation_date": "Unknown"
+      }
+    ]
+  },
+  "us-west-2": {
+    "sns": [
+      {
+        "arn": "arn:aws:sns:us-west-2:381785467984:ConsoleLoginFailPDSI-CF",
+        "name": "ConsoleLoginFailPDSI-CF",
+        "subclass": "sns",
+        "region": "us-west-2",
+        "creation_date": "Unknown"
+      },
+      {
+        "arn": "arn:aws:sns:us-west-2:381785467984:aws-controltower-SecurityNotifications",
+        "name": "aws-controltower-SecurityNotifications",
+        "subclass": "sns",
+        "region": "us-west-2",
+        "creation_date": "Unknown"
+      }
+    ]
+  },
+  "global": {
+    "iam": [
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-controltower-AdministratorExecutionRole",
+        "name": "role/aws-controltower-AdministratorExecutionRole",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-28T20:39:46+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-controltower-ConfigRecorderRole",
+        "name": "role/aws-controltower-ConfigRecorderRole",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-28T20:39:47+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-controltower-ForwardSnsNotificationRole",
+        "name": "role/aws-controltower-ForwardSnsNotificationRole",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-28T20:39:47+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-controltower-ReadOnlyExecutionRole",
+        "name": "role/aws-controltower-ReadOnlyExecutionRole",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-28T20:39:46+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/AWSControlTowerExecution",
+        "name": "role/AWSControlTowerExecution",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:43+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSAdministratorAccess_8d41ad5a452f831f",
+        "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSAdministratorAccess_8d41ad5a452f831f",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:18:27+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSOrganizationsFullAccess_e8e5bd66bb7fb112",
+        "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSOrganizationsFullAccess_e8e5bd66bb7fb112",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:18:25+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSPowerUserAccess_d86453b1fc3a2bd3",
+        "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSPowerUserAccess_d86453b1fc3a2bd3",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:18:26+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSReadOnlyAccess_64dd9484430a2846",
+        "name": "role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AWSReadOnlyAccess_64dd9484430a2846",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:18:26+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/AWSSecMonitorRole",
+        "name": "role/AWSSecMonitorRole",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:17:43+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/access-analyzer.amazonaws.com/AWSServiceRoleForAccessAnalyzer",
+        "name": "role/aws-service-role/access-analyzer.amazonaws.com/AWSServiceRoleForAccessAnalyzer",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:51+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDuty",
+        "name": "role/aws-service-role/guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDuty",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:17:48+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+        "name": "role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:51+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/controltower.amazonaws.com/AWSServiceRoleForAWSControlTower",
+        "name": "role/aws-service-role/controltower.amazonaws.com/AWSServiceRoleForAWSControlTower",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-28T20:39:44+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/member.org.stacksets.cloudformation.amazonaws.com/AWSServiceRoleForCloudFormationStackSetsOrgMember",
+        "name": "role/aws-service-role/member.org.stacksets.cloudformation.amazonaws.com/AWSServiceRoleForCloudFormationStackSetsOrgMember",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:53+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/cloudtrail.amazonaws.com/AWSServiceRoleForCloudTrail",
+        "name": "role/aws-service-role/cloudtrail.amazonaws.com/AWSServiceRoleForCloudTrail",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:19:46+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/compute-optimizer.amazonaws.com/AWSServiceRoleForComputeOptimizer",
+        "name": "role/aws-service-role/compute-optimizer.amazonaws.com/AWSServiceRoleForComputeOptimizer",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:18:17+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig",
+        "name": "role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:19:48+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/fms.amazonaws.com/AWSServiceRoleForFMS",
+        "name": "role/aws-service-role/fms.amazonaws.com/AWSServiceRoleForFMS",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:17:16+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/organizations.amazonaws.com/AWSServiceRoleForOrganizations",
+        "name": "role/aws-service-role/organizations.amazonaws.com/AWSServiceRoleForOrganizations",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:44+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/securityhub.amazonaws.com/AWSServiceRoleForSecurityHub",
+        "name": "role/aws-service-role/securityhub.amazonaws.com/AWSServiceRoleForSecurityHub",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:17:48+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/sso.amazonaws.com/AWSServiceRoleForSSO",
+        "name": "role/aws-service-role/sso.amazonaws.com/AWSServiceRoleForSSO",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:57+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
+        "name": "role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:43+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor",
+        "name": "role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:43+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/CloudConformity",
+        "name": "role/CloudConformity",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T21:16:09+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/embratel.acessos",
+        "name": "role/embratel.acessos",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:17:42+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/embratel.atendimento",
+        "name": "role/embratel.atendimento",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:17:42+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/embratel.billing",
+        "name": "role/embratel.billing",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:17:42+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/embratel.restrito",
+        "name": "role/embratel.restrito",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:17:42+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/embratel.sec.rd",
+        "name": "role/embratel.sec.rd",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2024-01-19T15:21:31+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/OrganizationAccountAccessRole",
+        "name": "role/OrganizationAccountAccessRole",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:46:14+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/Root-monitor-LambdaRootAPIMonitorRole",
+        "name": "role/Root-monitor-LambdaRootAPIMonitorRole",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2024-06-25T19:18:38+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-1f8-ExecutionRole-tdIIu1n3GF4l",
+        "name": "role/StackSet-AWSControlTowerGuardHook-1f8-ExecutionRole-tdIIu1n3GF4l",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:21+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-1f8e2e6f--LogRole-zvwNNQTKCbov",
+        "name": "role/StackSet-AWSControlTowerGuardHook-1f8e2e6f--LogRole-zvwNNQTKCbov",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:21+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-201-ExecutionRole-qtruLwsu0h93",
+        "name": "role/StackSet-AWSControlTowerGuardHook-201-ExecutionRole-qtruLwsu0h93",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:20+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-2019798c--LogRole-K1SVKlMvPjdg",
+        "name": "role/StackSet-AWSControlTowerGuardHook-2019798c--LogRole-K1SVKlMvPjdg",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:19+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-a2d-ExecutionRole-pWGYCNgi6kwH",
+        "name": "role/StackSet-AWSControlTowerGuardHook-a2d-ExecutionRole-pWGYCNgi6kwH",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:20+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-a2d43e6b--LogRole-2nJpc71Na3fS",
+        "name": "role/StackSet-AWSControlTowerGuardHook-a2d43e6b--LogRole-2nJpc71Na3fS",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:19+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-dab-ExecutionRole-SyJb6bKqytUs",
+        "name": "role/StackSet-AWSControlTowerGuardHook-dab-ExecutionRole-SyJb6bKqytUs",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:21+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-dabcbd88--LogRole-Wz6sntNu3Wac",
+        "name": "role/StackSet-AWSControlTowerGuardHook-dabcbd88--LogRole-Wz6sntNu3Wac",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:21+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-f20-ExecutionRole-vaQB5tc2lKQn",
+        "name": "role/StackSet-AWSControlTowerGuardHook-f20-ExecutionRole-vaQB5tc2lKQn",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:22+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/StackSet-AWSControlTowerGuardHook-f2045375--LogRole-OpInwCfRli8J",
+        "name": "role/StackSet-AWSControlTowerGuardHook-f2045375--LogRole-OpInwCfRli8J",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-12-26T18:59:22+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:role/stacksets-exec-c08e8c6df47332fb1da865c1af57f2ea",
+        "name": "role/stacksets-exec-c08e8c6df47332fb1da865c1af57f2ea",
+        "subclass": "iam",
+        "item_type": "role",
+        "region": "global",
+        "creation_date": "2023-09-13T13:16:59+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:policy/CloudConformityPart2",
+        "name": "policy/CloudConformityPart2",
+        "subclass": "iam",
+        "item_type": "policy",
+        "region": "global",
+        "creation_date": "2023-09-13T21:15:52+00:00"
+      },
+      {
+        "arn": "arn:aws:iam::381785467984:policy/CloudConformityPart1",
+        "name": "policy/CloudConformityPart1",
+        "subclass": "iam",
+        "item_type": "policy",
+        "region": "global",
+        "creation_date": "2023-09-13T21:15:52+00:00"
+      }
+    ]
+  }
+}
